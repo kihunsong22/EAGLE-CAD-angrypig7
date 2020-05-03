@@ -14,6 +14,11 @@
 
 # ASSIGN C+1 
 
+ASSIGN C+1    grid mil
+ASSIGN C+2    grid mm
+ASSIGN C+3    grid 50 mil
+ASSIGN C+4    grid 10 mil
+
 #----------------------------------#
 #---------- BOARD EDITOR ----------#
 #----------------------------------#
