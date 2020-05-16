@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -191,32 +191,32 @@
 <smd name="B8" x="-1.75" y="1.19" dx="0.3" dy="2" layer="1" rot="R180"/>
 <smd name="A5" x="-1.25" y="1.19" dx="0.3" dy="2" layer="1" rot="R180"/>
 <hole x="-2.89" y="-0.53" drill="0.65"/>
-<smd name="SHLD-B1" x="-4.32" y="0" dx="1" dy="1.7" layer="16" roundness="100" stop="no" cream="no"/>
-<smd name="SHLD-T1" x="-4.32" y="0" dx="1" dy="1.7" layer="1" roundness="100" rot="R180" stop="no" cream="no"/>
+<smd name="SHLD-B1" x="-4.32" y="0" dx="1" dy="1.7" layer="16" roundness="100" cream="no"/>
+<smd name="SHLD-T1" x="-4.32" y="0" dx="1" dy="1.7" layer="1" roundness="100" rot="R180" cream="no"/>
 <wire x1="-4.62" y1="-0.3" x2="-4.62" y2="0.3" width="0.01" layer="46"/>
 <wire x1="-4.02" y1="-0.3" x2="-4.02" y2="0.3" width="0.01" layer="46"/>
 <wire x1="-4.62" y1="0.3" x2="-4.32" y2="0.6" width="0.01" layer="46" curve="-90"/>
 <wire x1="-4.32" y1="0.6" x2="-4.02" y2="0.3" width="0.01" layer="46" curve="-90"/>
 <wire x1="-4.02" y1="-0.3" x2="-4.32" y2="-0.6" width="0.01" layer="46" curve="-90"/>
 <wire x1="-4.32" y1="-0.6" x2="-4.62" y2="-0.3" width="0.01" layer="46" curve="-90"/>
-<smd name="SHLD-B2" x="4.32" y="0" dx="1" dy="1.7" layer="16" roundness="100" stop="no" cream="no"/>
-<smd name="SHLD-T2" x="4.32" y="0" dx="1" dy="1.7" layer="1" roundness="100" rot="R180" stop="no" cream="no"/>
+<smd name="SHLD-B2" x="4.32" y="0" dx="1" dy="1.7" layer="16" roundness="100" cream="no"/>
+<smd name="SHLD-T2" x="4.32" y="0" dx="1" dy="1.7" layer="1" roundness="100" rot="R180" cream="no"/>
 <wire x1="4.02" y1="-0.3" x2="4.02" y2="0.3" width="0.01" layer="46"/>
 <wire x1="4.62" y1="-0.3" x2="4.62" y2="0.3" width="0.01" layer="46"/>
 <wire x1="4.02" y1="0.3" x2="4.32" y2="0.6" width="0.01" layer="46" curve="-90"/>
 <wire x1="4.32" y1="0.6" x2="4.62" y2="0.3" width="0.01" layer="46" curve="-90"/>
 <wire x1="4.62" y1="-0.3" x2="4.32" y2="-0.6" width="0.01" layer="46" curve="-90"/>
 <wire x1="4.32" y1="-0.6" x2="4.02" y2="-0.3" width="0.01" layer="46" curve="-90"/>
-<smd name="SHLD-B3" x="-4.32" y="-3.8" dx="1" dy="1.7" layer="16" roundness="100" stop="no" cream="no"/>
-<smd name="SHLD-T3" x="-4.32" y="-3.8" dx="1" dy="1.7" layer="1" roundness="100" rot="R180" stop="no" cream="no"/>
+<smd name="SHLD-B3" x="-4.32" y="-3.8" dx="1" dy="1.7" layer="16" roundness="100" cream="no"/>
+<smd name="SHLD-T3" x="-4.32" y="-3.8" dx="1" dy="1.7" layer="1" roundness="100" rot="R180" cream="no"/>
 <wire x1="-4.62" y1="-4.1" x2="-4.62" y2="-3.5" width="0.01" layer="46"/>
 <wire x1="-4.02" y1="-4.1" x2="-4.02" y2="-3.5" width="0.01" layer="46"/>
 <wire x1="-4.62" y1="-3.5" x2="-4.32" y2="-3.2" width="0.01" layer="46" curve="-90"/>
 <wire x1="-4.32" y1="-3.2" x2="-4.02" y2="-3.5" width="0.01" layer="46" curve="-90"/>
 <wire x1="-4.02" y1="-4.1" x2="-4.32" y2="-4.4" width="0.01" layer="46" curve="-90"/>
 <wire x1="-4.32" y1="-4.4" x2="-4.62" y2="-4.1" width="0.01" layer="46" curve="-90"/>
-<smd name="SHLD-B4" x="4.32" y="-3.8" dx="1" dy="1.7" layer="16" roundness="100" stop="no" cream="no"/>
-<smd name="SHLD-T4" x="4.32" y="-3.8" dx="1" dy="1.7" layer="1" roundness="100" rot="R180" stop="no" cream="no"/>
+<smd name="SHLD-B4" x="4.32" y="-3.8" dx="1" dy="1.7" layer="16" roundness="100" cream="no"/>
+<smd name="SHLD-T4" x="4.32" y="-3.8" dx="1" dy="1.7" layer="1" roundness="100" rot="R180" cream="no"/>
 <wire x1="4.02" y1="-4.1" x2="4.02" y2="-3.5" width="0.01" layer="46"/>
 <wire x1="4.62" y1="-4.1" x2="4.62" y2="-3.5" width="0.01" layer="46"/>
 <wire x1="4.02" y1="-3.5" x2="4.32" y2="-3.2" width="0.01" layer="46" curve="-90"/>
