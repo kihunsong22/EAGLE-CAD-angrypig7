@@ -5,14 +5,16 @@ group all;
 display none tname bname; # names only
 group all;             # Group everything including smashed texts.
 change font vector (C>0 0); # Change the font to a vector font
-change size 42mil (C>0 0); # Change the font size
+change size 48mil (C>0 0); # Change the font size
 change ratio 15 (C>0 0); # Change the width:height ratio
+change align center (C>0 0); # Center the text
 
 
 display none tval bval; # values only
 group all;             # Group everything including smashed texts.
 change font vector (C>0 0); # Change the font to a vector font
-change size 36mil (C>0 0); # Change the font size
+change size 42mil (C>0 0); # Change the font size
 change ratio 15 (C>0 0); # Change the width:height ratio
+change align center (C>0 0); # Center the text
 
 display last;
