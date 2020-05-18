@@ -2,6 +2,9 @@
 # eagle.scr will be automatically applied
 #
 
+grid 50 mil;
+grid on;
+
 #----------------------------------#
 #------------ GENERAL--------------#
 #----------------------------------#

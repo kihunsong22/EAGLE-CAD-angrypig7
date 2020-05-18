@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -34,7 +34,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -3479,9 +3479,10 @@ Mfr no: 1776244-3 &lt;br&gt;
 <pad name="2" x="0" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
 <pad name="3" x="-5" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
 <pad name="1" x="5" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
-<text x="-7.5" y="4" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <wire x1="6.858" y1="0.762" x2="6.858" y2="-1.778" width="0.254" layer="21"/>
 <wire x1="6.858" y1="-1.778" x2="6.858" y2="0.762" width="0.254" layer="22"/>
+<text x="0" y="4.508" size="1.2192" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-4.636" size="1.2192" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="TERMINAL_SCREW_BLOCK_2P_5MM">
 <description>wire to board terminal block 2 pins 5mm pitch &lt;br&gt;
@@ -3521,9 +3522,10 @@ Mfr no: 1776244-2 &lt;br&gt;
 <circle x="2.5" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
 <pad name="1" x="2.5" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
 <pad name="2" x="-2.5" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
-<text x="-5" y="4" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <wire x1="4.318" y1="0.762" x2="4.318" y2="-1.778" width="0.254" layer="21"/>
 <wire x1="4.318" y1="-1.778" x2="4.318" y2="0.762" width="0.254" layer="22"/>
+<text x="0" y="4.508" size="1.2192" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-4.636" size="1.2192" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="TERMINAL_SCREW_BLOCK_4P_5MM">
 <description>wire to board terminal block 3 pins 5mm pitch &lt;br&gt;
@@ -3572,7 +3574,6 @@ Mfr no: 1776244-3 &lt;br&gt;
 <pad name="2" x="0" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
 <pad name="3" x="-5" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
 <pad name="1" x="5" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
-<text x="-12.5" y="4" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <wire x1="6.858" y1="0.762" x2="6.858" y2="-1.778" width="0.254" layer="21"/>
 <wire x1="6.858" y1="-1.778" x2="6.858" y2="0.762" width="0.254" layer="22"/>
 <wire x1="-8.917" y1="0.925" x2="-9.658" y2="-0.358" width="0.0762" layer="51"/>
@@ -3586,6 +3587,8 @@ Mfr no: 1776244-3 &lt;br&gt;
 <circle x="-10" y="2.45" radius="0.45" width="0.0762" layer="21"/>
 <circle x="-10" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
 <pad name="4" x="-10" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
+<text x="-2.794" y="4.508" size="1.2192" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="-2.794" y="-4.636" size="1.2192" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="USB-TYPE-C-31-M-12">
 <wire x1="4.32" y1="-6.78" x2="4.32" y2="-5.24" width="0.2032" layer="21"/>
@@ -3686,7 +3689,6 @@ Mfr no: 1776244-3 &lt;br&gt;
 <pad name="2" x="0" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
 <pad name="3" x="-5" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
 <pad name="1" x="5" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
-<text x="-17.58" y="4" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <wire x1="6.858" y1="0.762" x2="6.858" y2="-1.778" width="0.254" layer="21"/>
 <wire x1="6.858" y1="-1.778" x2="6.858" y2="0.762" width="0.254" layer="22"/>
 <wire x1="-8.917" y1="0.925" x2="-9.658" y2="-0.358" width="0.0762" layer="51"/>
@@ -3711,6 +3713,8 @@ Mfr no: 1776244-3 &lt;br&gt;
 <circle x="-15.08" y="2.45" radius="0.45" width="0.0762" layer="21"/>
 <circle x="-15.08" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
 <pad name="5" x="-15.08" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
+<text x="-5.08" y="4.508" size="1.2192" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="-5.08" y="-4.636" size="1.2192" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="TERMINAL_SCREW_BLOCK_6P_5MM">
 <description>wire to board terminal block 3 pins 5mm pitch &lt;br&gt;
@@ -3759,7 +3763,6 @@ Mfr no: 1776244-3 &lt;br&gt;
 <pad name="2" x="0" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
 <pad name="3" x="-5" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
 <pad name="1" x="5" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
-<text x="-22.66" y="4" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <wire x1="6.858" y1="0.762" x2="6.858" y2="-1.778" width="0.254" layer="21"/>
 <wire x1="6.858" y1="-1.778" x2="6.858" y2="0.762" width="0.254" layer="22"/>
 <wire x1="-8.917" y1="0.925" x2="-9.658" y2="-0.358" width="0.0762" layer="51"/>
@@ -3795,6 +3798,8 @@ Mfr no: 1776244-3 &lt;br&gt;
 <circle x="-20.16" y="2.45" radius="0.45" width="0.0762" layer="21"/>
 <circle x="-20.16" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
 <pad name="6" x="-20.16" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
+<text x="-7.62" y="4.508" size="1.2192" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="-7.62" y="-4.636" size="1.2192" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="TERMINAL_PLUG_BLOCK_2P_3.81MM">
 <description>wire to board terminal block 2 pins 5mm pitch &lt;br&gt;
@@ -3802,7 +3807,7 @@ Mfr no: 1776244-2 &lt;br&gt;
 &lt;a href="http://www.ebay.com/itm/10pcs-2-Pin-Screw-Terminal-Block-Connector-5mm-Pitch-B-/300625175136?pt=LH_DefaultDomain_0&amp;hash=item45fea82260#ht_1330wt_1396"&gt; Ebay &lt;/a&gt;
 &lt;br&gt;
 &lt;a href="http://www.digikey.com/product-detail/en/1776244-2/A97996-ND/1826859"&gt; Digikey &lt;/a&gt;</description>
-<text x="-6.2" y="3.2" size="1.143" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-2.136" y="3.708" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <pad name="1" x="0" y="0" drill="1" diameter="2.5" shape="square"/>
 <pad name="2" x="-3.81" y="0" drill="1" diameter="2.5"/>
 <wire x1="2.345" y1="2.9" x2="-6.155" y2="2.9" width="0.15" layer="21"/>
@@ -3814,6 +3819,7 @@ Mfr no: 1776244-2 &lt;br&gt;
 <wire x1="2.345" y1="-2.9" x2="-6.155" y2="-2.9" width="0.15" layer="21"/>
 <wire x1="1.6" y1="1.4" x2="1.6" y2="-1.4" width="0.2" layer="21"/>
 <wire x1="1.6" y1="1.4" x2="1.6" y2="-1.4" width="0.2" layer="22"/>
+<text x="-1.882" y="-4.928" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="TERMINAL_PLUG_BLOCK_3P_3.81MM">
 <description>wire to board terminal block 2 pins 5mm pitch &lt;br&gt;
@@ -3821,7 +3827,7 @@ Mfr no: 1776244-2 &lt;br&gt;
 &lt;a href="http://www.ebay.com/itm/10pcs-2-Pin-Screw-Terminal-Block-Connector-5mm-Pitch-B-/300625175136?pt=LH_DefaultDomain_0&amp;hash=item45fea82260#ht_1330wt_1396"&gt; Ebay &lt;/a&gt;
 &lt;br&gt;
 &lt;a href="http://www.digikey.com/product-detail/en/1776244-2/A97996-ND/1826859"&gt; Digikey &lt;/a&gt;</description>
-<text x="-10.01" y="3.2" size="1.143" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-3.914" y="3.708" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <pad name="1" x="0" y="0" drill="1" diameter="2.5" shape="square"/>
 <pad name="2" x="-3.81" y="0" drill="1" diameter="2.5"/>
 <wire x1="2.345" y1="2.9" x2="-9.965" y2="2.9" width="0.15" layer="21"/>
@@ -3834,6 +3840,7 @@ Mfr no: 1776244-2 &lt;br&gt;
 <wire x1="1.6" y1="1.4" x2="1.6" y2="-1.4" width="0.2" layer="21"/>
 <wire x1="1.6" y1="1.4" x2="1.6" y2="-1.4" width="0.2" layer="22"/>
 <pad name="3" x="-7.62" y="0" drill="1" diameter="2.5"/>
+<text x="-3.914" y="-4.928" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="TERMINAL_PLUG_BLOCK_4P_3.81MM">
 <description>wire to board terminal block 2 pins 5mm pitch &lt;br&gt;
@@ -3841,7 +3848,7 @@ Mfr no: 1776244-2 &lt;br&gt;
 &lt;a href="http://www.ebay.com/itm/10pcs-2-Pin-Screw-Terminal-Block-Connector-5mm-Pitch-B-/300625175136?pt=LH_DefaultDomain_0&amp;hash=item45fea82260#ht_1330wt_1396"&gt; Ebay &lt;/a&gt;
 &lt;br&gt;
 &lt;a href="http://www.digikey.com/product-detail/en/1776244-2/A97996-ND/1826859"&gt; Digikey &lt;/a&gt;</description>
-<text x="-13.82" y="3.2" size="1.143" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-5.692" y="3.708" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <pad name="1" x="0" y="0" drill="1" diameter="2.5" shape="square"/>
 <pad name="2" x="-3.81" y="0" drill="1" diameter="2.5"/>
 <wire x1="2.345" y1="2.9" x2="-13.775" y2="2.9" width="0.15" layer="21"/>
@@ -3855,6 +3862,7 @@ Mfr no: 1776244-2 &lt;br&gt;
 <wire x1="1.6" y1="1.4" x2="1.6" y2="-1.4" width="0.2" layer="22"/>
 <pad name="3" x="-7.62" y="0" drill="1" diameter="2.5"/>
 <pad name="4" x="-11.43" y="0" drill="1" diameter="2.5"/>
+<text x="-5.692" y="-4.928" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="TERMINAL_PLUG_BLOCK_5P_3.81MM">
 <description>wire to board terminal block 2 pins 5mm pitch &lt;br&gt;
@@ -3862,7 +3870,7 @@ Mfr no: 1776244-2 &lt;br&gt;
 &lt;a href="http://www.ebay.com/itm/10pcs-2-Pin-Screw-Terminal-Block-Connector-5mm-Pitch-B-/300625175136?pt=LH_DefaultDomain_0&amp;hash=item45fea82260#ht_1330wt_1396"&gt; Ebay &lt;/a&gt;
 &lt;br&gt;
 &lt;a href="http://www.digikey.com/product-detail/en/1776244-2/A97996-ND/1826859"&gt; Digikey &lt;/a&gt;</description>
-<text x="-17.63" y="3.2" size="1.143" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-7.724" y="3.962" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <pad name="1" x="0" y="0" drill="1" diameter="2.5" shape="square"/>
 <pad name="2" x="-3.81" y="0" drill="1" diameter="2.5"/>
 <wire x1="2.345" y1="2.9" x2="-17.585" y2="2.9" width="0.15" layer="21"/>
@@ -3877,6 +3885,7 @@ Mfr no: 1776244-2 &lt;br&gt;
 <pad name="3" x="-7.62" y="0" drill="1" diameter="2.5"/>
 <pad name="4" x="-11.43" y="0" drill="1" diameter="2.5"/>
 <pad name="5" x="-15.24" y="0" drill="1" diameter="2.5"/>
+<text x="-7.47" y="-4.928" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="TERMINAL_PLUG_BLOCK_6P_3.81MM">
 <description>wire to board terminal block 2 pins 5mm pitch &lt;br&gt;
@@ -3884,7 +3893,7 @@ Mfr no: 1776244-2 &lt;br&gt;
 &lt;a href="http://www.ebay.com/itm/10pcs-2-Pin-Screw-Terminal-Block-Connector-5mm-Pitch-B-/300625175136?pt=LH_DefaultDomain_0&amp;hash=item45fea82260#ht_1330wt_1396"&gt; Ebay &lt;/a&gt;
 &lt;br&gt;
 &lt;a href="http://www.digikey.com/product-detail/en/1776244-2/A97996-ND/1826859"&gt; Digikey &lt;/a&gt;</description>
-<text x="-21.44" y="3.2" size="1.143" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-9.756" y="3.708" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <pad name="1" x="0" y="0" drill="1" diameter="2.5" shape="square"/>
 <pad name="2" x="-3.81" y="0" drill="1" diameter="2.5"/>
 <wire x1="2.345" y1="2.9" x2="-21.395" y2="2.9" width="0.15" layer="21"/>
@@ -3900,6 +3909,7 @@ Mfr no: 1776244-2 &lt;br&gt;
 <pad name="4" x="-11.43" y="0" drill="1" diameter="2.5"/>
 <pad name="5" x="-15.24" y="0" drill="1" diameter="2.5"/>
 <pad name="6" x="-19.05" y="0" drill="1" diameter="2.5"/>
+<text x="-9.502" y="-4.928" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
