@@ -3,7 +3,6 @@
 #
 
 grid 50 mil;
-grid on;
 
 #----------------------------------#
 #------------ GENERAL--------------#
@@ -23,12 +22,17 @@ ASSIGN C+1    grid mil
 ASSIGN C+2    grid mm
 ASSIGN C+3    grid 50 mil
 ASSIGN C+4    grid 10 mil
+ASSIGN C+5    grid 0.1 mm
+ASSIGN C+6    grid 0.5 mm
 
 #----------------------------------#
 #---------- BOARD EDITOR ----------#
 #----------------------------------#
 
 BRD:
+
+grid on;
+grid 10 mil;
 
 ASSIGN A+Q    GROUP;
 ASSIGN A+W    MOVE;
@@ -37,6 +41,7 @@ ASSIGN A+R    DELETE;
 
 ASSIGN A+A    VIA;
 ASSIGN A+S    SHOW;
+ASSIGN A+D    name GND;
 
 
 #----------------------------------#
@@ -44,6 +49,8 @@ ASSIGN A+S    SHOW;
 #----------------------------------#
 
 SCH:
+
+grid 50 mil;
 
 ASSIGN A+Q    GROUP;
 ASSIGN A+W    MOVE;
@@ -59,7 +66,11 @@ ASSIGN A+S    SHOW;
 
 LBR:
 
+grid 50 mil;
+
 SYM:
+
+grid 50 mil;
 
 ASSIGN A+Q    GROUP;
 ASSIGN A+W    MOVE;
@@ -70,6 +81,9 @@ ASSIGN A+A    PIN;
 
 
 PAC:
+
+grid on;
+grid 10 mil;
 
 ASSIGN A+Q    GROUP;
 ASSIGN A+M    MOVE;
