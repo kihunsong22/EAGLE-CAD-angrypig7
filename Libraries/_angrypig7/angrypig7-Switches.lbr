@@ -599,8 +599,8 @@
 <smd name="2" x="2.794" y="1.905" dx="0.762" dy="1.524" layer="1" rot="R90"/>
 <smd name="3" x="-2.794" y="-1.905" dx="0.762" dy="1.524" layer="1" rot="R90"/>
 <smd name="4" x="2.794" y="-1.905" dx="0.762" dy="1.524" layer="1" rot="R90"/>
-<text x="0" y="2.667" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
-<text x="0" y="-2.667" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+<text x="0" y="3.175" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;Name</text>
+<text x="0" y="-3.175" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;Value</text>
 </package>
 <package name="TACTILE_SWITCH_SMD_RIGHT_ANGLE">
 <description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, Right-angle&lt;/h3&gt;

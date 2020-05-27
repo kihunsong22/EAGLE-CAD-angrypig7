@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -3434,18 +3434,16 @@ Source: &lt;a href="http://emersonconnectivity.com/OA_MEDIA/drawings/dr-14207018
 <description>wire to board terminal block 3 pins 5mm pitch &lt;br&gt;
 Mfr no: 1776244-3 &lt;br&gt;
 &lt;a href="http://www.digikey.com/product-detail/en/1776244-3/A97997-ND/1826860"&gt; Digikey &lt;/a&gt;</description>
-<wire x1="-7.5" y1="3.75" x2="7.5" y2="3.75" width="0.1524" layer="21"/>
-<wire x1="7.5" y1="3.75" x2="7.5" y2="2.02" width="0.1524" layer="21"/>
-<wire x1="7.5" y1="2.02" x2="7.5" y2="-3.01" width="0.1524" layer="21"/>
-<wire x1="7.5" y1="-3.01" x2="7.5" y2="-3.75" width="0.1524" layer="21"/>
-<wire x1="7.5" y1="-3.75" x2="-7.5" y2="-3.75" width="0.1524" layer="21"/>
-<wire x1="-7.5" y1="-3.75" x2="-7.5" y2="-3.01" width="0.1524" layer="21"/>
-<wire x1="-7.5" y1="-3.01" x2="-7.5" y2="2.02" width="0.1524" layer="21"/>
-<wire x1="-7.5" y1="2.02" x2="-7.5" y2="2.155" width="0.1524" layer="21"/>
-<wire x1="-7.5" y1="2.155" x2="-7.5" y2="2.745" width="0.1524" layer="21"/>
-<wire x1="-7.5" y1="2.745" x2="-7.5" y2="3.75" width="0.1524" layer="21"/>
-<wire x1="-7.5" y1="2.02" x2="7.5" y2="2.02" width="0.1524" layer="21"/>
-<wire x1="-7.5" y1="-3.01" x2="7.5" y2="-3.01" width="0.1524" layer="21"/>
+<wire x1="-8" y1="4.45" x2="8" y2="4.45" width="0.1524" layer="21"/>
+<wire x1="8" y1="4.45" x2="8" y2="2.72" width="0.1524" layer="21"/>
+<wire x1="8" y1="2.72" x2="8" y2="-4.51" width="0.1524" layer="21"/>
+<wire x1="8" y1="-4.51" x2="8" y2="-5.75" width="0.1524" layer="21"/>
+<wire x1="8" y1="-5.75" x2="-8" y2="-5.75" width="0.1524" layer="21"/>
+<wire x1="-8" y1="-5.75" x2="-8" y2="-4.51" width="0.1524" layer="21"/>
+<wire x1="-8" y1="-4.51" x2="-8" y2="2.72" width="0.1524" layer="21"/>
+<wire x1="-8" y1="2.72" x2="-8" y2="4.45" width="0.1524" layer="21"/>
+<wire x1="-8" y1="2.72" x2="8" y2="2.72" width="0.1524" layer="21"/>
+<wire x1="-8" y1="-4.51" x2="8" y2="-4.51" width="0.1524" layer="21"/>
 <wire x1="-3.917" y1="0.925" x2="-4.658" y2="-0.358" width="0.0762" layer="51"/>
 <wire x1="-4.658" y1="-0.358" x2="-3.375" y2="-1.1" width="0.0762" layer="51"/>
 <wire x1="-3.625" y1="-1.533" x2="-4.908" y2="-0.792" width="0.0762" layer="51"/>
@@ -3470,19 +3468,25 @@ Mfr no: 1776244-3 &lt;br&gt;
 <wire x1="4.658" y1="-0.542" x2="3.375" y2="0.2" width="0.0762" layer="51"/>
 <wire x1="3.625" y1="0.633" x2="4.908" y2="-0.108" width="0.0762" layer="51"/>
 <wire x1="4.908" y1="-0.108" x2="5.65" y2="1.175" width="0.0762" layer="51"/>
-<circle x="-5" y="2.45" radius="0.45" width="0.0762" layer="21"/>
-<circle x="0" y="2.45" radius="0.45" width="0.0762" layer="21"/>
 <circle x="-5" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
 <circle x="0" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
-<circle x="5" y="2.45" radius="0.45" width="0.0762" layer="21"/>
 <circle x="5" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
 <pad name="2" x="0" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
 <pad name="3" x="-5" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
 <pad name="1" x="5" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
 <wire x1="6.858" y1="0.762" x2="6.858" y2="-1.778" width="0.254" layer="21"/>
 <wire x1="6.858" y1="-1.778" x2="6.858" y2="0.762" width="0.254" layer="22"/>
-<text x="0" y="4.508" size="1.2192" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0" y="-4.636" size="1.2192" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<text x="0" y="5.208" size="1.2192" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-6.636" size="1.2192" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<wire x1="6" y1="4.45" x2="6" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="4" y1="4.45" x2="4" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="1" y1="4.45" x2="1" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-1" y1="4.45" x2="-1" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-4" y1="4.45" x2="-4" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-6" y1="4.45" x2="-6" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="6" y1="3.5" x2="4" y2="3.5" width="0.1524" layer="21"/>
+<wire x1="1" y1="3.5" x2="-1" y2="3.5" width="0.1524" layer="21"/>
+<wire x1="-4" y1="3.5" x2="-6" y2="3.5" width="0.1524" layer="21"/>
 </package>
 <package name="TERMINAL_SCREW_BLOCK_2P_5MM">
 <description>wire to board terminal block 2 pins 5mm pitch &lt;br&gt;
@@ -3490,24 +3494,33 @@ Mfr no: 1776244-2 &lt;br&gt;
 &lt;a href="http://www.ebay.com/itm/10pcs-2-Pin-Screw-Terminal-Block-Connector-5mm-Pitch-B-/300625175136?pt=LH_DefaultDomain_0&amp;hash=item45fea82260#ht_1330wt_1396"&gt; Ebay &lt;/a&gt;
 &lt;br&gt;
 &lt;a href="http://www.digikey.com/product-detail/en/1776244-2/A97996-ND/1826859"&gt; Digikey &lt;/a&gt;</description>
-<wire x1="-5" y1="3.75" x2="5" y2="3.75" width="0.1524" layer="21"/>
-<wire x1="5" y1="3.75" x2="5" y2="2.02" width="0.1524" layer="21"/>
-<wire x1="5" y1="2.02" x2="5" y2="-3.01" width="0.1524" layer="21"/>
-<wire x1="5" y1="-3.01" x2="5" y2="-3.75" width="0.1524" layer="21"/>
-<wire x1="5" y1="-3.75" x2="-5" y2="-3.75" width="0.1524" layer="21"/>
-<wire x1="-5" y1="-3.75" x2="-5" y2="-3.01" width="0.1524" layer="21"/>
-<wire x1="-5" y1="-3.01" x2="-5" y2="2.02" width="0.1524" layer="21"/>
-<wire x1="-5" y1="2.02" x2="-5" y2="3.75" width="0.1524" layer="21"/>
-<wire x1="-5" y1="2.02" x2="5" y2="2.02" width="0.1524" layer="21"/>
-<wire x1="-5" y1="-3.01" x2="5" y2="-3.01" width="0.1524" layer="21"/>
-<wire x1="-1.417" y1="0.925" x2="-2.158" y2="-0.358" width="0.0762" layer="51"/>
-<wire x1="-2.158" y1="-0.358" x2="-0.875" y2="-1.1" width="0.0762" layer="51"/>
-<wire x1="-1.125" y1="-1.533" x2="-2.408" y2="-0.792" width="0.0762" layer="51"/>
-<wire x1="-2.408" y1="-0.792" x2="-3.15" y2="-2.075" width="0.0762" layer="51"/>
-<wire x1="-3.583" y1="-1.825" x2="-2.842" y2="-0.542" width="0.0762" layer="51"/>
-<wire x1="-2.842" y1="-0.542" x2="-4.125" y2="0.2" width="0.0762" layer="51"/>
-<wire x1="-3.875" y1="0.633" x2="-2.592" y2="-0.108" width="0.0762" layer="51"/>
-<wire x1="-2.592" y1="-0.108" x2="-1.85" y2="1.175" width="0.0762" layer="51"/>
+<wire x1="-5.5" y1="4.95" x2="-3.5" y2="4.95" width="0.1524" layer="21"/>
+<wire x1="-3.5" y1="4.95" x2="-1.5" y2="4.95" width="0.1524" layer="21"/>
+<wire x1="-1.5" y1="4.95" x2="1.5" y2="4.95" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="4.95" x2="3.5" y2="4.95" width="0.1524" layer="21"/>
+<wire x1="3.5" y1="4.95" x2="5.5" y2="4.95" width="0.1524" layer="21"/>
+<wire x1="5.5" y1="4.95" x2="5.5" y2="3.22" width="0.1524" layer="21"/>
+<wire x1="5.5" y1="3.22" x2="5.5" y2="-4.51" width="0.1524" layer="21"/>
+<wire x1="5.5" y1="-4.51" x2="5.5" y2="-5.75" width="0.1524" layer="21"/>
+<wire x1="5.5" y1="-5.75" x2="-5.5" y2="-5.75" width="0.1524" layer="21"/>
+<wire x1="-5.5" y1="-5.75" x2="-5.5" y2="-4.51" width="0.1524" layer="21"/>
+<wire x1="-5.5" y1="-4.51" x2="-5.5" y2="3.22" width="0.1524" layer="21"/>
+<wire x1="-5.5" y1="3.22" x2="-5.5" y2="4.95" width="0.1524" layer="21"/>
+<wire x1="-5.5" y1="3.22" x2="3.5" y2="3.22" width="0.1524" layer="21"/>
+<wire x1="3.5" y1="3.22" x2="5.5" y2="3.22" width="0.1524" layer="21"/>
+<wire x1="-5.5" y1="-4.51" x2="5.5" y2="-4.51" width="0.1524" layer="21"/>
+<circle x="-2.5" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
+<circle x="2.5" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
+<pad name="1" x="2.5" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
+<pad name="2" x="-2.5" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
+<wire x1="4.318" y1="0.762" x2="4.318" y2="-1.778" width="0.254" layer="21"/>
+<wire x1="4.318" y1="-1.778" x2="4.318" y2="0.762" width="0.254" layer="22"/>
+<text x="0" y="5.708" size="1.2192" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-6.636" size="1.2192" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<wire x1="3.5" y1="4.95" x2="3.5" y2="4" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="4.95" x2="1.5" y2="4" width="0.1524" layer="21"/>
+<wire x1="-1.5" y1="4.95" x2="-1.5" y2="4" width="0.1524" layer="21"/>
+<wire x1="-3.5" y1="4.95" x2="-3.5" y2="4" width="0.1524" layer="21"/>
 <wire x1="3.583" y1="0.925" x2="2.842" y2="-0.358" width="0.0762" layer="51"/>
 <wire x1="2.842" y1="-0.358" x2="4.125" y2="-1.1" width="0.0762" layer="51"/>
 <wire x1="3.875" y1="-1.533" x2="2.592" y2="-0.792" width="0.0762" layer="51"/>
@@ -3516,31 +3529,31 @@ Mfr no: 1776244-2 &lt;br&gt;
 <wire x1="2.158" y1="-0.542" x2="0.875" y2="0.2" width="0.0762" layer="51"/>
 <wire x1="1.125" y1="0.633" x2="2.408" y2="-0.108" width="0.0762" layer="51"/>
 <wire x1="2.408" y1="-0.108" x2="3.15" y2="1.175" width="0.0762" layer="51"/>
-<circle x="-2.5" y="2.45" radius="0.45" width="0.0762" layer="21"/>
-<circle x="2.5" y="2.45" radius="0.45" width="0.0762" layer="21"/>
-<circle x="-2.5" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
-<circle x="2.5" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
-<pad name="1" x="2.5" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
-<pad name="2" x="-2.5" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
-<wire x1="4.318" y1="0.762" x2="4.318" y2="-1.778" width="0.254" layer="21"/>
-<wire x1="4.318" y1="-1.778" x2="4.318" y2="0.762" width="0.254" layer="22"/>
-<text x="0" y="4.508" size="1.2192" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0" y="-4.636" size="1.2192" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<wire x1="-1.417" y1="0.925" x2="-2.158" y2="-0.358" width="0.0762" layer="51"/>
+<wire x1="-2.158" y1="-0.358" x2="-0.875" y2="-1.1" width="0.0762" layer="51"/>
+<wire x1="-1.125" y1="-1.533" x2="-2.408" y2="-0.792" width="0.0762" layer="51"/>
+<wire x1="-2.408" y1="-0.792" x2="-3.15" y2="-2.075" width="0.0762" layer="51"/>
+<wire x1="-3.583" y1="-1.825" x2="-2.842" y2="-0.542" width="0.0762" layer="51"/>
+<wire x1="-2.842" y1="-0.542" x2="-4.125" y2="0.2" width="0.0762" layer="51"/>
+<wire x1="-3.875" y1="0.633" x2="-2.592" y2="-0.108" width="0.0762" layer="51"/>
+<wire x1="-2.592" y1="-0.108" x2="-1.85" y2="1.175" width="0.0762" layer="51"/>
+<wire x1="-1.5" y1="4" x2="-3.5" y2="4" width="0.1524" layer="21"/>
+<wire x1="3.5" y1="4" x2="1.5" y2="4" width="0.1524" layer="21"/>
 </package>
 <package name="TERMINAL_SCREW_BLOCK_4P_5MM">
 <description>wire to board terminal block 3 pins 5mm pitch &lt;br&gt;
 Mfr no: 1776244-3 &lt;br&gt;
 &lt;a href="http://www.digikey.com/product-detail/en/1776244-3/A97997-ND/1826860"&gt; Digikey &lt;/a&gt;</description>
-<wire x1="-12.5" y1="3.75" x2="7.5" y2="3.75" width="0.1524" layer="21"/>
-<wire x1="7.5" y1="3.75" x2="7.5" y2="2.02" width="0.1524" layer="21"/>
-<wire x1="7.5" y1="2.02" x2="7.5" y2="-3.01" width="0.1524" layer="21"/>
-<wire x1="7.5" y1="-3.01" x2="7.5" y2="-3.75" width="0.1524" layer="21"/>
-<wire x1="7.5" y1="-3.75" x2="-12.5" y2="-3.75" width="0.1524" layer="21"/>
-<wire x1="-12.5" y1="-3.75" x2="-12.5" y2="-3.01" width="0.1524" layer="21"/>
-<wire x1="-12.5" y1="-3.01" x2="-12.5" y2="2.02" width="0.1524" layer="21"/>
-<wire x1="-12.5" y1="2.02" x2="-12.5" y2="3.75" width="0.1524" layer="21"/>
-<wire x1="-12.5" y1="2.02" x2="7.5" y2="2.02" width="0.1524" layer="21"/>
-<wire x1="-12.5" y1="-3.01" x2="7.5" y2="-3.01" width="0.1524" layer="21"/>
+<wire x1="-13" y1="4.45" x2="8" y2="4.45" width="0.1524" layer="21"/>
+<wire x1="8" y1="4.45" x2="8" y2="2.72" width="0.1524" layer="21"/>
+<wire x1="8" y1="2.72" x2="8" y2="-4.51" width="0.1524" layer="21"/>
+<wire x1="8" y1="-4.51" x2="8" y2="-5.75" width="0.1524" layer="21"/>
+<wire x1="8" y1="-5.75" x2="-13" y2="-5.75" width="0.1524" layer="21"/>
+<wire x1="-13" y1="-5.75" x2="-13" y2="-4.51" width="0.1524" layer="21"/>
+<wire x1="-13" y1="-4.51" x2="-13" y2="2.72" width="0.1524" layer="21"/>
+<wire x1="-13" y1="2.72" x2="-13" y2="4.45" width="0.1524" layer="21"/>
+<wire x1="-13" y1="2.72" x2="8" y2="2.72" width="0.1524" layer="21"/>
+<wire x1="-13" y1="-4.51" x2="8" y2="-4.51" width="0.1524" layer="21"/>
 <wire x1="-3.917" y1="0.925" x2="-4.658" y2="-0.358" width="0.0762" layer="51"/>
 <wire x1="-4.658" y1="-0.358" x2="-3.375" y2="-1.1" width="0.0762" layer="51"/>
 <wire x1="-3.625" y1="-1.533" x2="-4.908" y2="-0.792" width="0.0762" layer="51"/>
@@ -3565,11 +3578,8 @@ Mfr no: 1776244-3 &lt;br&gt;
 <wire x1="4.658" y1="-0.542" x2="3.375" y2="0.2" width="0.0762" layer="51"/>
 <wire x1="3.625" y1="0.633" x2="4.908" y2="-0.108" width="0.0762" layer="51"/>
 <wire x1="4.908" y1="-0.108" x2="5.65" y2="1.175" width="0.0762" layer="51"/>
-<circle x="-5" y="2.45" radius="0.45" width="0.0762" layer="21"/>
-<circle x="0" y="2.45" radius="0.45" width="0.0762" layer="21"/>
 <circle x="-5" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
 <circle x="0" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
-<circle x="5" y="2.45" radius="0.45" width="0.0762" layer="21"/>
 <circle x="5" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
 <pad name="2" x="0" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
 <pad name="3" x="-5" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
@@ -3584,11 +3594,22 @@ Mfr no: 1776244-3 &lt;br&gt;
 <wire x1="-10.342" y1="-0.542" x2="-11.625" y2="0.2" width="0.0762" layer="51"/>
 <wire x1="-11.375" y1="0.633" x2="-10.092" y2="-0.108" width="0.0762" layer="51"/>
 <wire x1="-10.092" y1="-0.108" x2="-9.35" y2="1.175" width="0.0762" layer="51"/>
-<circle x="-10" y="2.45" radius="0.45" width="0.0762" layer="21"/>
 <circle x="-10" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
 <pad name="4" x="-10" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
-<text x="-2.794" y="4.508" size="1.2192" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="-2.794" y="-4.636" size="1.2192" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<text x="-2.794" y="5.208" size="1.2192" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="-2.794" y="-6.636" size="1.2192" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<wire x1="6" y1="4.45" x2="6" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="4" y1="4.45" x2="4" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="1" y1="4.45" x2="1" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-1" y1="4.45" x2="-1" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-4" y1="4.45" x2="-4" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-6" y1="4.45" x2="-6" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-9" y1="4.45" x2="-9" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-11" y1="4.45" x2="-11" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="6" y1="3.5" x2="4" y2="3.5" width="0.1524" layer="21"/>
+<wire x1="1" y1="3.5" x2="-1" y2="3.5" width="0.1524" layer="21"/>
+<wire x1="-4" y1="3.5" x2="-6" y2="3.5" width="0.1524" layer="21"/>
+<wire x1="-9" y1="3.5" x2="-11" y2="3.5" width="0.1524" layer="21"/>
 </package>
 <package name="USB-TYPE-C-31-M-12">
 <wire x1="4.32" y1="-6.78" x2="4.32" y2="-5.24" width="0.2032" layer="21"/>
@@ -3646,16 +3667,16 @@ Mfr no: 1776244-3 &lt;br&gt;
 <description>wire to board terminal block 3 pins 5mm pitch &lt;br&gt;
 Mfr no: 1776244-3 &lt;br&gt;
 &lt;a href="http://www.digikey.com/product-detail/en/1776244-3/A97997-ND/1826860"&gt; Digikey &lt;/a&gt;</description>
-<wire x1="-17.58" y1="3.75" x2="7.5" y2="3.75" width="0.1524" layer="21"/>
-<wire x1="7.5" y1="3.75" x2="7.5" y2="2.02" width="0.1524" layer="21"/>
-<wire x1="7.5" y1="2.02" x2="7.5" y2="-3.01" width="0.1524" layer="21"/>
-<wire x1="7.5" y1="-3.01" x2="7.5" y2="-3.75" width="0.1524" layer="21"/>
-<wire x1="7.5" y1="-3.75" x2="-17.58" y2="-3.75" width="0.1524" layer="21"/>
-<wire x1="-17.58" y1="-3.75" x2="-17.58" y2="-3.01" width="0.1524" layer="21"/>
-<wire x1="-17.58" y1="-3.01" x2="-17.58" y2="2.02" width="0.1524" layer="21"/>
-<wire x1="-17.58" y1="2.02" x2="-17.58" y2="3.75" width="0.1524" layer="21"/>
-<wire x1="-17.58" y1="2.02" x2="7.5" y2="2.02" width="0.1524" layer="21"/>
-<wire x1="-17.58" y1="-3.01" x2="7.5" y2="-3.01" width="0.1524" layer="21"/>
+<wire x1="-18.08" y1="4.45" x2="8" y2="4.45" width="0.1524" layer="21"/>
+<wire x1="8" y1="4.45" x2="8" y2="2.72" width="0.1524" layer="21"/>
+<wire x1="8" y1="2.72" x2="8" y2="-4.51" width="0.1524" layer="21"/>
+<wire x1="8" y1="-4.51" x2="8" y2="-5.75" width="0.1524" layer="21"/>
+<wire x1="8" y1="-5.75" x2="-18.08" y2="-5.75" width="0.1524" layer="21"/>
+<wire x1="-18.08" y1="-5.75" x2="-18.08" y2="-4.51" width="0.1524" layer="21"/>
+<wire x1="-18.08" y1="-4.51" x2="-18.08" y2="2.72" width="0.1524" layer="21"/>
+<wire x1="-18.08" y1="2.72" x2="-18.08" y2="4.45" width="0.1524" layer="21"/>
+<wire x1="-18.08" y1="2.72" x2="8" y2="2.72" width="0.1524" layer="21"/>
+<wire x1="-18.08" y1="-4.51" x2="8" y2="-4.51" width="0.1524" layer="21"/>
 <wire x1="-3.917" y1="0.925" x2="-4.658" y2="-0.358" width="0.0762" layer="51"/>
 <wire x1="-4.658" y1="-0.358" x2="-3.375" y2="-1.1" width="0.0762" layer="51"/>
 <wire x1="-3.625" y1="-1.533" x2="-4.908" y2="-0.792" width="0.0762" layer="51"/>
@@ -3680,11 +3701,8 @@ Mfr no: 1776244-3 &lt;br&gt;
 <wire x1="4.658" y1="-0.542" x2="3.375" y2="0.2" width="0.0762" layer="51"/>
 <wire x1="3.625" y1="0.633" x2="4.908" y2="-0.108" width="0.0762" layer="51"/>
 <wire x1="4.908" y1="-0.108" x2="5.65" y2="1.175" width="0.0762" layer="51"/>
-<circle x="-5" y="2.45" radius="0.45" width="0.0762" layer="21"/>
-<circle x="0" y="2.45" radius="0.45" width="0.0762" layer="21"/>
 <circle x="-5" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
 <circle x="0" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
-<circle x="5" y="2.45" radius="0.45" width="0.0762" layer="21"/>
 <circle x="5" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
 <pad name="2" x="0" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
 <pad name="3" x="-5" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
@@ -3699,7 +3717,6 @@ Mfr no: 1776244-3 &lt;br&gt;
 <wire x1="-10.342" y1="-0.542" x2="-11.625" y2="0.2" width="0.0762" layer="51"/>
 <wire x1="-11.375" y1="0.633" x2="-10.092" y2="-0.108" width="0.0762" layer="51"/>
 <wire x1="-10.092" y1="-0.108" x2="-9.35" y2="1.175" width="0.0762" layer="51"/>
-<circle x="-10" y="2.45" radius="0.45" width="0.0762" layer="21"/>
 <circle x="-10" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
 <pad name="4" x="-10" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
 <wire x1="-13.997" y1="0.925" x2="-14.738" y2="-0.358" width="0.0762" layer="51"/>
@@ -3710,26 +3727,40 @@ Mfr no: 1776244-3 &lt;br&gt;
 <wire x1="-15.422" y1="-0.542" x2="-16.705" y2="0.2" width="0.0762" layer="51"/>
 <wire x1="-16.455" y1="0.633" x2="-15.172" y2="-0.108" width="0.0762" layer="51"/>
 <wire x1="-15.172" y1="-0.108" x2="-14.43" y2="1.175" width="0.0762" layer="51"/>
-<circle x="-15.08" y="2.45" radius="0.45" width="0.0762" layer="21"/>
 <circle x="-15.08" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
 <pad name="5" x="-15.08" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
-<text x="-5.08" y="4.508" size="1.2192" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="-5.08" y="-4.636" size="1.2192" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<text x="-5.08" y="5.208" size="1.2192" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="-5.08" y="-6.636" size="1.2192" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<wire x1="6" y1="4.45" x2="6" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="4" y1="4.45" x2="4" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="1" y1="4.45" x2="1" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-1" y1="4.45" x2="-1" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-4" y1="4.45" x2="-4" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-6" y1="4.45" x2="-6" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-9" y1="4.45" x2="-9" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-11" y1="4.45" x2="-11" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-14" y1="4.45" x2="-14" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-16" y1="4.45" x2="-16" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="6" y1="3.5" x2="4" y2="3.5" width="0.1524" layer="21"/>
+<wire x1="1" y1="3.5" x2="-1" y2="3.5" width="0.1524" layer="21"/>
+<wire x1="-4" y1="3.5" x2="-6" y2="3.5" width="0.1524" layer="21"/>
+<wire x1="-9" y1="3.5" x2="-11" y2="3.5" width="0.1524" layer="21"/>
+<wire x1="-14" y1="3.5" x2="-16" y2="3.5" width="0.1524" layer="21"/>
 </package>
 <package name="TERMINAL_SCREW_BLOCK_6P_5MM">
 <description>wire to board terminal block 3 pins 5mm pitch &lt;br&gt;
 Mfr no: 1776244-3 &lt;br&gt;
 &lt;a href="http://www.digikey.com/product-detail/en/1776244-3/A97997-ND/1826860"&gt; Digikey &lt;/a&gt;</description>
-<wire x1="-22.66" y1="3.75" x2="7.5" y2="3.75" width="0.1524" layer="21"/>
-<wire x1="7.5" y1="3.75" x2="7.5" y2="2.02" width="0.1524" layer="21"/>
-<wire x1="7.5" y1="2.02" x2="7.5" y2="-3.01" width="0.1524" layer="21"/>
-<wire x1="7.5" y1="-3.01" x2="7.5" y2="-3.75" width="0.1524" layer="21"/>
-<wire x1="7.5" y1="-3.75" x2="-22.66" y2="-3.75" width="0.1524" layer="21"/>
-<wire x1="-22.66" y1="-3.75" x2="-22.66" y2="-3.01" width="0.1524" layer="21"/>
-<wire x1="-22.66" y1="-3.01" x2="-22.66" y2="2.02" width="0.1524" layer="21"/>
-<wire x1="-22.66" y1="2.02" x2="-22.66" y2="3.75" width="0.1524" layer="21"/>
-<wire x1="-22.66" y1="2.02" x2="7.5" y2="2.02" width="0.1524" layer="21"/>
-<wire x1="-22.66" y1="-3.01" x2="7.5" y2="-3.01" width="0.1524" layer="21"/>
+<wire x1="-23.16" y1="4.45" x2="8" y2="4.45" width="0.1524" layer="21"/>
+<wire x1="8" y1="4.45" x2="8" y2="2.72" width="0.1524" layer="21"/>
+<wire x1="8" y1="2.72" x2="8" y2="-4.51" width="0.1524" layer="21"/>
+<wire x1="8" y1="-4.51" x2="8" y2="-5.75" width="0.1524" layer="21"/>
+<wire x1="8" y1="-5.75" x2="-23.16" y2="-5.75" width="0.1524" layer="21"/>
+<wire x1="-23.16" y1="-5.75" x2="-23.16" y2="-4.51" width="0.1524" layer="21"/>
+<wire x1="-23.16" y1="-4.51" x2="-23.16" y2="2.72" width="0.1524" layer="21"/>
+<wire x1="-23.16" y1="2.72" x2="-23.16" y2="4.45" width="0.1524" layer="21"/>
+<wire x1="-23.16" y1="2.72" x2="8" y2="2.72" width="0.1524" layer="21"/>
+<wire x1="-23.16" y1="-4.51" x2="8" y2="-4.51" width="0.1524" layer="21"/>
 <wire x1="-3.917" y1="0.925" x2="-4.658" y2="-0.358" width="0.0762" layer="51"/>
 <wire x1="-4.658" y1="-0.358" x2="-3.375" y2="-1.1" width="0.0762" layer="51"/>
 <wire x1="-3.625" y1="-1.533" x2="-4.908" y2="-0.792" width="0.0762" layer="51"/>
@@ -3754,11 +3785,8 @@ Mfr no: 1776244-3 &lt;br&gt;
 <wire x1="4.658" y1="-0.542" x2="3.375" y2="0.2" width="0.0762" layer="51"/>
 <wire x1="3.625" y1="0.633" x2="4.908" y2="-0.108" width="0.0762" layer="51"/>
 <wire x1="4.908" y1="-0.108" x2="5.65" y2="1.175" width="0.0762" layer="51"/>
-<circle x="-5" y="2.45" radius="0.45" width="0.0762" layer="21"/>
-<circle x="0" y="2.45" radius="0.45" width="0.0762" layer="21"/>
 <circle x="-5" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
 <circle x="0" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
-<circle x="5" y="2.45" radius="0.45" width="0.0762" layer="21"/>
 <circle x="5" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
 <pad name="2" x="0" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
 <pad name="3" x="-5" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
@@ -3773,7 +3801,6 @@ Mfr no: 1776244-3 &lt;br&gt;
 <wire x1="-10.342" y1="-0.542" x2="-11.625" y2="0.2" width="0.0762" layer="51"/>
 <wire x1="-11.375" y1="0.633" x2="-10.092" y2="-0.108" width="0.0762" layer="51"/>
 <wire x1="-10.092" y1="-0.108" x2="-9.35" y2="1.175" width="0.0762" layer="51"/>
-<circle x="-10" y="2.45" radius="0.45" width="0.0762" layer="21"/>
 <circle x="-10" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
 <pad name="4" x="-10" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
 <wire x1="-13.997" y1="0.925" x2="-14.738" y2="-0.358" width="0.0762" layer="51"/>
@@ -3784,7 +3811,6 @@ Mfr no: 1776244-3 &lt;br&gt;
 <wire x1="-15.422" y1="-0.542" x2="-16.705" y2="0.2" width="0.0762" layer="51"/>
 <wire x1="-16.455" y1="0.633" x2="-15.172" y2="-0.108" width="0.0762" layer="51"/>
 <wire x1="-15.172" y1="-0.108" x2="-14.43" y2="1.175" width="0.0762" layer="51"/>
-<circle x="-15.08" y="2.45" radius="0.45" width="0.0762" layer="21"/>
 <circle x="-15.08" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
 <pad name="5" x="-15.08" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
 <wire x1="-19.077" y1="0.925" x2="-19.818" y2="-0.358" width="0.0762" layer="51"/>
@@ -3795,11 +3821,28 @@ Mfr no: 1776244-3 &lt;br&gt;
 <wire x1="-20.502" y1="-0.542" x2="-21.785" y2="0.2" width="0.0762" layer="51"/>
 <wire x1="-21.535" y1="0.633" x2="-20.252" y2="-0.108" width="0.0762" layer="51"/>
 <wire x1="-20.252" y1="-0.108" x2="-19.51" y2="1.175" width="0.0762" layer="51"/>
-<circle x="-20.16" y="2.45" radius="0.45" width="0.0762" layer="21"/>
 <circle x="-20.16" y="-0.45" radius="1.75" width="0.0762" layer="51"/>
 <pad name="6" x="-20.16" y="-0.45" drill="1.4" diameter="2.38" shape="long" rot="R90"/>
-<text x="-7.62" y="4.508" size="1.2192" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="-7.62" y="-4.636" size="1.2192" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<text x="-7.62" y="5.208" size="1.2192" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="-7.62" y="-6.636" size="1.2192" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<wire x1="6" y1="4.45" x2="6" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="4" y1="4.45" x2="4" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="1" y1="4.45" x2="1" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-1" y1="4.45" x2="-1" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-4" y1="4.45" x2="-4" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-6" y1="4.45" x2="-6" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-9" y1="4.45" x2="-9" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-11" y1="4.45" x2="-11" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-14" y1="4.45" x2="-14" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-16" y1="4.45" x2="-16" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-19" y1="4.45" x2="-19" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="-21" y1="4.45" x2="-21" y2="3.52" width="0.1524" layer="21"/>
+<wire x1="6" y1="3.5" x2="4" y2="3.5" width="0.1524" layer="21"/>
+<wire x1="1" y1="3.5" x2="-1" y2="3.5" width="0.1524" layer="21"/>
+<wire x1="-4" y1="3.5" x2="-6" y2="3.5" width="0.1524" layer="21"/>
+<wire x1="-9" y1="3.5" x2="-11" y2="3.5" width="0.1524" layer="21"/>
+<wire x1="-14" y1="3.5" x2="-16" y2="3.5" width="0.1524" layer="21"/>
+<wire x1="-19" y1="3.5" x2="-21" y2="3.5" width="0.1524" layer="21"/>
 </package>
 <package name="TERMINAL_PLUG_BLOCK_2P_3.81MM">
 <description>wire to board terminal block 2 pins 5mm pitch &lt;br&gt;

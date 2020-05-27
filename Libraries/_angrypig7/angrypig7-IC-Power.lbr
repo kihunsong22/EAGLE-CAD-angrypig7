@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="12.5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -329,7 +329,7 @@
 <rectangle x1="3.2718" y1="-0.381" x2="4.1354" y2="0.381" layer="21" rot="R90"/>
 <smd name="1" x="4.802" y="-2.28" dx="1.6" dy="3" layer="1" rot="R90"/>
 <smd name="3" x="4.802" y="2.28" dx="1.6" dy="3" layer="1" rot="R90"/>
-<smd name="4" x="-2.096" y="0" dx="4.826" dy="5.715" layer="1" rot="R90"/>
+<smd name="4" x="-1.7785" y="0" dx="5.842" dy="6.35" layer="1" rot="R90"/>
 <text x="0" y="-4.064" size="1.143" layer="25" font="vector" ratio="15" rot="R180" align="center">&gt;NAME</text>
 <text x="0" y="4.064" size="1.143" layer="27" font="vector" ratio="15" rot="R180" align="center">&gt;VALUE</text>
 <polygon width="0.1998" layer="51">
