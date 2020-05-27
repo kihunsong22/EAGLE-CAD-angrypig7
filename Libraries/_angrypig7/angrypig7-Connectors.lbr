@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -181,27 +181,26 @@
 <wire x1="4.32" y1="-6.55" x2="4.32" y2="-5.24" width="0.2032" layer="21"/>
 <wire x1="4.32" y1="-6.55" x2="-4.32" y2="-6.55" width="0.2032" layer="21"/>
 <wire x1="-4.32" y1="-6.55" x2="-4.32" y2="-5.24" width="0.2032" layer="21"/>
-<text x="-2.73578125" y="-5.80746875" size="1.016" layer="25" font="vector" ratio="12">&gt;NAME</text>
-<smd name="SHLD-B1" x="-4.32" y="0" dx="1" dy="1.7" layer="16" roundness="100" cream="no"/>
-<smd name="SHLD-T1" x="-4.32" y="0" dx="1" dy="1.7" layer="1" roundness="100" rot="R180" cream="no"/>
-<smd name="SHLD-B2" x="4.32" y="0" dx="1" dy="1.7" layer="16" roundness="100" cream="no"/>
-<smd name="SHLD-T2" x="4.32" y="0" dx="1" dy="1.7" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="SHLD-B1" x="-4.32" y="0" dx="1.5" dy="2.2" layer="16" roundness="100" cream="no"/>
+<smd name="SHLD-T1" x="-4.32" y="0" dx="1.5" dy="2.2" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="SHLD-B2" x="4.32" y="0" dx="1.5" dy="2.2" layer="16" roundness="100" cream="no"/>
+<smd name="SHLD-T2" x="4.32" y="0" dx="1.5" dy="2.2" layer="1" roundness="100" rot="R180" cream="no"/>
 <wire x1="4.02" y1="-0.3" x2="4.02" y2="0.3" width="0.01" layer="46"/>
 <wire x1="4.62" y1="-0.3" x2="4.62" y2="0.3" width="0.01" layer="46"/>
 <wire x1="4.02" y1="0.3" x2="4.32" y2="0.6" width="0.01" layer="46" curve="-90"/>
 <wire x1="4.32" y1="0.6" x2="4.62" y2="0.3" width="0.01" layer="46" curve="-90"/>
 <wire x1="4.62" y1="-0.3" x2="4.32" y2="-0.6" width="0.01" layer="46" curve="-90"/>
 <wire x1="4.32" y1="-0.6" x2="4.02" y2="-0.3" width="0.01" layer="46" curve="-90"/>
-<smd name="SHLD-B3" x="-4.32" y="-3.8" dx="1" dy="1.7" layer="16" roundness="100" cream="no"/>
-<smd name="SHLD-T3" x="-4.32" y="-3.8" dx="1" dy="1.7" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="SHLD-B3" x="-4.32" y="-3.8" dx="1.5" dy="2.2" layer="16" roundness="100" cream="no"/>
+<smd name="SHLD-T3" x="-4.32" y="-3.8" dx="1.5" dy="2.2" layer="1" roundness="100" rot="R180" cream="no"/>
 <wire x1="-4.62" y1="-4.1" x2="-4.62" y2="-3.5" width="0.01" layer="46"/>
 <wire x1="-4.02" y1="-4.1" x2="-4.02" y2="-3.5" width="0.01" layer="46"/>
 <wire x1="-4.62" y1="-3.5" x2="-4.32" y2="-3.2" width="0.01" layer="46" curve="-90"/>
 <wire x1="-4.32" y1="-3.2" x2="-4.02" y2="-3.5" width="0.01" layer="46" curve="-90"/>
 <wire x1="-4.02" y1="-4.1" x2="-4.32" y2="-4.4" width="0.01" layer="46" curve="-90"/>
 <wire x1="-4.32" y1="-4.4" x2="-4.62" y2="-4.1" width="0.01" layer="46" curve="-90"/>
-<smd name="SHLD-B4" x="4.32" y="-3.8" dx="1" dy="1.7" layer="16" roundness="100" cream="no"/>
-<smd name="SHLD-T4" x="4.32" y="-3.8" dx="1" dy="1.7" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="SHLD-B4" x="4.32" y="-3.8" dx="1.5" dy="2.2" layer="16" roundness="100" cream="no"/>
+<smd name="SHLD-T4" x="4.32" y="-3.8" dx="1.5" dy="2.2" layer="1" roundness="100" rot="R180" cream="no"/>
 <wire x1="4.02" y1="-4.1" x2="4.02" y2="-3.5" width="0.01" layer="46"/>
 <wire x1="4.62" y1="-4.1" x2="4.62" y2="-3.5" width="0.01" layer="46"/>
 <wire x1="4.02" y1="-3.5" x2="4.32" y2="-3.2" width="0.01" layer="46" curve="-90"/>
@@ -214,6 +213,7 @@
 <wire x1="-4.32" y1="0.6" x2="-4.02" y2="0.3" width="0.01" layer="46" curve="-90"/>
 <wire x1="-4.02" y1="-0.3" x2="-4.32" y2="-0.6" width="0.01" layer="46" curve="-90"/>
 <wire x1="-4.32" y1="-0.6" x2="-4.62" y2="-0.3" width="0.01" layer="46" curve="-90"/>
+<text x="0" y="-5.62" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="USB-HRS_ZX62D-B-5P8">
 <wire x1="-2.425" y1="3.35" x2="-2.1" y2="3.025" width="0" layer="46" curve="-90"/>
@@ -3612,10 +3612,10 @@ Mfr no: 1776244-3 &lt;br&gt;
 <wire x1="-9" y1="3.5" x2="-11" y2="3.5" width="0.1524" layer="21"/>
 </package>
 <package name="USB-TYPE-C-31-M-12">
-<wire x1="4.32" y1="-6.78" x2="4.32" y2="-5.24" width="0.2032" layer="21"/>
+<wire x1="4.32" y1="-6.78" x2="4.32" y2="-5.54" width="0.2032" layer="21"/>
 <wire x1="4.32" y1="-6.78" x2="-4.32" y2="-6.78" width="0.2032" layer="21"/>
-<wire x1="-4.32" y1="-6.78" x2="-4.32" y2="-5.24" width="0.2032" layer="21"/>
-<text x="-2.73578125" y="-5.80746875" size="1.016" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<wire x1="-4.32" y1="-6.78" x2="-4.32" y2="-5.54" width="0.2032" layer="21"/>
+<text x="0" y="-6" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <smd name="B6" x="0.75" y="1.19" dx="0.3" dy="2" layer="1"/>
 <smd name="A7" x="0.25" y="1.19" dx="0.3" dy="2" layer="1"/>
 <smd name="GND2" x="3.225" y="1.19" dx="0.6" dy="2" layer="1"/>
@@ -3629,38 +3629,38 @@ Mfr no: 1776244-3 &lt;br&gt;
 <smd name="B8" x="-1.75" y="1.19" dx="0.3" dy="2" layer="1" rot="R180"/>
 <smd name="A5" x="-1.25" y="1.19" dx="0.3" dy="2" layer="1" rot="R180"/>
 <hole x="-2.89" y="-0.53" drill="0.65"/>
-<smd name="SHLD-B1" x="-4.32" y="0" dx="1" dy="1.7" layer="16" roundness="100" cream="no"/>
-<smd name="SHLD-T1" x="-4.32" y="0" dx="1" dy="1.7" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="SHLD-B1" x="-4.32" y="0" dx="1.5" dy="2.2" layer="16" roundness="100" cream="no"/>
+<smd name="SHLD-T1" x="-4.32" y="0" dx="1.5" dy="2.2" layer="1" roundness="100" rot="R180" cream="no"/>
 <wire x1="-4.62" y1="-0.3" x2="-4.62" y2="0.3" width="0.01" layer="46"/>
 <wire x1="-4.02" y1="-0.3" x2="-4.02" y2="0.3" width="0.01" layer="46"/>
 <wire x1="-4.62" y1="0.3" x2="-4.32" y2="0.6" width="0.01" layer="46" curve="-90"/>
 <wire x1="-4.32" y1="0.6" x2="-4.02" y2="0.3" width="0.01" layer="46" curve="-90"/>
 <wire x1="-4.02" y1="-0.3" x2="-4.32" y2="-0.6" width="0.01" layer="46" curve="-90"/>
 <wire x1="-4.32" y1="-0.6" x2="-4.62" y2="-0.3" width="0.01" layer="46" curve="-90"/>
-<smd name="SHLD-B2" x="4.32" y="0" dx="1" dy="1.7" layer="16" roundness="100" cream="no"/>
-<smd name="SHLD-T2" x="4.32" y="0" dx="1" dy="1.7" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="SHLD-B2" x="4.32" y="0" dx="1.5" dy="2.2" layer="16" roundness="100" cream="no"/>
+<smd name="SHLD-T2" x="4.32" y="0" dx="1.5" dy="2.2" layer="1" roundness="100" rot="R180" cream="no"/>
 <wire x1="4.02" y1="-0.3" x2="4.02" y2="0.3" width="0.01" layer="46"/>
 <wire x1="4.62" y1="-0.3" x2="4.62" y2="0.3" width="0.01" layer="46"/>
 <wire x1="4.02" y1="0.3" x2="4.32" y2="0.6" width="0.01" layer="46" curve="-90"/>
 <wire x1="4.32" y1="0.6" x2="4.62" y2="0.3" width="0.01" layer="46" curve="-90"/>
 <wire x1="4.62" y1="-0.3" x2="4.32" y2="-0.6" width="0.01" layer="46" curve="-90"/>
 <wire x1="4.32" y1="-0.6" x2="4.02" y2="-0.3" width="0.01" layer="46" curve="-90"/>
-<smd name="SHLD-B3" x="-4.32" y="-3.8" dx="1" dy="1.7" layer="16" roundness="100" cream="no"/>
-<smd name="SHLD-T3" x="-4.32" y="-3.8" dx="1" dy="1.7" layer="1" roundness="100" rot="R180" cream="no"/>
-<wire x1="-4.62" y1="-4.1" x2="-4.62" y2="-3.5" width="0.01" layer="46"/>
-<wire x1="-4.02" y1="-4.1" x2="-4.02" y2="-3.5" width="0.01" layer="46"/>
-<wire x1="-4.62" y1="-3.5" x2="-4.32" y2="-3.2" width="0.01" layer="46" curve="-90"/>
-<wire x1="-4.32" y1="-3.2" x2="-4.02" y2="-3.5" width="0.01" layer="46" curve="-90"/>
-<wire x1="-4.02" y1="-4.1" x2="-4.32" y2="-4.4" width="0.01" layer="46" curve="-90"/>
-<wire x1="-4.32" y1="-4.4" x2="-4.62" y2="-4.1" width="0.01" layer="46" curve="-90"/>
-<smd name="SHLD-B4" x="4.32" y="-3.8" dx="1" dy="1.7" layer="16" roundness="100" cream="no"/>
-<smd name="SHLD-T4" x="4.32" y="-3.8" dx="1" dy="1.7" layer="1" roundness="100" rot="R180" cream="no"/>
-<wire x1="4.02" y1="-4.1" x2="4.02" y2="-3.5" width="0.01" layer="46"/>
-<wire x1="4.62" y1="-4.1" x2="4.62" y2="-3.5" width="0.01" layer="46"/>
-<wire x1="4.02" y1="-3.5" x2="4.32" y2="-3.2" width="0.01" layer="46" curve="-90"/>
-<wire x1="4.32" y1="-3.2" x2="4.62" y2="-3.5" width="0.01" layer="46" curve="-90"/>
-<wire x1="4.62" y1="-4.1" x2="4.32" y2="-4.4" width="0.01" layer="46" curve="-90"/>
-<wire x1="4.32" y1="-4.4" x2="4.02" y2="-4.1" width="0.01" layer="46" curve="-90"/>
+<smd name="SHLD-B3" x="-4.32" y="-4.18" dx="1.5" dy="2.2" layer="16" roundness="100" cream="no"/>
+<smd name="SHLD-T3" x="-4.32" y="-4.18" dx="1.5" dy="2.2" layer="1" roundness="100" rot="R180" cream="no"/>
+<wire x1="-4.62" y1="-4.48" x2="-4.62" y2="-3.88" width="0.01" layer="46"/>
+<wire x1="-4.02" y1="-4.48" x2="-4.02" y2="-3.88" width="0.01" layer="46"/>
+<wire x1="-4.62" y1="-3.88" x2="-4.32" y2="-3.58" width="0.01" layer="46" curve="-90"/>
+<wire x1="-4.32" y1="-3.58" x2="-4.02" y2="-3.88" width="0.01" layer="46" curve="-90"/>
+<wire x1="-4.02" y1="-4.48" x2="-4.32" y2="-4.78" width="0.01" layer="46" curve="-90"/>
+<wire x1="-4.32" y1="-4.78" x2="-4.62" y2="-4.48" width="0.01" layer="46" curve="-90"/>
+<smd name="SHLD-B4" x="4.32" y="-4.18" dx="1.5" dy="2.2" layer="16" roundness="100" cream="no"/>
+<smd name="SHLD-T4" x="4.32" y="-4.18" dx="1.5" dy="2.2" layer="1" roundness="100" rot="R180" cream="no"/>
+<wire x1="4.02" y1="-4.48" x2="4.02" y2="-3.88" width="0.01" layer="46"/>
+<wire x1="4.62" y1="-4.48" x2="4.62" y2="-3.88" width="0.01" layer="46"/>
+<wire x1="4.02" y1="-3.88" x2="4.32" y2="-3.58" width="0.01" layer="46" curve="-90"/>
+<wire x1="4.32" y1="-3.58" x2="4.62" y2="-3.88" width="0.01" layer="46" curve="-90"/>
+<wire x1="4.62" y1="-4.48" x2="4.32" y2="-4.78" width="0.01" layer="46" curve="-90"/>
+<wire x1="4.32" y1="-4.78" x2="4.02" y2="-4.48" width="0.01" layer="46" curve="-90"/>
 <hole x="2.89" y="-0.53" drill="0.65"/>
 </package>
 <package name="TERMINAL_SCREW_BLOCK_5P_5MM">
