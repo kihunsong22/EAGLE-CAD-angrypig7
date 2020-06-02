@@ -18,7 +18,7 @@ grid 50 mil;
 
 # ASSIGN C+1 
 
-ASSIGN C+1    grid 10 mil
+ASSIGN C+1    grid 5 mil
 ASSIGN C+2    grid 50 mil
 ASSIGN C+3    grid 0.1 mm
 ASSIGN C+4    grid 0.5 mm
