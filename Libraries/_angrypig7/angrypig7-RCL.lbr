@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -77,14 +77,14 @@
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
 <wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
 <wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
-<wire x1="-1.173" y1="0.483" x2="1.173" y2="0.483" width="0.0508" layer="39"/>
-<wire x1="1.173" y1="0.483" x2="1.173" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="1.173" y1="-0.483" x2="-1.173" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="-1.173" y1="-0.483" x2="-1.173" y2="0.483" width="0.0508" layer="39"/>
-<smd name="1" x="-0.65" y="0" dx="0.6" dy="0.7" layer="1"/>
-<smd name="2" x="0.65" y="0" dx="0.6" dy="0.7" layer="1"/>
-<text x="0" y="1.235" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0" y="-1.305" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<wire x1="-0.973" y1="0.433" x2="0.973" y2="0.433" width="0.0508" layer="39"/>
+<wire x1="0.973" y1="0.433" x2="0.973" y2="-0.433" width="0.0508" layer="39"/>
+<wire x1="0.973" y1="-0.433" x2="-0.973" y2="-0.433" width="0.0508" layer="39"/>
+<wire x1="-0.973" y1="-0.433" x2="-0.973" y2="0.433" width="0.0508" layer="39"/>
+<smd name="1" x="-0.5" y="0" dx="0.6" dy="0.65" layer="1"/>
+<smd name="2" x="0.5" y="0" dx="0.6" dy="0.65" layer="1"/>
+<text x="0" y="1.085" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-1.105" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
@@ -364,17 +364,17 @@ Source: AVX .. aphvc.pdf</description>
 <description>&lt;b&gt;Chip RESISTOR 0402 EIA (1005 Metric)&lt;/b&gt;</description>
 <wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
 <wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
-<wire x1="-1" y1="0.483" x2="1" y2="0.483" width="0.0508" layer="39"/>
-<wire x1="1" y1="0.483" x2="1" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="1" y1="-0.483" x2="-1" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="-1" y1="-0.483" x2="-1" y2="0.483" width="0.0508" layer="39"/>
-<smd name="1" x="-0.5" y="0" dx="0.6" dy="0.7" layer="1"/>
-<smd name="2" x="0.5" y="0" dx="0.6" dy="0.7" layer="1"/>
+<smd name="1" x="-0.5" y="0" dx="0.6" dy="0.65" layer="1"/>
+<smd name="2" x="0.5" y="0" dx="0.6" dy="0.65" layer="1"/>
 <text x="0" y="1.197" size="1.27" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0" y="-1.343" size="1.27" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<text x="0" y="-1.243" size="1.27" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.35" x2="0.1999" y2="0.35" layer="35"/>
+<wire x1="-0.973" y1="0.433" x2="0.973" y2="0.433" width="0.0508" layer="39"/>
+<wire x1="0.973" y1="0.433" x2="0.973" y2="-0.433" width="0.0508" layer="39"/>
+<wire x1="0.973" y1="-0.433" x2="-0.973" y2="-0.433" width="0.0508" layer="39"/>
+<wire x1="-0.973" y1="-0.433" x2="-0.973" y2="0.433" width="0.0508" layer="39"/>
 </package>
 <package name="R0603" urn="urn:adsk.eagle:footprint:23044/1" locally_modified="yes">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
