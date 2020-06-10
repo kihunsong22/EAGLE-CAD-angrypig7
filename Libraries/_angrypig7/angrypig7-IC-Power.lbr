@@ -272,7 +272,7 @@
 <smd name="2" x="3.1" y="0" dx="1.85" dy="0.9" layer="1" rot="R180"/>
 <smd name="3" x="3.1" y="2.3" dx="1.85" dy="0.9" layer="1" rot="R180"/>
 <smd name="4" x="-3.1" y="0" dx="3.2" dy="1.85" layer="1" rot="R270"/>
-<text x="-0.762" y="0" size="1.27" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+<text x="-0.762" y="0" size="1.143" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 <wire x1="1.75" y1="-3.25" x2="-1.75" y2="-3.25" width="0.2032" layer="21"/>
 <wire x1="-1.75" y1="-3.25" x2="-1.75" y2="3.25" width="0.2032" layer="21"/>
 <wire x1="-1.75" y1="3.25" x2="1.75" y2="3.25" width="0.2032" layer="21"/>
@@ -314,31 +314,31 @@
 </polygon>
 </package>
 <package name="TO-252-2_DPAK">
-<wire x1="-2.9734" y1="3.2766" x2="3.221" y2="3.277" width="0.2032" layer="21"/>
-<wire x1="3.221" y1="3.277" x2="3.221" y2="-3.277" width="0.2032" layer="21"/>
-<wire x1="3.221" y1="-3.277" x2="-2.9734" y2="-3.2766" width="0.2032" layer="21"/>
-<wire x1="-2.973" y1="-3.277" x2="-2.9726" y2="3.2774" width="0.2032" layer="51"/>
-<wire x1="-3.075" y1="-2.5654" x2="-3.7862" y2="-2.5654" width="0.2032" layer="51"/>
-<wire x1="-3.7862" y1="-2.5654" x2="-4.2434" y2="-2.1082" width="0.2032" layer="51"/>
-<wire x1="-4.2434" y1="-2.1082" x2="-4.2434" y2="2.1082" width="0.2032" layer="51"/>
-<wire x1="-4.2434" y1="2.1082" x2="-3.7862" y2="2.5654" width="0.2032" layer="51"/>
-<wire x1="-3.7862" y1="2.5654" x2="-3.075" y2="2.5654" width="0.2032" layer="51"/>
-<wire x1="-3.075" y1="2.5654" x2="-3.075" y2="-2.5654" width="0.2032" layer="51"/>
-<rectangle x1="4.3386" y1="-3.7338" x2="5.2022" y2="-0.8382" layer="51" rot="R90"/>
-<rectangle x1="4.3386" y1="0.8382" x2="5.2022" y2="3.7338" layer="51" rot="R90"/>
-<rectangle x1="3.2718" y1="-0.381" x2="4.1354" y2="0.381" layer="21" rot="R90"/>
-<smd name="1" x="4.802" y="-2.28" dx="1.6" dy="3" layer="1" rot="R90"/>
-<smd name="3" x="4.802" y="2.28" dx="1.6" dy="3" layer="1" rot="R90"/>
-<smd name="4" x="-1.7785" y="0" dx="5.842" dy="6.35" layer="1" rot="R90"/>
-<text x="0" y="-4.064" size="1.143" layer="25" font="vector" ratio="15" rot="R180" align="center">&gt;NAME</text>
-<text x="0" y="4.064" size="1.143" layer="27" font="vector" ratio="15" rot="R180" align="center">&gt;VALUE</text>
+<wire x1="2.9734" y1="-3.2766" x2="-3.221" y2="-3.277" width="0.2032" layer="21"/>
+<wire x1="-3.221" y1="-3.277" x2="-3.221" y2="3.277" width="0.2032" layer="21"/>
+<wire x1="-3.221" y1="3.277" x2="2.9734" y2="3.2766" width="0.2032" layer="21"/>
+<wire x1="2.973" y1="3.277" x2="2.9726" y2="-3.2774" width="0.2032" layer="51"/>
+<wire x1="3.075" y1="2.5654" x2="3.7862" y2="2.5654" width="0.2032" layer="51"/>
+<wire x1="3.7862" y1="2.5654" x2="4.2434" y2="2.1082" width="0.2032" layer="51"/>
+<wire x1="4.2434" y1="2.1082" x2="4.2434" y2="-2.1082" width="0.2032" layer="51"/>
+<wire x1="4.2434" y1="-2.1082" x2="3.7862" y2="-2.5654" width="0.2032" layer="51"/>
+<wire x1="3.7862" y1="-2.5654" x2="3.075" y2="-2.5654" width="0.2032" layer="51"/>
+<wire x1="3.075" y1="-2.5654" x2="3.075" y2="2.5654" width="0.2032" layer="51"/>
+<rectangle x1="-5.2022" y1="0.8382" x2="-4.3386" y2="3.7338" layer="51" rot="R270"/>
+<rectangle x1="-5.2022" y1="-3.7338" x2="-4.3386" y2="-0.8382" layer="51" rot="R270"/>
+<rectangle x1="-4.1354" y1="-0.381" x2="-3.2718" y2="0.381" layer="21" rot="R270"/>
+<smd name="1" x="-4.802" y="2.28" dx="1.6" dy="3" layer="1" rot="R270"/>
+<smd name="3" x="-4.802" y="-2.28" dx="1.6" dy="3" layer="1" rot="R270"/>
+<smd name="4" x="1.7785" y="0" dx="5.842" dy="6.35" layer="1" rot="R270"/>
+<text x="0" y="4.064" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-4.064" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <polygon width="0.1998" layer="51">
-<vertex x="-3.075" y="-2.5654"/>
-<vertex x="-3.7862" y="-2.5654"/>
-<vertex x="-4.2434" y="-2.1082"/>
-<vertex x="-4.2434" y="2.1082"/>
-<vertex x="-3.7862" y="2.5654"/>
-<vertex x="-3.075" y="2.5654"/>
+<vertex x="3.075" y="2.5654"/>
+<vertex x="3.7862" y="2.5654"/>
+<vertex x="4.2434" y="2.1082"/>
+<vertex x="4.2434" y="-2.1082"/>
+<vertex x="3.7862" y="-2.5654"/>
+<vertex x="3.075" y="-2.5654"/>
 </polygon>
 </package>
 </packages>
