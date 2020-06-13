@@ -1485,7 +1485,7 @@ nRF52832 SoC module</description>
 <gate name="G$1" symbol="UTO-NBL-52A-NOPADS" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-NOPADS" package="UTO-NBL-52A-NOPADS">
+<device name="" package="UTO-NBL-52A-NOPADS">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="DCC" pad="DCC"/>
