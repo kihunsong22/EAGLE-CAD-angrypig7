@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.06" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -5394,10 +5394,10 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <description>&lt;b&gt;Chip Capacitor &lt;/b&gt; Polar tantalum capacitors with solid electrolyte&lt;p&gt;
 Siemens Matsushita Components B 45 194, B 45 197, B 45 198&lt;br&gt;
 Source: www.farnell.com/datasheets/247.pdf</description>
-<wire x1="1.6" y1="-1.35" x2="-1.6" y2="-1.35" width="0.1016" layer="51"/>
-<wire x1="-1.6" y1="-1.35" x2="-1.6" y2="1.35" width="0.1016" layer="51"/>
-<wire x1="-1.6" y1="1.35" x2="1.6" y2="1.35" width="0.1016" layer="51"/>
-<wire x1="1.6" y1="1.35" x2="1.6" y2="-1.35" width="0.1016" layer="51"/>
+<wire x1="1.6" y1="-1.41" x2="-1.6" y2="-1.41" width="0.1016" layer="21"/>
+<wire x1="-1.6" y1="-1.41" x2="-1.6" y2="1.41" width="0.1016" layer="51"/>
+<wire x1="-1.6" y1="1.41" x2="1.6" y2="1.41" width="0.1016" layer="21"/>
+<wire x1="1.6" y1="1.41" x2="1.6" y2="-1.41" width="0.1016" layer="51"/>
 <smd name="+" x="1.5" y="0" dx="1.6" dy="2.4" layer="1" rot="R180"/>
 <smd name="-" x="-1.5" y="0" dx="1.6" dy="2.4" layer="1"/>
 <text x="0" y="-2.205" size="1.143" layer="25" font="vector" ratio="15" rot="R180" align="center">&gt;NAME</text>
