@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -930,11 +930,10 @@
 <smd name="16" x="0" y="-6.35" dx="4" dy="1.6" layer="16" rot="R180"/>
 <smd name="18" x="0" y="-8.89" dx="4" dy="1.6" layer="16" rot="R180"/>
 <smd name="20" x="0" y="-11.43" dx="4" dy="1.6" layer="16" rot="R180"/>
-<wire x1="-2.286" y1="-12.7" x2="-2.286" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="-2.286" y1="12.7" x2="-0.508" y2="12.7" width="0.2032" layer="21"/>
+<wire x1="-2" y1="12.7" x2="-0.508" y2="12.7" width="0.2032" layer="21"/>
 <wire x1="-0.508" y1="12.7" x2="-0.508" y2="12.446" width="0.2032" layer="21"/>
 <wire x1="-0.508" y1="12.446" x2="1.778" y2="12.446" width="0.2032" layer="21"/>
-<wire x1="-2.286" y1="-12.7" x2="-0.254" y2="-12.7" width="0.2032" layer="21"/>
+<wire x1="-2" y1="-12.7" x2="-0.254" y2="-12.7" width="0.2032" layer="21"/>
 <wire x1="-0.254" y1="-12.7" x2="-0.254" y2="-12.446" width="0.2032" layer="21"/>
 <wire x1="-0.254" y1="-12.446" x2="1.778" y2="-12.446" width="0.2032" layer="21"/>
 <wire x1="-2" y1="-15" x2="-2" y2="15" width="0.2032" layer="51"/>
@@ -944,11 +943,11 @@
 <wire x1="-8.89" y1="-1.27" x2="-7.62" y2="-1.27" width="0.2032" layer="51"/>
 <wire x1="-7.62" y1="-1.27" x2="-7.62" y2="1.27" width="0.2032" layer="51"/>
 <wire x1="-7.62" y1="1.27" x2="-8.89" y2="1.27" width="0.2032" layer="51"/>
-<wire x1="2.286" y1="-1.016" x2="2.54" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="-1.016" x2="2.54" y2="1.016" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="1.016" x2="2.286" y2="1.016" width="0.2032" layer="21"/>
-<wire x1="2.286" y1="-1.016" x2="2.286" y2="-1.524" width="0.2032" layer="21"/>
-<wire x1="2.286" y1="1.016" x2="2.286" y2="1.524" width="0.2032" layer="21"/>
+<wire x1="2.159" y1="-1.27" x2="2.54" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="1.27" x2="2.159" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="2.159" y1="-1.27" x2="2.159" y2="-1.778" width="0.2032" layer="21"/>
+<wire x1="2.159" y1="1.27" x2="2.159" y2="1.778" width="0.2032" layer="21"/>
 </package>
 <package name="SOICBITE">
 <smd name="1" x="1.905" y="0.75" dx="0.8" dy="1.5" layer="1" roundness="100" rot="R180"/>
