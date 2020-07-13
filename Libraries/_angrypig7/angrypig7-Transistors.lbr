@@ -362,8 +362,8 @@
 <smd name="1" x="0.97" y="-0.96" dx="0.8" dy="0.9" layer="1" rot="R90"/>
 <smd name="2" x="0.97" y="0.96" dx="0.8" dy="0.9" layer="1" rot="R90"/>
 <smd name="3" x="-0.97" y="0" dx="0.8" dy="0.9" layer="1" rot="R90"/>
-<text x="0" y="-1.951" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center">&gt;NAME</text>
-<text x="0" y="1.951" size="0.6096" layer="27" font="vector" ratio="15" rot="R180" align="center">&gt;VALUE</text>
+<text x="0" y="-2.459" size="1.143" layer="25" font="vector" ratio="15" rot="R180" align="center">&gt;NAME</text>
+<text x="0" y="2.459" size="1.143" layer="27" font="vector" ratio="15" rot="R180" align="center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
