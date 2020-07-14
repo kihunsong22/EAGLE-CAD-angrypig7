@@ -250,6 +250,15 @@
 <text x="0" y="2.5" size="1.143" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
 <wire x1="-4.1" y1="1" x2="-4.1" y2="-1" width="0.1524" layer="21"/>
 </package>
+<package name="PAD-ROUND-1.4MM">
+<smd name="P$1" x="0" y="0" dx="1.4" dy="1.4" layer="1" roundness="100"/>
+<text x="0" y="1.324" size="1.143" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="PAD-ROUND-1.4MM-SILK">
+<smd name="P$1" x="0" y="0" dx="1.4" dy="1.4" layer="1" roundness="100"/>
+<text x="0" y="1.324" size="1.143" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
+<circle x="0" y="0" radius="0.7366" width="0.0762" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TEST-POINT-1">
@@ -359,6 +368,22 @@
 </technologies>
 </device>
 <device name="_2.8MM" package="PAD-ROUND-2.8MM">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_1.4MM" package="PAD-ROUND-1.4MM">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_1.4MM-SILK" package="PAD-ROUND-1.4MM-SILK">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 </connects>
