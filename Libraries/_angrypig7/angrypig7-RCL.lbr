@@ -57,7 +57,7 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
@@ -856,7 +856,7 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <rectangle x1="-0.15" y1="0.05" x2="0.15" y2="0.1" layer="51"/>
 <rectangle x1="-0.15" y1="-0.1" x2="0.15" y2="-0.05" layer="51"/>
 </package>
-<package name="L2012C" urn="urn:adsk.eagle:footprint:22978/1">
+<package name="L2012C" urn="urn:adsk.eagle:footprint:22978/1" locally_modified="yes">
 <description>&lt;b&gt;INDUCTOR&lt;/b&gt;</description>
 <wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
@@ -866,11 +866,11 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
 <smd name="1" x="-1" y="0" dx="1" dy="1" layer="1"/>
 <smd name="2" x="1" y="0" dx="1" dy="1" layer="1"/>
-<text x="-1.905" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-1.143" y1="-0.6096" x2="-0.843" y2="0.5903" layer="51"/>
 <rectangle x1="0.8382" y1="-0.6096" x2="1.1382" y2="0.5903" layer="51"/>
 <rectangle x1="-0.3" y1="-0.4001" x2="0.3" y2="0.4001" layer="35"/>
+<text x="0" y="1.714" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-1.698" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="L2825P" urn="urn:adsk.eagle:footprint:22979/1">
 <description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
@@ -1100,17 +1100,17 @@ molded</description>
 <text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
 </package>
-<package name="L1812" urn="urn:adsk.eagle:footprint:23000/1">
+<package name="L1812" urn="urn:adsk.eagle:footprint:23000/1" locally_modified="yes">
 <description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
 chip</description>
 <wire x1="-1.4732" y1="1.6002" x2="1.4732" y2="1.6002" width="0.1016" layer="51"/>
 <wire x1="-1.4478" y1="-1.6002" x2="1.4732" y2="-1.6002" width="0.1016" layer="51"/>
 <smd name="1" x="-1.95" y="0" dx="1.9" dy="3.4" layer="1"/>
 <smd name="2" x="1.95" y="0" dx="1.9" dy="3.4" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-2.3876" y1="-1.651" x2="-1.4376" y2="1.649" layer="51"/>
 <rectangle x1="1.4478" y1="-1.651" x2="2.3978" y2="1.649" layer="51"/>
+<text x="0" y="2.476" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-2.46" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="CEP125" urn="urn:adsk.eagle:footprint:25528/1">
 <description>&lt;b&gt;POWER INDUCTORS&lt;/b&gt; (SMT Type)&lt;p&gt;
@@ -1164,17 +1164,17 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <text x="-5.08" y="1.27" size="1.27" layer="25">&gt;NAME</text>
 <text x="-5.08" y="-1.27" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="L0201" urn="urn:adsk.eagle:footprint:23020/1">
+<package name="L0201" urn="urn:adsk.eagle:footprint:23020/1" locally_modified="yes">
 <description>&lt;b&gt;NIS02 Chip Inductor&lt;/b&gt;&lt;p&gt;
 Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 <smd name="1" x="-0.275" y="0" dx="0.25" dy="0.35" layer="1"/>
 <smd name="2" x="0.275" y="0" dx="0.25" dy="0.35" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.3" y1="-0.15" x2="-0.15" y2="0.15" layer="51"/>
 <rectangle x1="0.15" y1="-0.15" x2="0.3" y2="0.15" layer="51"/>
 <rectangle x1="-0.15" y1="0.05" x2="0.15" y2="0.15" layer="51"/>
 <rectangle x1="-0.15" y1="-0.15" x2="0.15" y2="-0.05" layer="51"/>
+<text x="0" y="0.952" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-0.936" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="CT3216" urn="urn:adsk.eagle:footprint:22802/1">
 <description>&lt;b&gt;TANTALUM CAPACITOR&lt;/b&gt;</description>
@@ -6943,12 +6943,10 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <text x="-2.64" y="-2.99" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="4.01" y="-2.99" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
-<package name="L-7.0*7.0MM-SLF7045">
+<package name="L-7.0X7.0MM-SLF7045">
 <description>&lt;b&gt;SMD Inductors(Coils)&lt;/b&gt; For Power Line (Wound, Magnetic Shielded)&lt;p&gt;
 Source: TDK, e531_slf7045.pdf</description>
-<wire x1="-3.4" y1="-3.4" x2="-3.4" y2="2.35" width="0.2032" layer="51"/>
 <wire x1="-2.35" y1="3.4" x2="3.4" y2="3.4" width="0.2032" layer="21"/>
-<wire x1="3.4" y1="3.4" x2="3.4" y2="-3.4" width="0.2032" layer="51"/>
 <wire x1="3.4" y1="-3.4" x2="-3.4" y2="-3.4" width="0.2032" layer="21"/>
 <wire x1="-2.35" y1="3.4" x2="-2.35" y2="2.35" width="0.2032" layer="21"/>
 <wire x1="-2.35" y1="2.35" x2="-3.4" y2="2.35" width="0.2032" layer="21"/>
@@ -6960,14 +6958,13 @@ Source: TDK, e531_slf7045.pdf</description>
 <wire x1="3.4" y1="-1.6" x2="3.4" y2="-3.4" width="0.2032" layer="21"/>
 <wire x1="3.4" y1="3.4" x2="3.4" y2="1.6" width="0.2032" layer="21"/>
 <wire x1="-3.4" y1="1.6" x2="-3.4" y2="2.35" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="3.125" width="0.2032" layer="51"/>
 <circle x="0" y="0" radius="2" width="0.2032" layer="21"/>
 <smd name="1" x="-3.2" y="0" dx="2.2" dy="1.5" layer="1" rot="R90"/>
 <smd name="2" x="3.2" y="0" dx="2.2" dy="1.5" layer="1" rot="R90"/>
-<text x="-3.5" y="4" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.5" y="-5" size="1.27" layer="27">&gt;VALUE</text>
+<text x="0" y="4.254" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-4.238" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
-<package name="L-12.0*12.0MM-SRR1210">
+<package name="L-12.0X12.0MM-SRR1210">
 <description>&lt;b&gt; SRR1210 Series - Shielded SMD Power Inductors &lt;/b&gt;&lt;p&gt;
 
 Source : http://www.bourns.com/pdfs/SRR1210.pdf&lt;br&gt;
@@ -6981,18 +6978,12 @@ Source : http://www.bourns.com/pdfs/SRR1210.pdf&lt;br&gt;
 <wire x1="5" y1="-6" x2="-5" y2="-6" width="0.127" layer="21"/>
 <wire x1="-5" y1="-6" x2="-6" y2="-5" width="0.127" layer="21" curve="-90"/>
 <wire x1="-6" y1="-5" x2="-6" y2="5" width="0.127" layer="21"/>
-<wire x1="-2.6" y1="4.3" x2="-4.3" y2="2.6" width="0.127" layer="21" curve="180"/>
-<wire x1="4.3" y1="2.6" x2="2.6" y2="4.3" width="0.127" layer="21" curve="180"/>
-<wire x1="2.6" y1="-4.3" x2="4.3" y2="-2.6" width="0.127" layer="21" curve="180"/>
-<wire x1="-4.3" y1="-2.6" x2="-2.6" y2="-4.3" width="0.127" layer="21" curve="180"/>
-<circle x="0" y="0" radius="5" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="4.4721" width="0.127" layer="21"/>
 <smd name="1" x="-5.05" y="0" dx="5.3" dy="2.8" layer="1" rot="R90"/>
 <smd name="2" x="5.05" y="0" dx="5.3" dy="2.8" layer="1" rot="R90"/>
-<text x="-3.175" y="1.905" size="1.27" layer="25">&gt;Name</text>
-<text x="-3.175" y="-2.54" size="1.27" layer="27">&gt;Value</text>
+<text x="0" y="6.794" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-6.778" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
-<package name="L-7.6*7.6MM-DR73">
+<package name="L-7.6X7.6MM-DR73">
 <description>&lt;b&gt;High Power Density, High Efficiency, Shielded Inductors&lt;/b&gt;&lt;p&gt;
 Source: coiltronics_dr_series.pdf</description>
 <wire x1="-3.7" y1="3.7" x2="3.7" y2="3.7" width="0.2032" layer="21"/>
@@ -7006,14 +6997,14 @@ Source: coiltronics_dr_series.pdf</description>
 <circle x="0" y="0" radius="2.975" width="0.2032" layer="51"/>
 <smd name="1" x="-3" y="0" dx="2.5" dy="3.25" layer="1"/>
 <smd name="2" x="3" y="0" dx="2.5" dy="3.25" layer="1"/>
-<text x="-3.5" y="4" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.5" y="-5.5" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-2.8215" y1="1.984" x2="-1.7215" y2="2.559" layer="21" rot="R45"/>
 <rectangle x1="-2.8215" y1="-2.559" x2="-1.7215" y2="-1.984" layer="21" rot="R135"/>
 <rectangle x1="1.7215" y1="-2.559" x2="2.8215" y2="-1.984" layer="21" rot="R225"/>
 <rectangle x1="1.7215" y1="1.984" x2="2.8215" y2="2.559" layer="21" rot="R315"/>
+<text x="0" y="4.508" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-4.492" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
-<package name="L-12.5*12.5MM-DR125">
+<package name="L-12.5X12.5MM-DR125">
 <description>&lt;b&gt;High Power Density, High Efficiency, Shielded Inductors&lt;/b&gt;&lt;p&gt;
 Source: coiltronics_dr_series.pdf</description>
 <wire x1="-6.5" y1="6.5" x2="6.525" y2="6.5" width="0.2032" layer="21"/>
@@ -7031,30 +7022,49 @@ Source: coiltronics_dr_series.pdf</description>
 <circle x="0" y="0" radius="5.9" width="0.2032" layer="51"/>
 <smd name="1" x="-4.975" y="0" dx="3.85" dy="5.5" layer="1"/>
 <smd name="2" x="4.975" y="0" dx="3.85" dy="5.5" layer="1"/>
-<text x="-2.5" y="3" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3" y="-4.5" size="1.27" layer="27">&gt;VALUE</text>
+<text x="0" y="7.302" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-7.286" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
-<package name="L-10.8*10MM">
+<package name="L-10.8X10MM">
 <description>&lt;b&gt; SRR1210 Series - Shielded SMD Power Inductors &lt;/b&gt;&lt;p&gt;
 
 Source : http://www.bourns.com/pdfs/SRR1210.pdf&lt;br&gt;
 
 &lt;Author&gt; jc.nicaise at solaris-system  dot be &lt;/&gt;</description>
-<text x="2.625" y="-3.095" size="1.27" layer="25">&gt;Name</text>
-<text x="2.625" y="-7.54" size="1.27" layer="27">&gt;Value</text>
-<wire x1="1" y1="0" x2="9.8" y2="0" width="0.127" layer="21"/>
-<smd name="P$1" x="0.6" y="-5" dx="3" dy="4" layer="1"/>
-<smd name="P$2" x="10.2" y="-5" dx="3" dy="4" layer="1"/>
-<wire x1="0.8" y1="-10" x2="9.8" y2="-10" width="0.127" layer="21"/>
-<wire x1="10.8" y1="-1" x2="10.8" y2="-2.6" width="0.127" layer="21"/>
-<wire x1="10.8" y1="-9" x2="10.8" y2="-7.4" width="0.127" layer="21"/>
-<wire x1="0" y1="-9" x2="0" y2="-7.4" width="0.127" layer="21"/>
-<wire x1="0" y1="-1" x2="0" y2="-2.6" width="0.127" layer="21"/>
-<wire x1="0" y1="-1" x2="1" y2="0" width="0.127" layer="21" curve="-90"/>
-<wire x1="9.8" y1="0" x2="10.8" y2="-1" width="0.127" layer="21" curve="-90"/>
-<wire x1="10.8" y1="-9" x2="9.8" y2="-10" width="0.127" layer="21" curve="-90"/>
-<wire x1="0" y1="-9" x2="0" y2="-9.2" width="0.127" layer="21"/>
-<wire x1="0" y1="-9.2" x2="0.8" y2="-10" width="0.127" layer="21" curve="90"/>
+<wire x1="-4.334" y1="5.08" x2="4.466" y2="5.08" width="0.127" layer="21"/>
+<smd name="P$1" x="-4.734" y="0.08" dx="3" dy="4" layer="1"/>
+<smd name="P$2" x="4.866" y="0.08" dx="3" dy="4" layer="1"/>
+<wire x1="-4.534" y1="-4.92" x2="4.466" y2="-4.92" width="0.127" layer="21"/>
+<wire x1="5.466" y1="4.08" x2="5.466" y2="2.48" width="0.127" layer="21"/>
+<wire x1="5.466" y1="-3.92" x2="5.466" y2="-2.32" width="0.127" layer="21"/>
+<wire x1="-5.334" y1="-4.12" x2="-5.334" y2="-2.32" width="0.127" layer="21"/>
+<wire x1="-5.334" y1="4.08" x2="-5.334" y2="2.48" width="0.127" layer="21"/>
+<wire x1="-5.334" y1="4.08" x2="-4.334" y2="5.08" width="0.127" layer="21" curve="-90"/>
+<wire x1="4.466" y1="5.08" x2="5.466" y2="4.08" width="0.127" layer="21" curve="-90"/>
+<wire x1="5.466" y1="-3.92" x2="4.466" y2="-4.92" width="0.127" layer="21" curve="-90"/>
+<wire x1="-5.334" y1="-4.12" x2="-4.534" y2="-4.92" width="0.127" layer="21" curve="90"/>
+<text x="0" y="5.754" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-5.638" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+</package>
+<package name="L-10.3X10.4MM">
+<text x="0" y="5.854" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-5.838" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<smd name="P$1" x="-5" y="0" dx="2.7" dy="3.6" layer="1"/>
+<smd name="P$2" x="5" y="0" dx="2.7" dy="3.6" layer="1"/>
+<wire x1="5.2" y1="-3.4" x2="5.2" y2="-2" width="0.1524" layer="22"/>
+<wire x1="5.2" y1="2" x2="5.2" y2="5.15" width="0.1524" layer="22"/>
+<wire x1="5.2" y1="5.15" x2="-3.35" y2="5.15" width="0.1524" layer="22"/>
+<wire x1="3.45" y1="-5.15" x2="-5.2" y2="-5.15" width="0.1524" layer="22"/>
+<wire x1="-5.2" y1="-5.15" x2="-5.2" y2="-2" width="0.1524" layer="22"/>
+<wire x1="-5.2" y1="2" x2="-5.2" y2="3.3" width="0.1524" layer="22"/>
+<wire x1="-5.2" y1="2" x2="-3.4" y2="2" width="0.1524" layer="22"/>
+<wire x1="-3.4" y1="2" x2="-3.4" y2="-2" width="0.1524" layer="22"/>
+<wire x1="-3.4" y1="-2" x2="-5.2" y2="-2" width="0.1524" layer="22"/>
+<wire x1="3.4" y1="-2" x2="3.4" y2="2" width="0.1524" layer="22"/>
+<wire x1="3.4" y1="-2" x2="5.2" y2="-2" width="0.1524" layer="22"/>
+<wire x1="3.4" y1="2" x2="5.2" y2="2" width="0.1524" layer="22"/>
+<wire x1="-5.2" y1="3.3" x2="-3.35" y2="5.15" width="0.1524" layer="22"/>
+<wire x1="3.45" y1="-5.15" x2="5.2" y2="-3.4" width="0.1524" layer="22"/>
 </package>
 </packages>
 <packages3d>
@@ -9023,51 +9033,6 @@ Source:  Data sheet</description>
 <gate name="G$1" symbol="L-US" x="0" y="0"/>
 </gates>
 <devices>
-<device name="12.0*12.0" package="L-12.0*12.0MM-SRR1210">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="12.5*12.5" package="L-12.5*12.5MM-DR125">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="7.0*7.0" package="L-7.0*7.0MM-SLF7045">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="7.6*7.6" package="L-7.6*7.6MM-DR73">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="10.8*10" package="L-10.8*10MM">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="0402" package="R0402">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -12564,6 +12529,73 @@ R2 3 2 {val-val*var/100}
 </devices>
 <spice>
 <pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+</deviceset>
+<deviceset name="L-POWER" prefix="L" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="L-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="12.0*12.0" package="L-12.0X12.0MM-SRR1210">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="12.5*12.5" package="L-12.5X12.5MM-DR125">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="7.0*7.0" package="L-7.0X7.0MM-SLF7045">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="7.6*7.6" package="L-7.6X7.6MM-DR73">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="10.8*10" package="L-10.8X10MM">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="10.3*10.4" package="L-10.3X10.4MM">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+<spice>
+<pinmapping spiceprefix="L">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
