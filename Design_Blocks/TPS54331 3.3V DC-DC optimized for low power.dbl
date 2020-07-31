@@ -4,8 +4,7 @@
 <designblock>
 <description>&lt;b&gt;TPS54331: 3.3V DC-DC, optimized for low power&lt;/b&gt;</description>
 <attributes>
-<attribute name="AIRWIRES" value="YES"/>
-<attribute name="BOARDSIZE" value="885 x 991 mil"/>
+<attribute name="BOARDSIZE" value="818 x 956 mil"/>
 <attribute name="LAYERS" value="2: 1, 16"/>
 </attributes>
 <drawings>
@@ -67,7 +66,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="16" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="16" fill="1" visible="no" active="no"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -1180,76 +1179,6 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="angrypig7-Symbols">
-<packages>
-</packages>
-<symbols>
-<symbol name="3.3V">
-<description>&lt;h3&gt;3.3V Voltage Supply&lt;/h3&gt;</description>
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
-</symbol>
-<symbol name="VIN">
-<description>&lt;h3&gt;Input Voltage Supply&lt;/h3&gt;</description>
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<pin name="VIN" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
-</symbol>
-<symbol name="DGND">
-<description>&lt;h3&gt;Digital Ground Supply&lt;/h3&gt;</description>
-<wire x1="-1.905" y1="-2.54" x2="1.905" y2="-2.54" width="0.254" layer="94"/>
-<pin name="GND" x="0" y="0" visible="off" length="short" direction="sup" rot="R270"/>
-<text x="0" y="-2.794" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="3.3V" prefix="SUPPLY">
-<description>&lt;h3&gt;3.3V Supply Symbol&lt;/h3&gt;
-&lt;p&gt;Power supply symbol for a specifically-stated 3.3V source.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="3.3V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VIN" prefix="SUPPLY">
-<description>&lt;h3&gt;Input Voltage Supply&lt;/h3&gt;
-&lt;p&gt;Generic voltage input supply symbol.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="VIN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="GND" prefix="GND">
-<description>&lt;h3&gt;Ground Supply Symbol&lt;/h3&gt;
-&lt;p&gt;Generic signal ground supply symbol.&lt;/p&gt;</description>
-<gates>
-<gate name="1" symbol="DGND" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="angrypig7-IC-Power">
 <packages>
 <package name="SOIC-8_150MIL">
@@ -1332,53 +1261,49 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 </class>
 <class number="1" name="power" width="0.4064" drill="0">
 </class>
+<class number="2" name="RF" width="0.4318" drill="0">
+<clearance class="2" value="0.2032"/>
+</class>
 </classes>
 <parts>
-<part name="SUPPLY27" library="angrypig7-Symbols" deviceset="VIN" device=""/>
-<part name="SUPPLY29" library="angrypig7-Symbols" deviceset="3.3V" device=""/>
-<part name="GND16" library="angrypig7-Symbols" deviceset="GND" device=""/>
-<part name="D1" library="angrypig7-Diodes" deviceset="DIODE-SCHOTTKY" device="_SOD-123" value="B5819W">
-<attribute name="LCSC" value="C8598"/>
-</part>
 <part name="U1" library="angrypig7-IC-Power" deviceset="TPS54331" device="">
 <attribute name="LCSC" value="C9865"/>
 </part>
-<part name="C10" library="angrypig7-RCL" deviceset="C-NON-POL" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10uF,50V"/>
-<part name="D3" library="angrypig7-Diodes" deviceset="DIODE-SCHOTTKY" device="_SOD-123" value="B5819W">
+<part name="C11" library="angrypig7-RCL" deviceset="C-NON-POL" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10uF,50V"/>
+<part name="D2" library="angrypig7-Diodes" deviceset="DIODE-SCHOTTKY" device="_SOD-123" value="B5819W">
 <attribute name="LCSC" value="C8598"/>
 </part>
-<part name="GND35" library="angrypig7-Symbols" deviceset="GND" device=""/>
-<part name="R9" library="angrypig7-RCL" deviceset="R" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/54" value="10k">
+<part name="R5" library="angrypig7-RCL" deviceset="R" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/54" value="10k">
 <attribute name="LCSC" value="C13585"/>
 </part>
-<part name="R10" library="angrypig7-RCL" deviceset="R" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/54" value="3.3k">
+<part name="R6" library="angrypig7-RCL" deviceset="R" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/54" value="3.3k">
 <attribute name="LCSC" value="C22978"/>
 </part>
 <part name="L1" library="angrypig7-RCL" deviceset="L-POWER" device="10.3*10.4" value="33uH">
 <attribute name="LCSC" value="C9936"/>
 </part>
-<part name="C16" library="angrypig7-RCL" deviceset="C-NON-POL" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF">
+<part name="C17" library="angrypig7-RCL" deviceset="C-NON-POL" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF">
 <attribute name="LCSC" value="C45783"/>
 </part>
-<part name="C13" library="angrypig7-RCL" deviceset="C-NON-POL" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="8.2nF">
+<part name="C14" library="angrypig7-RCL" deviceset="C-NON-POL" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="8.2nF">
 <attribute name="LCSC" value="C14663"/>
 </part>
-<part name="R7" library="angrypig7-RCL" deviceset="R" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/54" value="100R">
+<part name="R3" library="angrypig7-RCL" deviceset="R" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/54" value="100R">
 <attribute name="LCSC" value="C22775"/>
 </part>
-<part name="C12" library="angrypig7-RCL" deviceset="C-NON-POL" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="33nF">
+<part name="C13" library="angrypig7-RCL" deviceset="C-NON-POL" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="33nF">
 <attribute name="LCSC" value="C21117"/>
 </part>
-<part name="C11" library="angrypig7-RCL" deviceset="C-NON-POL" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="27nF">
+<part name="C12" library="angrypig7-RCL" deviceset="C-NON-POL" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="27nF">
 <attribute name="LCSC" value="C1700"/>
 </part>
-<part name="C14" library="angrypig7-RCL" deviceset="C-NON-POL" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="100nF">
+<part name="C15" library="angrypig7-RCL" deviceset="C-NON-POL" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="100nF">
 <attribute name="LCSC" value="C1525"/>
 </part>
-<part name="C9" library="angrypig7-RCL" deviceset="C-NON-POL" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="100nF">
+<part name="C10" library="angrypig7-RCL" deviceset="C-NON-POL" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="100nF">
 <attribute name="LCSC" value="C1525"/>
 </part>
-<part name="C17" library="angrypig7-RCL" deviceset="C-NON-POL" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="100nF">
+<part name="C18" library="angrypig7-RCL" deviceset="C-NON-POL" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="100nF">
 <attribute name="LCSC" value="C1525"/>
 </part>
 </parts>
@@ -1387,43 +1312,26 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <plain>
 </plain>
 <instances>
-<instance part="SUPPLY27" gate="G$1" x="160.02" y="270.51" smashed="yes">
-<attribute name="VALUE" x="160.02" y="273.304" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="SUPPLY29" gate="G$1" x="295.91" y="273.05" smashed="yes">
-<attribute name="VALUE" x="295.91" y="275.844" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="GND16" gate="1" x="160.02" y="220.98" smashed="yes">
-<attribute name="VALUE" x="160.02" y="218.186" size="1.778" layer="96" align="top-center"/>
-</instance>
-<instance part="D1" gate="G$1" x="57.15" y="214.63" smashed="yes">
-<attribute name="NAME" x="54.61" y="216.662" size="1.778" layer="95"/>
-<attribute name="VALUE" x="54.61" y="212.598" size="1.778" layer="96" align="top-left"/>
-<attribute name="LCSC" x="57.15" y="214.63" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="U1" gate="G$1" x="222.25" y="257.81" smashed="yes">
 <attribute name="NAME" x="213.36" y="271.78" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="213.36" y="269.24" size="1.778" layer="96" align="center-left"/>
 <attribute name="LCSC" x="222.25" y="257.81" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C10" gate="G$1" x="160.02" y="247.65" smashed="yes">
+<instance part="C11" gate="G$1" x="160.02" y="247.65" smashed="yes">
 <attribute name="NAME" x="161.544" y="249.301" size="1.778" layer="95"/>
 <attribute name="VALUE" x="161.544" y="244.221" size="1.778" layer="96"/>
 </instance>
-<instance part="D3" gate="G$1" x="257.81" y="255.27" smashed="yes">
+<instance part="D2" gate="G$1" x="257.81" y="255.27" smashed="yes">
 <attribute name="NAME" x="255.27" y="257.302" size="1.778" layer="95"/>
 <attribute name="VALUE" x="255.27" y="253.238" size="1.778" layer="96" align="top-left"/>
 <attribute name="LCSC" x="257.81" y="255.27" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="GND35" gate="1" x="251.46" y="254" smashed="yes">
-<attribute name="VALUE" x="251.46" y="251.206" size="1.778" layer="96" align="top-center"/>
-</instance>
-<instance part="R9" gate="G$1" x="287.02" y="252.73" smashed="yes" rot="R90">
+<instance part="R5" gate="G$1" x="287.02" y="252.73" smashed="yes" rot="R90">
 <attribute name="NAME" x="285.5214" y="248.92" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="290.322" y="248.92" size="1.778" layer="96" rot="R90"/>
 <attribute name="LCSC" x="287.02" y="252.73" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="R10" gate="G$1" x="287.02" y="237.49" smashed="yes" rot="R90">
+<instance part="R6" gate="G$1" x="287.02" y="237.49" smashed="yes" rot="R90">
 <attribute name="NAME" x="285.5214" y="233.68" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="290.322" y="233.68" size="1.778" layer="96" rot="R90"/>
 <attribute name="LCSC" x="287.02" y="237.49" size="1.778" layer="96" rot="R90" display="off"/>
@@ -1433,42 +1341,42 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <attribute name="VALUE" x="272.034" y="257.81" size="1.778" layer="96"/>
 <attribute name="LCSC" x="275.59" y="260.35" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C16" gate="G$1" x="295.91" y="247.65" smashed="yes">
+<instance part="C17" gate="G$1" x="295.91" y="247.65" smashed="yes">
 <attribute name="NAME" x="297.434" y="249.301" size="1.778" layer="95"/>
 <attribute name="VALUE" x="297.434" y="244.221" size="1.778" layer="96"/>
 <attribute name="LCSC" x="295.91" y="247.65" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C13" gate="G$1" x="203.2" y="240.03" smashed="yes">
+<instance part="C14" gate="G$1" x="203.2" y="240.03" smashed="yes">
 <attribute name="NAME" x="204.724" y="241.681" size="1.778" layer="95"/>
 <attribute name="VALUE" x="204.724" y="236.601" size="1.778" layer="96"/>
 <attribute name="LCSC" x="203.2" y="240.03" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R7" gate="G$1" x="191.77" y="247.65" smashed="yes" rot="R90">
+<instance part="R3" gate="G$1" x="191.77" y="247.65" smashed="yes" rot="R90">
 <attribute name="NAME" x="190.2714" y="243.84" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="195.072" y="243.84" size="1.778" layer="96" rot="R90"/>
 <attribute name="LCSC" x="191.77" y="247.65" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="C12" gate="G$1" x="191.77" y="236.22" smashed="yes">
+<instance part="C13" gate="G$1" x="191.77" y="236.22" smashed="yes">
 <attribute name="NAME" x="193.294" y="237.871" size="1.778" layer="95"/>
 <attribute name="VALUE" x="193.294" y="232.791" size="1.778" layer="96"/>
 <attribute name="LCSC" x="191.77" y="236.22" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C11" gate="G$1" x="179.07" y="242.57" smashed="yes">
+<instance part="C12" gate="G$1" x="179.07" y="242.57" smashed="yes">
 <attribute name="NAME" x="180.594" y="244.221" size="1.778" layer="95"/>
 <attribute name="VALUE" x="180.594" y="239.141" size="1.778" layer="96"/>
 <attribute name="LCSC" x="179.07" y="242.57" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C14" gate="G$1" x="245.11" y="265.43" smashed="yes" rot="R90">
+<instance part="C15" gate="G$1" x="245.11" y="265.43" smashed="yes" rot="R90">
 <attribute name="NAME" x="243.459" y="266.954" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="248.539" y="266.954" size="1.778" layer="96" rot="R90"/>
 <attribute name="LCSC" x="245.11" y="265.43" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="C9" gate="G$1" x="149.86" y="247.65" smashed="yes">
+<instance part="C10" gate="G$1" x="149.86" y="247.65" smashed="yes">
 <attribute name="NAME" x="151.384" y="249.301" size="1.778" layer="95"/>
 <attribute name="VALUE" x="151.384" y="244.221" size="1.778" layer="96"/>
 <attribute name="LCSC" x="149.86" y="247.65" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C17" gate="G$1" x="306.07" y="247.65" smashed="yes">
+<instance part="C18" gate="G$1" x="306.07" y="247.65" smashed="yes">
 <attribute name="NAME" x="307.594" y="249.301" size="1.778" layer="95"/>
 <attribute name="VALUE" x="307.594" y="244.221" size="1.778" layer="96"/>
 <attribute name="LCSC" x="306.07" y="247.65" size="1.778" layer="96" display="off"/>
@@ -1477,6 +1385,144 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <busses>
 </busses>
 <nets>
+<net name="GND" class="1">
+<segment>
+<wire x1="160.02" y1="220.98" x2="160.02" y2="229.87" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="GND"/>
+<wire x1="160.02" y1="229.87" x2="179.07" y2="229.87" width="0.1524" layer="91"/>
+<wire x1="179.07" y1="229.87" x2="191.77" y2="229.87" width="0.1524" layer="91"/>
+<wire x1="191.77" y1="229.87" x2="203.2" y2="229.87" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="229.87" x2="240.03" y2="229.87" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="243.84" x2="160.02" y2="229.87" width="0.1524" layer="91"/>
+<junction x="160.02" y="229.87"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="240.03" y1="229.87" x2="287.02" y2="229.87" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="229.87" x2="287.02" y2="232.41" width="0.1524" layer="91"/>
+<pinref part="C17" gate="G$1" pin="2"/>
+<wire x1="295.91" y1="243.84" x2="295.91" y2="229.87" width="0.1524" layer="91"/>
+<wire x1="295.91" y1="229.87" x2="287.02" y2="229.87" width="0.1524" layer="91"/>
+<junction x="287.02" y="229.87"/>
+<pinref part="C14" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="236.22" x2="203.2" y2="229.87" width="0.1524" layer="91"/>
+<junction x="203.2" y="229.87"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="191.77" y1="232.41" x2="191.77" y2="229.87" width="0.1524" layer="91"/>
+<junction x="191.77" y="229.87"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<wire x1="179.07" y1="238.76" x2="179.07" y2="229.87" width="0.1524" layer="91"/>
+<junction x="179.07" y="229.87"/>
+<wire x1="306.07" y1="243.84" x2="306.07" y2="229.87" width="0.1524" layer="91"/>
+<wire x1="306.07" y1="229.87" x2="295.91" y2="229.87" width="0.1524" layer="91"/>
+<junction x="295.91" y="229.87"/>
+<wire x1="236.22" y1="250.19" x2="240.03" y2="250.19" width="0.1524" layer="91"/>
+<wire x1="240.03" y1="250.19" x2="240.03" y2="229.87" width="0.1524" layer="91"/>
+<junction x="240.03" y="229.87"/>
+<wire x1="149.86" y1="243.84" x2="149.86" y2="229.87" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="229.87" x2="160.02" y2="229.87" width="0.1524" layer="91"/>
+<pinref part="C18" gate="G$1" pin="2"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="255.27" y1="255.27" x2="251.46" y2="255.27" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="255.27" x2="251.46" y2="254" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="3.3V" class="1">
+<segment>
+<pinref part="C17" gate="G$1" pin="1"/>
+<pinref part="L1" gate="G$1" pin="2"/>
+<wire x1="295.91" y1="251.46" x2="295.91" y2="260.35" width="0.1524" layer="91"/>
+<wire x1="295.91" y1="260.35" x2="287.02" y2="260.35" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="287.02" y1="260.35" x2="280.67" y2="260.35" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="257.81" x2="287.02" y2="260.35" width="0.1524" layer="91"/>
+<junction x="287.02" y="260.35"/>
+<wire x1="295.91" y1="260.35" x2="295.91" y2="273.05" width="0.1524" layer="91"/>
+<junction x="295.91" y="260.35"/>
+<wire x1="306.07" y1="251.46" x2="306.07" y2="260.35" width="0.1524" layer="91"/>
+<wire x1="306.07" y1="260.35" x2="295.91" y2="260.35" width="0.1524" layer="91"/>
+<pinref part="C18" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="VIN" class="1">
+<segment>
+<pinref part="U1" gate="G$1" pin="VIN"/>
+<wire x1="208.28" y1="265.43" x2="160.02" y2="265.43" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="265.43" x2="160.02" y2="270.51" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="251.46" x2="160.02" y2="265.43" width="0.1524" layer="91"/>
+<junction x="160.02" y="265.43"/>
+<wire x1="149.86" y1="251.46" x2="149.86" y2="265.43" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="265.43" x2="160.02" y2="265.43" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="TPS_PH" class="1">
+<segment>
+<pinref part="U1" gate="G$1" pin="PH"/>
+<wire x1="236.22" y1="260.35" x2="254" y2="260.35" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="254" y1="260.35" x2="264.16" y2="260.35" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="260.35" x2="270.51" y2="260.35" width="0.1524" layer="91"/>
+<wire x1="260.35" y1="255.27" x2="264.16" y2="255.27" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="255.27" x2="264.16" y2="260.35" width="0.1524" layer="91"/>
+<junction x="264.16" y="260.35"/>
+<wire x1="248.92" y1="265.43" x2="254" y2="265.43" width="0.1524" layer="91"/>
+<wire x1="254" y1="265.43" x2="254" y2="260.35" width="0.1524" layer="91"/>
+<junction x="254" y="260.35"/>
+<pinref part="L1" gate="G$1" pin="1"/>
+<pinref part="C15" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="TPS_VSNS" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="VSNS"/>
+<wire x1="236.22" y1="255.27" x2="242.57" y2="255.27" width="0.1524" layer="91"/>
+<wire x1="242.57" y1="255.27" x2="242.57" y2="245.11" width="0.1524" layer="91"/>
+<wire x1="242.57" y1="245.11" x2="287.02" y2="245.11" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="287.02" y1="245.11" x2="287.02" y2="247.65" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="287.02" y1="242.57" x2="287.02" y2="245.11" width="0.1524" layer="91"/>
+<junction x="287.02" y="245.11"/>
+</segment>
+</net>
+<net name="TPS_BOOT" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="BOOT"/>
+<wire x1="241.3" y1="265.43" x2="236.22" y2="265.43" width="0.1524" layer="91"/>
+<pinref part="C15" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="TPS_SS" class="0">
+<segment>
+<pinref part="C14" gate="G$1" pin="1"/>
+<pinref part="U1" gate="G$1" pin="SS"/>
+<wire x1="203.2" y1="243.84" x2="203.2" y2="250.19" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="250.19" x2="208.28" y2="250.19" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="C13" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="191.77" y1="240.03" x2="191.77" y2="242.57" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TPS_COMP" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="U1" gate="G$1" pin="COMP"/>
+<wire x1="191.77" y1="252.73" x2="191.77" y2="255.27" width="0.1524" layer="91"/>
+<wire x1="191.77" y1="255.27" x2="208.28" y2="255.27" width="0.1524" layer="91"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="179.07" y1="246.38" x2="179.07" y2="255.27" width="0.1524" layer="91"/>
+<wire x1="179.07" y1="255.27" x2="191.77" y2="255.27" width="0.1524" layer="91"/>
+<junction x="191.77" y="255.27"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -1856,6 +1902,9 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 </class>
 <class number="1" name="power" width="0.4064" drill="0">
 </class>
+<class number="2" name="RF" width="0.4318" drill="0">
+<clearance class="2" value="0.2032"/>
+</class>
 </classes>
 <designrules name="JLCPCB_2-Layer">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
@@ -2038,189 +2087,212 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </pass>
 </autorouter>
 <elements>
-<element name="D1" library="angrypig7-Diodes" package="SOD-123" value="B5819W" x="3.683" y="24.13" smashed="yes" rot="R180">
-<attribute name="LCSC" value="C8598" x="3.937" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="3.7162" y="22.5458" size="1.143" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE" x="3.6654" y="25.5664" size="1.143" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
+<element name="U1" library="angrypig7-IC-Power" package="SOIC-8_150MIL" value="TPS54331" x="6.477" y="16.002" smashed="yes" rot="R180">
+<attribute name="LCSC" value="C9865" x="6.477" y="16.002" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="3.302" y="14.986" size="1.143" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="VALUE" x="3.175" y="16.002" size="1.143" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="U1" library="angrypig7-IC-Power" package="SOIC-8_150MIL" value="TPS54331" x="8.001" y="17.145" smashed="yes" rot="R180">
-<attribute name="LCSC" value="C9865" x="8.001" y="17.145" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="4.826" y="16.129" size="1.143" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
-<attribute name="VALUE" x="4.699" y="17.145" size="1.143" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
+<element name="C11" library="angrypig7-RCL" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10uF,50V" x="8.636" y="22.987" smashed="yes">
+<attribute name="NAME" x="12.192" y="23.052" size="1.27" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="SPICEPREFIX" value="C" x="8.636" y="22.987" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="8.636" y="21.147" size="1.27" layer="27" font="vector" ratio="15" align="center"/>
 </element>
-<element name="C10" library="angrypig7-RCL" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10uF,50V" x="10.16" y="24.13" smashed="yes">
-<attribute name="NAME" x="13.716" y="24.195" size="1.27" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="SPICEPREFIX" value="C" x="10.16" y="24.13" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="10.16" y="22.29" size="1.27" layer="27" font="vector" ratio="15" align="center"/>
+<element name="D2" library="angrypig7-Diodes" package="SOD-123" value="B5819W" x="11.557" y="15.24" smashed="yes" rot="R90">
+<attribute name="LCSC" value="C8598" x="11.557" y="14.986" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="11.6238" y="19.1438" size="1.143" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="VALUE" x="12.9934" y="15.2576" size="1.143" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="D3" library="angrypig7-Diodes" package="SOD-123" value="B5819W" x="13.081" y="16.383" smashed="yes" rot="R90">
-<attribute name="LCSC" value="C8598" x="13.081" y="16.129" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="13.1478" y="20.2868" size="1.143" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
-<attribute name="VALUE" x="14.5174" y="16.4006" size="1.143" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
+<element name="R5" library="angrypig7-RCL" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/54" value="10k" x="4.953" y="3.683" smashed="yes" rot="R270">
+<attribute name="LCSC" value="C13585" x="4.953" y="2.159" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="3.494" y="3.683" size="1.27" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="SPICEPREFIX" value="R" x="4.953" y="2.159" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="3.648" y="3.683" size="1.27" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="R9" library="angrypig7-RCL" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/54" value="10k" x="6.477" y="4.826" smashed="yes" rot="R270">
-<attribute name="LCSC" value="C13585" x="6.477" y="3.302" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="5.018" y="4.826" size="1.27" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
-<attribute name="SPICEPREFIX" value="R" x="6.477" y="3.302" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="5.172" y="4.826" size="1.27" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
+<element name="R6" library="angrypig7-RCL" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/54" value="3.3k" x="5.715" y="6.096" smashed="yes" rot="R180">
+<attribute name="LCSC" value="C22978" x="4.191" y="6.096" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="2.54" y="6.031" size="1.27" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="SPICEPREFIX" value="R" x="4.191" y="6.096" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="5.715" y="7.401" size="1.27" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R10" library="angrypig7-RCL" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/54" value="3.3k" x="7.239" y="7.239" smashed="yes" rot="R180">
-<attribute name="LCSC" value="C22978" x="5.715" y="7.239" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="4.064" y="7.174" size="1.27" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="SPICEPREFIX" value="R" x="5.715" y="7.239" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="7.239" y="8.544" size="1.27" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
+<element name="L1" library="angrypig7-RCL" package="L-10.3X10.4MM" value="33uH" x="14.097" y="6.985" smashed="yes">
+<attribute name="LCSC" value="C9936" x="14.097" y="6.985" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="7.862" y="2.921" size="1.143" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="VALUE" x="14.097" y="1.147" size="1.143" layer="27" font="vector" ratio="15" align="center"/>
 </element>
-<element name="L1" library="angrypig7-RCL" package="L-10.3X10.4MM" value="33uH" x="15.621" y="8.128" smashed="yes">
-<attribute name="LCSC" value="C9936" x="15.621" y="8.128" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="21.578" y="11.176" size="1.143" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
-<attribute name="VALUE" x="15.621" y="2.29" size="1.143" layer="27" font="vector" ratio="15" align="center"/>
+<element name="C17" library="angrypig7-RCL" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF" x="17.526" y="13.335" smashed="yes" rot="R180">
+<attribute name="LCSC" value="C45783" x="17.526" y="13.335" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="14.097" y="13.27" size="1.27" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="SPICEPREFIX" value="C" x="17.526" y="13.335" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="17.526" y="15.175" size="1.27" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C16" library="angrypig7-RCL" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF" x="19.05" y="14.478" smashed="yes" rot="R180">
-<attribute name="LCSC" value="C45783" x="19.05" y="14.478" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="15.621" y="14.413" size="1.27" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="SPICEPREFIX" value="C" x="19.05" y="14.478" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="19.05" y="16.318" size="1.27" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
+<element name="C14" library="angrypig7-RCL" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="8.2nF" x="2.794" y="17.907" smashed="yes" rot="R270">
+<attribute name="LCSC" value="C14663" x="2.794" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="1.37" y="17.907" size="1.143" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="SPICEPREFIX" value="C" x="2.794" y="17.907" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="1.497" y="17.907" size="1.143" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="C13" library="angrypig7-RCL" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="8.2nF" x="4.318" y="19.05" smashed="yes" rot="R270">
-<attribute name="LCSC" value="C14663" x="4.318" y="18.542" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="2.894" y="19.05" size="1.143" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
-<attribute name="SPICEPREFIX" value="C" x="4.318" y="19.05" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="3.021" y="19.05" size="1.143" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
+<element name="R3" library="angrypig7-RCL" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/54" value="100R" x="4.064" y="9.525" smashed="yes" rot="R180">
+<attribute name="LCSC" value="C22775" x="2.286" y="9.525" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="1.716" y="9.525" size="1.27" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="SPICEPREFIX" value="R" x="2.286" y="9.525" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="4.064" y="10.83" size="1.27" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R7" library="angrypig7-RCL" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/54" value="100R" x="5.588" y="10.668" smashed="yes" rot="R180">
-<attribute name="LCSC" value="C22775" x="3.81" y="10.668" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="2.413" y="10.73" size="1.27" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="SPICEPREFIX" value="R" x="3.81" y="10.668" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="5.588" y="11.973" size="1.27" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
+<element name="C13" library="angrypig7-RCL" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="33nF" x="5.715" y="7.874" smashed="yes">
+<attribute name="LCSC" value="C21117" x="6.223" y="7.874" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="2.54" y="7.901" size="1.143" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="SPICEPREFIX" value="C" x="5.715" y="7.874" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="5.715" y="6.577" size="1.143" layer="27" font="vector" ratio="15" align="center"/>
 </element>
-<element name="C12" library="angrypig7-RCL" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="33nF" x="7.239" y="9.017" smashed="yes">
-<attribute name="LCSC" value="C21117" x="7.747" y="9.017" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="4.064" y="9.044" size="1.143" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="SPICEPREFIX" value="C" x="7.239" y="9.017" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="7.239" y="7.72" size="1.143" layer="27" font="vector" ratio="15" align="center"/>
+<element name="C12" library="angrypig7-RCL" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="27nF" x="5.715" y="11.176" smashed="yes">
+<attribute name="LCSC" value="C1700" x="6.731" y="11.176" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="2.667" y="11.203" size="1.143" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="SPICEPREFIX" value="C" x="5.715" y="11.176" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="5.715" y="9.879" size="1.143" layer="27" font="vector" ratio="15" align="center"/>
 </element>
-<element name="C11" library="angrypig7-RCL" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="27nF" x="7.239" y="12.319" smashed="yes">
-<attribute name="LCSC" value="C1700" x="8.255" y="12.319" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="4.191" y="12.346" size="1.143" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="SPICEPREFIX" value="C" x="7.239" y="12.319" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="7.239" y="11.022" size="1.143" layer="27" font="vector" ratio="15" align="center"/>
+<element name="C15" library="angrypig7-RCL" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="100nF" x="9.779" y="12.827" smashed="yes" rot="R270">
+<attribute name="LCSC" value="C1525" x="9.779" y="12.827" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="9.848" y="15.367" size="1.143" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="SPICEPREFIX" value="C" x="9.779" y="12.827" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="8.674" y="12.827" size="1.143" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="C14" library="angrypig7-RCL" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="100nF" x="11.303" y="13.97" smashed="yes" rot="R270">
-<attribute name="LCSC" value="C1525" x="11.303" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="11.372" y="16.51" size="1.143" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
-<attribute name="SPICEPREFIX" value="C" x="11.303" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="10.198" y="13.97" size="1.143" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
+<element name="C10" library="angrypig7-RCL" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="100nF" x="7.747" y="20.701" smashed="yes">
+<attribute name="LCSC" value="C1525" x="8.255" y="20.701" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="9.779" y="20.77" size="1.143" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="SPICEPREFIX" value="C" x="8.255" y="20.701" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="7.747" y="19.596" size="1.143" layer="27" font="vector" ratio="15" align="center"/>
 </element>
-<element name="C9" library="angrypig7-RCL" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="100nF" x="9.271" y="21.844" smashed="yes">
-<attribute name="LCSC" value="C1525" x="9.779" y="21.844" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="11.303" y="21.913" size="1.143" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="SPICEPREFIX" value="C" x="9.779" y="21.844" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="9.271" y="20.739" size="1.143" layer="27" font="vector" ratio="15" align="center"/>
-</element>
-<element name="C17" library="angrypig7-RCL" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="100nF" x="19.431" y="16.51" smashed="yes" rot="R180">
-<attribute name="LCSC" value="C1525" x="18.923" y="16.51" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="16.764" y="16.568" size="1.143" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="SPICEPREFIX" value="C" x="18.923" y="16.51" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="19.431" y="17.615" size="1.143" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
+<element name="C18" library="angrypig7-RCL" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="100nF" x="17.907" y="15.367" smashed="yes" rot="R180">
+<attribute name="LCSC" value="C1525" x="17.399" y="15.367" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="15.24" y="15.425" size="1.143" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="SPICEPREFIX" value="C" x="17.399" y="15.367" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="17.907" y="16.472" size="1.143" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 </elements>
 <signals>
 <signal name="GND" class="1">
 <contactref element="U1" pad="7"/>
+<contactref element="C11" pad="2"/>
+<contactref element="D2" pad="A"/>
+<contactref element="R6" pad="1"/>
+<contactref element="C17" pad="2"/>
+<contactref element="C14" pad="2"/>
+<contactref element="C13" pad="2"/>
+<contactref element="C12" pad="2"/>
+<contactref element="C18" pad="2"/>
+<contactref element="C10" pad="2"/>
 </signal>
 <signal name="3.3V" class="1">
+<contactref element="C17" pad="1"/>
+<contactref element="L1" pad="P$2"/>
+<contactref element="R5" pad="2"/>
+<contactref element="C18" pad="1"/>
 <polygon width="0.2032" layer="1">
-<vertex x="19.05" y="5.588"/>
-<vertex x="21.971" y="5.588"/>
-<vertex x="22.606" y="6.223"/>
-<vertex x="22.606" y="10.16"/>
-<vertex x="21.336" y="11.43"/>
-<vertex x="21.336" y="16.764"/>
-<vertex x="20.828" y="17.272"/>
-<vertex x="19.812" y="17.272"/>
-<vertex x="19.558" y="17.018"/>
-<vertex x="19.558" y="15.748"/>
-<vertex x="19.304" y="15.494"/>
-<vertex x="19.304" y="11.557"/>
-<vertex x="18.415" y="10.668"/>
-<vertex x="18.415" y="6.223"/>
+<vertex x="17.526" y="4.445"/>
+<vertex x="20.447" y="4.445"/>
+<vertex x="21.082" y="5.08"/>
+<vertex x="21.082" y="9.017"/>
+<vertex x="19.812" y="10.287"/>
+<vertex x="19.812" y="15.621"/>
+<vertex x="19.304" y="16.129"/>
+<vertex x="18.288" y="16.129"/>
+<vertex x="18.034" y="15.875"/>
+<vertex x="18.034" y="14.605"/>
+<vertex x="17.78" y="14.351"/>
+<vertex x="17.78" y="10.414"/>
+<vertex x="16.891" y="9.525"/>
+<vertex x="16.891" y="5.08"/>
 </polygon>
-<wire x1="20.621" y1="8.128" x2="20.621" y2="2.714" width="0.4064" layer="1"/>
-<wire x1="20.621" y1="2.714" x2="20.193" y2="2.286" width="0.4064" layer="1"/>
-<wire x1="20.193" y1="2.286" x2="8.636" y2="2.286" width="0.4064" layer="1"/>
-<wire x1="6.477" y1="3.976" x2="8.167" y2="2.286" width="0.4064" layer="1"/>
-<wire x1="8.167" y1="2.286" x2="8.636" y2="2.286" width="0.4064" layer="1"/>
+<wire x1="19.097" y1="6.985" x2="19.097" y2="1.571" width="0.4064" layer="1"/>
+<wire x1="19.097" y1="1.571" x2="18.669" y2="1.143" width="0.4064" layer="1"/>
+<wire x1="18.669" y1="1.143" x2="6.643003125" y2="1.143" width="0.4064" layer="1"/>
+<wire x1="4.953" y1="2.833" x2="6.643003125" y2="1.143" width="0.4064" layer="1"/>
 </signal>
 <signal name="VIN" class="1">
+<contactref element="U1" pad="2"/>
+<contactref element="C11" pad="1"/>
+<contactref element="C10" pad="1"/>
 <polygon width="0.2032" layer="1">
-<vertex x="7.874" y="19.685"/>
-<vertex x="9.271" y="19.685"/>
-<vertex x="9.271" y="20.955"/>
-<vertex x="9.017" y="21.209"/>
-<vertex x="9.017" y="22.606"/>
-<vertex x="9.525" y="23.114"/>
-<vertex x="9.525" y="25.527"/>
-<vertex x="7.366" y="25.527"/>
-<vertex x="7.366" y="21.717"/>
-<vertex x="7.874" y="21.209"/>
+<vertex x="6.35" y="18.542"/>
+<vertex x="7.747" y="18.542"/>
+<vertex x="7.747" y="19.812"/>
+<vertex x="7.493" y="20.066"/>
+<vertex x="7.493" y="21.463"/>
+<vertex x="8.001" y="21.971"/>
+<vertex x="8.001" y="24.384"/>
+<vertex x="5.842" y="24.384"/>
+<vertex x="5.842" y="20.574"/>
+<vertex x="6.35" y="20.066"/>
 </polygon>
-<wire x1="5.583" y1="24.13" x2="8.76" y2="24.13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TPS_PH" class="1">
+<contactref element="U1" pad="8"/>
+<contactref element="D2" pad="C"/>
+<contactref element="L1" pad="P$1"/>
+<contactref element="C15" pad="2"/>
 <polygon width="0.2032" layer="1">
-<vertex x="10.668" y="14.605"/>
-<vertex x="10.414" y="14.859"/>
-<vertex x="9.525" y="14.859"/>
-<vertex x="9.271" y="14.605"/>
-<vertex x="9.271" y="6.223"/>
-<vertex x="9.652" y="5.842"/>
-<vertex x="12.065" y="5.842"/>
-<vertex x="12.446" y="6.223"/>
-<vertex x="12.446" y="10.922"/>
-<vertex x="14.224" y="12.7"/>
-<vertex x="14.224" y="15.494"/>
-<vertex x="13.843" y="15.875"/>
-<vertex x="12.573" y="15.875"/>
-<vertex x="11.938" y="15.24"/>
-<vertex x="11.938" y="13.843"/>
-<vertex x="11.811" y="13.716"/>
-<vertex x="10.795" y="13.716"/>
-<vertex x="10.668" y="13.843"/>
+<vertex x="9.144" y="13.462"/>
+<vertex x="8.89" y="13.716"/>
+<vertex x="8.001" y="13.716"/>
+<vertex x="7.747" y="13.462"/>
+<vertex x="7.747" y="5.08"/>
+<vertex x="8.128" y="4.699"/>
+<vertex x="10.541" y="4.699"/>
+<vertex x="10.922" y="5.08"/>
+<vertex x="10.922" y="9.779"/>
+<vertex x="12.7" y="11.557"/>
+<vertex x="12.7" y="14.351"/>
+<vertex x="12.319" y="14.732"/>
+<vertex x="11.049" y="14.732"/>
+<vertex x="10.414" y="14.097"/>
+<vertex x="10.414" y="12.7"/>
+<vertex x="10.287" y="12.573"/>
+<vertex x="9.271" y="12.573"/>
+<vertex x="9.144" y="12.7"/>
 </polygon>
 </signal>
 <signal name="TPS_VSNS">
 <contactref element="U1" pad="5"/>
-<wire x1="6.311" y1="7.161" x2="6.389" y2="7.239" width="0.4064" layer="1"/>
-<wire x1="6.096" y1="14.445" x2="6.096" y2="13.542975" width="0.4064" layer="1"/>
-<wire x1="3.9078" y1="11.354775" x2="3.9078" y2="9.5642" width="0.4064" layer="1"/>
-<wire x1="3.9078" y1="9.5642" x2="6.311" y2="7.161" width="0.4064" layer="1"/>
-<wire x1="6.096" y1="13.542975" x2="3.9078" y2="11.354775" width="0.4064" layer="1"/>
-<wire x1="6.477" y1="5.676" x2="6.311" y2="5.842" width="0.4064" layer="1"/>
-<wire x1="6.311" y1="5.842" x2="6.311" y2="7.161" width="0.4064" layer="1"/>
+<contactref element="R5" pad="1"/>
+<contactref element="R6" pad="2"/>
+<wire x1="4.787" y1="6.018" x2="4.865" y2="6.096" width="0.4064" layer="1"/>
+<wire x1="4.572" y1="13.302" x2="4.572" y2="12.399975" width="0.4064" layer="1"/>
+<wire x1="2.3838" y1="10.211775" x2="2.3838" y2="8.4212" width="0.4064" layer="1"/>
+<wire x1="2.3838" y1="8.4212" x2="4.787" y2="6.018" width="0.4064" layer="1"/>
+<wire x1="4.572" y1="12.399975" x2="2.3838" y2="10.211775" width="0.4064" layer="1"/>
+<wire x1="4.953" y1="4.533" x2="4.787" y2="4.699" width="0.4064" layer="1"/>
+<wire x1="4.787" y1="4.699" x2="4.787" y2="6.018" width="0.4064" layer="1"/>
 </signal>
 <signal name="TPS_BOOT">
-<wire x1="11.303" y1="14.5208" x2="11.300434375" y2="14.523365625" width="0.2032" layer="1"/>
-<wire x1="11.300434375" y1="14.523365625" x2="11.300434375" y2="15.364434375" width="0.2032" layer="1"/>
-<via x="11.300434375" y="15.364434375" extent="1-16" drill="0.2"/>
-<wire x1="11.300434375" y1="15.364434375" x2="11.300434375" y2="19.179565625" width="0.2032" layer="16"/>
-<wire x1="10.795" y1="19.685" x2="11.300434375" y2="19.179565625" width="0.2032" layer="16"/>
-<via x="10.795" y="19.685" extent="1-16" drill="0.2"/>
-<wire x1="10.795" y1="19.685" x2="10.066" y2="19.685" width="0.2032" layer="1"/>
-<wire x1="10.066" y1="19.685" x2="9.906" y2="19.845" width="0.2032" layer="1"/>
+<contactref element="U1" pad="1"/>
+<contactref element="C15" pad="1"/>
+<wire x1="9.779" y1="13.3778" x2="9.776434375" y2="13.380365625" width="0.2032" layer="1"/>
+<wire x1="9.776434375" y1="13.380365625" x2="9.776434375" y2="14.221434375" width="0.2032" layer="1"/>
+<via x="9.776434375" y="14.221434375" extent="1-16" drill="0.2"/>
+<wire x1="9.776434375" y1="14.221434375" x2="9.776434375" y2="18.036565625" width="0.2032" layer="16"/>
+<wire x1="9.271" y1="18.542" x2="9.776434375" y2="18.036565625" width="0.2032" layer="16"/>
+<via x="9.271" y="18.542" extent="1-16" drill="0.2"/>
+<wire x1="9.271" y1="18.542" x2="8.542" y2="18.542" width="0.2032" layer="1"/>
+<wire x1="8.542" y1="18.542" x2="8.382" y2="18.702" width="0.2032" layer="1"/>
 </signal>
 <signal name="TPS_SS">
-<wire x1="4.318" y1="19.9" x2="6.041" y2="19.9" width="0.4064" layer="1"/>
-<wire x1="6.041" y1="19.9" x2="6.096" y2="19.845" width="0.4064" layer="1"/>
+<contactref element="C14" pad="1"/>
+<contactref element="U1" pad="4"/>
+<wire x1="2.794" y1="18.757" x2="4.517" y2="18.757" width="0.4064" layer="1"/>
+<wire x1="4.517" y1="18.757" x2="4.572" y2="18.702" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$32">
-<wire x1="6.389" y1="9.017" x2="6.389" y2="10.619" width="0.4064" layer="1"/>
-<wire x1="6.389" y1="10.619" x2="6.438" y2="10.668" width="0.4064" layer="1"/>
+<contactref element="C13" pad="1"/>
+<contactref element="R3" pad="1"/>
+<wire x1="4.865" y1="7.874" x2="4.865" y2="9.476" width="0.4064" layer="1"/>
+<wire x1="4.865" y1="9.476" x2="4.914" y2="9.525" width="0.4064" layer="1"/>
 </signal>
 <signal name="TPS_COMP">
+<contactref element="R3" pad="2"/>
 <contactref element="U1" pad="6"/>
-<wire x1="4.738" y1="10.668" x2="6.389" y2="12.319" width="0.4064" layer="1"/>
-<wire x1="6.389" y1="12.319" x2="7.366" y2="13.296" width="0.4064" layer="1"/>
-<wire x1="7.366" y1="13.296" x2="7.366" y2="14.445" width="0.4064" layer="1"/>
+<contactref element="C12" pad="1"/>
+<wire x1="3.214" y1="9.525" x2="4.865" y2="11.176" width="0.4064" layer="1"/>
+<wire x1="4.865" y1="11.176" x2="5.842" y2="12.153" width="0.4064" layer="1"/>
+<wire x1="5.842" y1="12.153" x2="5.842" y2="13.302" width="0.4064" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
