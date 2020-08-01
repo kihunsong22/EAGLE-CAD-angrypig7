@@ -1111,7 +1111,7 @@
 <text x="-8.89" y="-5.715" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 <text x="-8.89" y="5.842" size="1.778" layer="95">&gt;NAME</text>
 <pin name="VREF" x="-13.97" y="2.54" length="middle" direction="pas" swaplevel="1"/>
-<pin name="RST" x="-13.97" y="0" length="middle" direction="pas" swaplevel="1"/>
+<pin name="TDI" x="-13.97" y="0" length="middle" direction="pas" swaplevel="1"/>
 <pin name="GND" x="-13.97" y="-2.54" length="middle" direction="pas" swaplevel="1"/>
 <pin name="TMS" x="13.97" y="2.54" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="TCK" x="13.97" y="0" length="middle" direction="pas" swaplevel="1" rot="R180"/>
@@ -1413,8 +1413,8 @@
 <device name="-NL" package="TC2030-IDC-NL">
 <connects>
 <connect gate="A" pin="GND" pad="5"/>
-<connect gate="A" pin="RST" pad="3"/>
 <connect gate="A" pin="TCK" pad="4"/>
+<connect gate="A" pin="TDI" pad="3"/>
 <connect gate="A" pin="TDO" pad="6"/>
 <connect gate="A" pin="TMS" pad="2"/>
 <connect gate="A" pin="VREF" pad="1"/>
@@ -1426,8 +1426,8 @@
 <device name="" package="TC2030-IDC">
 <connects>
 <connect gate="A" pin="GND" pad="5"/>
-<connect gate="A" pin="RST" pad="3"/>
 <connect gate="A" pin="TCK" pad="4"/>
+<connect gate="A" pin="TDI" pad="3"/>
 <connect gate="A" pin="TDO" pad="6"/>
 <connect gate="A" pin="TMS" pad="2"/>
 <connect gate="A" pin="VREF" pad="1"/>
