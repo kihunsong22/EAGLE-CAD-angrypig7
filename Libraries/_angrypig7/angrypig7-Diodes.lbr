@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -169,31 +169,6 @@
 </layers>
 <library>
 <packages>
-<package name="SOD-323">
-<description>SOD-323 (Small Outline Diode)</description>
-<smd name="C" x="-1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
-<smd name="A" x="1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
-<text x="0.0938" y="1.0762" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0.1446" y="-1.1062" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
-<wire x1="-0.6428" y1="0.319" x2="0.6682" y2="0.319" width="0.2032" layer="21"/>
-<wire x1="0.6682" y1="0.319" x2="0.6682" y2="-0.319" width="0.2032" layer="21"/>
-<wire x1="0.6682" y1="-0.319" x2="-0.6428" y2="-0.319" width="0.2032" layer="21"/>
-<wire x1="-0.6428" y1="-0.319" x2="-0.6428" y2="0.319" width="0.2032" layer="21"/>
-<wire x1="-0.2618" y1="-0.2682" x2="-0.2618" y2="0.2682" width="0.254" layer="21"/>
-<wire x1="-1.6334" y1="-0.2682" x2="-1.6334" y2="0.2682" width="0.2032" layer="21"/>
-</package>
-<package name="SOD-523">
-<description>SOD-523 (Small Outline Diode)</description>
-<smd name="C" x="0.7" y="0" dx="0.4" dy="0.4" layer="1"/>
-<smd name="A" x="-0.7" y="0" dx="0.4" dy="0.4" layer="1"/>
-<text x="0.0938" y="0.9492" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0.1446" y="-0.9792" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
-<wire x1="-0.4142" y1="0.1666" x2="0.4142" y2="0.1666" width="0.1524" layer="21"/>
-<wire x1="0.4142" y1="0.1666" x2="0.4142" y2="-0.1666" width="0.1524" layer="21"/>
-<wire x1="0.4142" y1="-0.1666" x2="-0.4142" y2="-0.1666" width="0.1524" layer="21"/>
-<wire x1="-0.4142" y1="-0.1666" x2="-0.4142" y2="0.1666" width="0.1524" layer="21"/>
-<wire x1="-0.1856" y1="-0.1158" x2="-0.1856" y2="0.1158" width="0.2032" layer="21"/>
-</package>
 <package name="SOT-23-3">
 <description>SOT23-3</description>
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
@@ -222,20 +197,6 @@
 <text x="0" y="1.016" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-1.6002" size="0.6096" layer="27" font="vector" ratio="20" align="bottom-center">&gt;Value</text>
 <wire x1="-2.0574" y1="-0.6096" x2="-2.0574" y2="0.5842" width="0.127" layer="21"/>
-</package>
-<package name="SOD-123">
-<description>&lt;b&gt;Diode&lt;/b&gt;</description>
-<wire x1="-0.973" y1="0.6238" x2="0.973" y2="0.6238" width="0.2032" layer="21"/>
-<wire x1="0.973" y1="0.6238" x2="0.973" y2="-0.6238" width="0.2032" layer="21"/>
-<wire x1="0.973" y1="-0.6238" x2="-0.973" y2="-0.6238" width="0.2032" layer="21"/>
-<wire x1="-0.973" y1="-0.6238" x2="-0.973" y2="0.6238" width="0.2032" layer="21"/>
-<smd name="C" x="-1.9" y="0" dx="1.4" dy="1.4" layer="1"/>
-<smd name="A" x="1.9" y="0" dx="1.4" dy="1.4" layer="1"/>
-<text x="-0.0332" y="1.4572" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0.0176" y="-1.4364" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
-<rectangle x1="-1.95" y1="-0.45" x2="-1.2" y2="0.4" layer="51"/>
-<rectangle x1="1.2" y1="-0.45" x2="1.95" y2="0.4" layer="51"/>
-<wire x1="-0.592" y1="-0.573" x2="-0.592" y2="0.573" width="0.254" layer="21"/>
 </package>
 <package name="SMC">
 <description>&lt;b&gt;DIODE&lt;/b&gt;</description>
@@ -718,7 +679,70 @@ Source: http://www.diotec.com/pdf/s40.pdf</description>
 <text x="0" y="-1.905" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <wire x1="-0.9398" y1="-1.2192" x2="-0.9398" y2="-0.7112" width="0.1524" layer="21"/>
 </package>
+<package name="SOD-123" urn="urn:adsk.eagle:footprint:22471101/1" locally_modified="yes">
+<description>SOD-123, 3.75 mm span, 2.75 X 1.63 X 1.35 mm body
+&lt;p&gt;SOD package with 3.75 mm span with body size 2.75 X 1.63 X 1.35 mm&lt;/p&gt;</description>
+<smd name="C" x="-1.6" y="0" dx="0.988" dy="0.95" layer="1"/>
+<smd name="A" x="1.6" y="0" dx="0.988" dy="0.95" layer="1"/>
+<wire x1="-0.973" y1="0.6238" x2="0.973" y2="0.6238" width="0.2032" layer="21"/>
+<wire x1="0.973" y1="0.6238" x2="0.973" y2="-0.6238" width="0.2032" layer="21"/>
+<wire x1="0.973" y1="-0.6238" x2="-0.973" y2="-0.6238" width="0.2032" layer="21"/>
+<wire x1="-0.973" y1="-0.6238" x2="-0.973" y2="0.6238" width="0.2032" layer="21"/>
+<text x="0" y="1.4572" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-1.4364" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<wire x1="-0.592" y1="-0.573" x2="-0.592" y2="0.573" width="0.254" layer="21"/>
+</package>
+<package name="SOD-323" urn="urn:adsk.eagle:footprint:22471091/1" locally_modified="yes">
+<description>SOD-323, 2.60 mm span, 1.75 X 1.35 X 1.10 mm body
+&lt;p&gt;SOD package with 2.60 mm span with body size 1.75 X 1.35 X 1.10 mm&lt;/p&gt;</description>
+<smd name="C" x="-1.055" y="0" dx="0.65" dy="0.45" layer="1"/>
+<smd name="A" x="1.055" y="0" dx="0.65" dy="0.45" layer="1"/>
+<text x="0" y="1.0762" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-1.1062" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<wire x1="-0.592" y1="0.319" x2="0.592" y2="0.319" width="0.2032" layer="21"/>
+<wire x1="0.592" y1="0.319" x2="0.592" y2="-0.319" width="0.2032" layer="21"/>
+<wire x1="0.592" y1="-0.319" x2="-0.592" y2="-0.319" width="0.2032" layer="21"/>
+<wire x1="-0.592" y1="-0.319" x2="-0.592" y2="0.319" width="0.2032" layer="21"/>
+<wire x1="-0.2618" y1="-0.2682" x2="-0.2618" y2="0.2682" width="0.254" layer="21"/>
+<wire x1="-1.5064" y1="-0.2682" x2="-1.5064" y2="0.2682" width="0.2032" layer="21"/>
+</package>
+<package name="SOD-523" urn="urn:adsk.eagle:footprint:22471119/1" locally_modified="yes">
+<description>SOD-523, 1.65 mm span, 1.20 X 0.80 X 0.65 mm body
+&lt;p&gt;SODFL package with 1.65 mm span with body size 1.20 X 0.80 X 0.65 mm&lt;/p&gt;</description>
+<smd name="C" x="-0.75" y="0" dx="0.6" dy="0.7" layer="1"/>
+<smd name="A" x="0.75" y="0" dx="0.6" dy="0.7" layer="1"/>
+<text x="0" y="0.9492" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-0.9792" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<wire x1="-0.3942" y1="0.2866" x2="0.3742" y2="0.2866" width="0.1524" layer="21"/>
+<wire x1="0.3742" y1="0.2866" x2="0.3742" y2="-0.2866" width="0.1524" layer="21"/>
+<wire x1="0.3742" y1="-0.2866" x2="-0.3942" y2="-0.2866" width="0.1524" layer="21"/>
+<wire x1="-0.3942" y1="-0.2866" x2="-0.3942" y2="0.2866" width="0.1524" layer="21"/>
+<wire x1="-0.1656" y1="-0.2558" x2="-0.1656" y2="0.2558" width="0.1524" layer="21"/>
+</package>
 </packages>
+<packages3d>
+<package3d name="SOD3716X135N" urn="urn:adsk.eagle:package:22471064/2" type="model">
+<description>SOD, 3.75 mm span, 2.75 X 1.63 X 1.35 mm body
+&lt;p&gt;SOD package with 3.75 mm span with body size 2.75 X 1.63 X 1.35 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOD-123"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD2613X110N" urn="urn:adsk.eagle:package:22471076/2" type="model">
+<description>SOD, 2.60 mm span, 1.75 X 1.35 X 1.10 mm body
+&lt;p&gt;SOD package with 2.60 mm span with body size 1.75 X 1.35 X 1.10 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOD-323"/>
+</packageinstances>
+</package3d>
+<package3d name="SODFL1608X65N" urn="urn:adsk.eagle:package:22471077/2" type="model">
+<description>SODFL, 1.65 mm span, 1.20 X 0.80 X 0.65 mm body
+&lt;p&gt;SODFL package with 1.65 mm span with body size 1.20 X 0.80 X 0.65 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOD-523"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
 <symbol name="DIODE-SCHOTTKY">
 <wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.1524" layer="94"/>
@@ -1163,6 +1187,9 @@ Source: http://www.diotec.com/pdf/s40.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22471076/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1172,6 +1199,9 @@ Source: http://www.diotec.com/pdf/s40.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22471077/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1217,6 +1247,9 @@ Source: http://www.diotec.com/pdf/s40.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22471064/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1233,6 +1266,9 @@ Source: http://www.diotec.com/pdf/s40.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22471076/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1242,6 +1278,9 @@ Source: http://www.diotec.com/pdf/s40.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22471077/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1287,6 +1326,9 @@ Source: http://www.diotec.com/pdf/s40.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22471064/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1330,6 +1372,9 @@ Source: http://www.diotec.com/pdf/s40.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22471064/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1339,6 +1384,9 @@ Source: http://www.diotec.com/pdf/s40.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22471076/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1348,6 +1396,9 @@ Source: http://www.diotec.com/pdf/s40.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22471077/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1554,11 +1605,14 @@ Source: http://www.diotec.com/pdf/s40.pdf</description>
 <gate name="G$1" symbol="TVS" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOD-123">
+<device name="_SOD-123" package="SOD-123">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22471064/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1568,6 +1622,9 @@ Source: http://www.diotec.com/pdf/s40.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22471076/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1577,6 +1634,9 @@ Source: http://www.diotec.com/pdf/s40.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22471077/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1668,6 +1728,11 @@ Source: http://www.diotec.com/pdf/s40.pdf</description>
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
 will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
