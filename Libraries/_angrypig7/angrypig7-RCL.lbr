@@ -7051,20 +7051,20 @@ Source : http://www.bourns.com/pdfs/SRR1210.pdf&lt;br&gt;
 <text x="0" y="-5.838" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <smd name="P$1" x="-5" y="0" dx="2.7" dy="3.6" layer="1"/>
 <smd name="P$2" x="5" y="0" dx="2.7" dy="3.6" layer="1"/>
-<wire x1="5.2" y1="-3.4" x2="5.2" y2="-2" width="0.1524" layer="22"/>
-<wire x1="5.2" y1="2" x2="5.2" y2="5.15" width="0.1524" layer="22"/>
-<wire x1="5.2" y1="5.15" x2="-3.35" y2="5.15" width="0.1524" layer="22"/>
-<wire x1="3.45" y1="-5.15" x2="-5.2" y2="-5.15" width="0.1524" layer="22"/>
-<wire x1="-5.2" y1="-5.15" x2="-5.2" y2="-2" width="0.1524" layer="22"/>
-<wire x1="-5.2" y1="2" x2="-5.2" y2="3.3" width="0.1524" layer="22"/>
-<wire x1="-5.2" y1="2" x2="-3.4" y2="2" width="0.1524" layer="22"/>
-<wire x1="-3.4" y1="2" x2="-3.4" y2="-2" width="0.1524" layer="22"/>
-<wire x1="-3.4" y1="-2" x2="-5.2" y2="-2" width="0.1524" layer="22"/>
-<wire x1="3.4" y1="-2" x2="3.4" y2="2" width="0.1524" layer="22"/>
-<wire x1="3.4" y1="-2" x2="5.2" y2="-2" width="0.1524" layer="22"/>
-<wire x1="3.4" y1="2" x2="5.2" y2="2" width="0.1524" layer="22"/>
-<wire x1="-5.2" y1="3.3" x2="-3.35" y2="5.15" width="0.1524" layer="22"/>
-<wire x1="3.45" y1="-5.15" x2="5.2" y2="-3.4" width="0.1524" layer="22"/>
+<wire x1="5.2" y1="-3.4" x2="5.2" y2="-2" width="0.1524" layer="21"/>
+<wire x1="5.2" y1="2" x2="5.2" y2="5.15" width="0.1524" layer="21"/>
+<wire x1="5.2" y1="5.15" x2="-3.35" y2="5.15" width="0.1524" layer="21"/>
+<wire x1="3.45" y1="-5.15" x2="-5.2" y2="-5.15" width="0.1524" layer="21"/>
+<wire x1="-5.2" y1="-5.15" x2="-5.2" y2="-2" width="0.1524" layer="21"/>
+<wire x1="-5.2" y1="2" x2="-5.2" y2="3.3" width="0.1524" layer="21"/>
+<wire x1="-5.2" y1="2" x2="-3.4" y2="2" width="0.1524" layer="21"/>
+<wire x1="-3.4" y1="2" x2="-3.4" y2="-2" width="0.1524" layer="21"/>
+<wire x1="-3.4" y1="-2" x2="-5.2" y2="-2" width="0.1524" layer="21"/>
+<wire x1="3.4" y1="-2" x2="3.4" y2="2" width="0.1524" layer="21"/>
+<wire x1="3.4" y1="-2" x2="5.2" y2="-2" width="0.1524" layer="21"/>
+<wire x1="3.4" y1="2" x2="5.2" y2="2" width="0.1524" layer="21"/>
+<wire x1="-5.2" y1="3.3" x2="-3.35" y2="5.15" width="0.1524" layer="21"/>
+<wire x1="3.45" y1="-5.15" x2="5.2" y2="-3.4" width="0.1524" layer="21"/>
 </package>
 </packages>
 <packages3d>
