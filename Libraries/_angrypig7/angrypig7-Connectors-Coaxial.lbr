@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -369,61 +369,6 @@ Source:  http://catalog.digikey.com .. 142-0711-201, 205, 202, 206.pdf</descript
 <text x="0" y="4.318" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="-4.318" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
-<package name="SMA-EDGE-2" urn="urn:adsk.eagle:footprint:6190/1" locally_modified="yes">
-<wire x1="-3.6582" y1="-4.65" x2="-3.6582" y2="-2" width="0.2032" layer="51"/>
-<wire x1="-3.6582" y1="-2" x2="-5.8082" y2="-2" width="0.2032" layer="51"/>
-<wire x1="-5.8082" y1="-2" x2="-6.5582" y2="-2.75" width="0.2032" layer="51"/>
-<wire x1="-6.5582" y1="-2.75" x2="-10.3582" y2="-2.75" width="0.2032" layer="51"/>
-<wire x1="-10.3582" y1="-2.75" x2="-10.3582" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-10.3582" y1="-1.9" x2="-11.5332" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-11.5332" y1="-1.9" x2="-11.5332" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="-11.5332" y1="1.9" x2="-10.3582" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="-10.3582" y1="1.9" x2="-10.3582" y2="2.75" width="0.2032" layer="51"/>
-<wire x1="-10.3582" y1="2.75" x2="-6.5582" y2="2.75" width="0.2032" layer="51"/>
-<wire x1="-6.5582" y1="2.75" x2="-5.8082" y2="2" width="0.2032" layer="51"/>
-<wire x1="-5.8082" y1="2" x2="-3.6582" y2="2" width="0.2032" layer="51"/>
-<wire x1="-3.6582" y1="2" x2="-3.6582" y2="4.65" width="0.2032" layer="51"/>
-<wire x1="-3.6582" y1="4.65" x2="1.9918" y2="4.65" width="0.2032" layer="51"/>
-<wire x1="1.9918" y1="-4.65" x2="-3.6582" y2="-4.65" width="0.2032" layer="51"/>
-<wire x1="1.9918" y1="-4.65" x2="1.9918" y2="-3.85" width="0.2032" layer="51"/>
-<wire x1="1.9918" y1="-3.85" x2="-2.2082" y2="-3.85" width="0.2032" layer="51"/>
-<wire x1="-2.2082" y1="-3.85" x2="-2.2082" y2="3.85" width="0.2032" layer="21"/>
-<wire x1="-2.2082" y1="3.85" x2="1.9918" y2="3.85" width="0.2032" layer="51"/>
-<wire x1="1.9918" y1="3.85" x2="1.9918" y2="4.65" width="0.2032" layer="51"/>
-<wire x1="-3.6582" y1="4.65" x2="-2.2082" y2="4.65" width="0.2032" layer="21"/>
-<wire x1="-2.2082" y1="-4.65" x2="-3.6582" y2="-4.65" width="0.2032" layer="21"/>
-<smd name="1" x="0" y="0" dx="4.191" dy="1.778" layer="1"/>
-<smd name="G@1" x="0" y="3.4946" dx="4.191" dy="2.667" layer="1"/>
-<smd name="G@2" x="0" y="-3.4946" dx="4.191" dy="2.667" layer="1"/>
-<smd name="G@4" x="0" y="-3.4946" dx="4.191" dy="2.667" layer="16"/>
-<smd name="G@3" x="0" y="3.4946" dx="4.191" dy="2.667" layer="16"/>
-<text x="-0.8382" y="5.461" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="-0.8382" y="-5.461" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
-</package>
-<package name="SMA-EDGE-VERTICAL" urn="urn:adsk.eagle:footprint:6193/1" locally_modified="yes">
-<wire x1="-4.65" y1="4.65" x2="4.65" y2="4.65" width="0.2032" layer="21"/>
-<wire x1="4.65" y1="4.65" x2="4.65" y2="-4.65" width="0.2032" layer="51"/>
-<wire x1="4.65" y1="-4.65" x2="-4.65" y2="-4.65" width="0.2032" layer="51"/>
-<wire x1="-4.65" y1="-4.65" x2="-4.65" y2="4.65" width="0.2032" layer="51"/>
-<wire x1="-4.65" y1="1.7" x2="-4.65" y2="4.65" width="0.2032" layer="21"/>
-<wire x1="4.65" y1="4.65" x2="4.65" y2="1.7" width="0.2032" layer="21"/>
-<wire x1="2.745" y1="-4.65" x2="-2.745" y2="-4.65" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="3.2378" width="0.2032" layer="51"/>
-<circle x="0" y="0" radius="1.4199" width="0.2032" layer="21"/>
-<pad name="1" x="0" y="0" drill="0.762" diameter="1.524"/>
-<pad name="2@1" x="-4.2545" y="0" drill="1.524" diameter="2.54"/>
-<pad name="2@2" x="4.2545" y="0" drill="1.524" diameter="2.54"/>
-<pad name="2@3" x="-4.2545" y="-3.1496" drill="2.159" diameter="2.794"/>
-<pad name="2@4" x="4.2545" y="-3.1496" drill="2.159" diameter="2.794"/>
-<text x="0" y="5.461" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0" y="-5.461" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
-<rectangle x1="-4.775" y1="-0.5" x2="-3.75" y2="0.5" layer="51"/>
-<rectangle x1="-4.775" y1="-3.2432" x2="-3.75" y2="-2.2432" layer="51"/>
-<rectangle x1="-4.775" y1="-4.0814" x2="-3.75" y2="-3.0814" layer="51"/>
-<rectangle x1="3.75" y1="-0.5" x2="4.775" y2="0.5" layer="51" rot="R180"/>
-<rectangle x1="3.75" y1="-3.2432" x2="4.775" y2="-2.2432" layer="51" rot="R180"/>
-<rectangle x1="3.75" y1="-4.0814" x2="4.775" y2="-3.0814" layer="51" rot="R180"/>
-</package>
 <package name="U.FL-R-SMT-1">
 <description>&lt;b&gt;Hirose U.FL-R-SMT-1(80)&lt;/b&gt;</description>
 <smd name="1" x="0" y="1.475" dx="2.2" dy="1.05" layer="1"/>
@@ -449,6 +394,158 @@ Source:  http://catalog.digikey.com .. 142-0711-201, 205, 202, 206.pdf</descript
 <smd name="SIG1" x="0" y="1.16" dx="0.5" dy="0.58" layer="1"/>
 <smd name="SIG2" x="0" y="-1.16" dx="0.5" dy="0.58" layer="1"/>
 <smd name="GND" x="0" y="0" dx="2.8" dy="1.1" layer="1" stop="no" cream="no"/>
+</package>
+<package name="SMA-EDGE">
+<wire x1="-3.6582" y1="-3" x2="-3.6582" y2="-2" width="0.2032" layer="51"/>
+<wire x1="-3.6582" y1="-2" x2="-5.8082" y2="-2" width="0.2032" layer="51"/>
+<wire x1="-5.8082" y1="-2" x2="-6.5582" y2="-2.75" width="0.2032" layer="51"/>
+<wire x1="-6.5582" y1="-2.75" x2="-10.3582" y2="-2.75" width="0.2032" layer="51"/>
+<wire x1="-10.3582" y1="-2.75" x2="-10.3582" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-10.3582" y1="-1.9" x2="-11.5332" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-11.5332" y1="-1.9" x2="-11.5332" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-11.5332" y1="1.9" x2="-10.3582" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-10.3582" y1="1.9" x2="-10.3582" y2="2.75" width="0.2032" layer="51"/>
+<wire x1="-10.3582" y1="2.75" x2="-6.5582" y2="2.75" width="0.2032" layer="51"/>
+<wire x1="-6.5582" y1="2.75" x2="-5.8082" y2="2" width="0.2032" layer="51"/>
+<wire x1="-5.8082" y1="2" x2="-3.6582" y2="2" width="0.2032" layer="51"/>
+<wire x1="-3.6582" y1="2" x2="-3.6582" y2="3" width="0.2032" layer="51"/>
+<wire x1="-3.6582" y1="3" x2="1.9918" y2="3" width="0.2032" layer="51"/>
+<wire x1="1.9918" y1="-3" x2="-3.6582" y2="-3" width="0.2032" layer="51"/>
+<wire x1="1.9918" y1="-3" x2="1.9918" y2="-2.1" width="0.2032" layer="51"/>
+<wire x1="1.9918" y1="-2.1" x2="-2.2082" y2="-2.1" width="0.2032" layer="51"/>
+<wire x1="-2.2082" y1="-2.1" x2="-2.2082" y2="2.1" width="0.2032" layer="51"/>
+<wire x1="-2.2082" y1="2.1" x2="1.9918" y2="2.1" width="0.2032" layer="51"/>
+<wire x1="1.9918" y1="2.1" x2="1.9918" y2="3" width="0.2032" layer="51"/>
+<smd name="1" x="0" y="0" dx="4.2" dy="1.5" layer="1"/>
+<smd name="G@1" x="0" y="2.45" dx="4.2" dy="1.8" layer="1"/>
+<smd name="G@2" x="0" y="-2.45" dx="4.2" dy="1.8" layer="1"/>
+<smd name="G@4" x="0" y="-2.45" dx="4.2" dy="1.8" layer="16"/>
+<smd name="G@3" x="0" y="2.45" dx="4.2" dy="1.8" layer="16"/>
+<text x="-0.8382" y="4.191" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="-0.8382" y="-4.191" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+</package>
+<package name="SMA-EDGE-VERTICAL">
+<wire x1="-4.65" y1="4.65" x2="4.65" y2="4.65" width="0.2032" layer="21"/>
+<wire x1="4.65" y1="4.65" x2="4.65" y2="-4.65" width="0.2032" layer="51"/>
+<wire x1="4.65" y1="-4.65" x2="-4.65" y2="-4.65" width="0.2032" layer="51"/>
+<wire x1="-4.65" y1="-4.65" x2="-4.65" y2="4.65" width="0.2032" layer="51"/>
+<wire x1="-4.65" y1="1.7" x2="-4.65" y2="4.65" width="0.2032" layer="21"/>
+<wire x1="4.65" y1="4.65" x2="4.65" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="2.745" y1="-4.65" x2="-2.745" y2="-4.65" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="3.2378" width="0.2032" layer="51"/>
+<circle x="0" y="0" radius="1.4199" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="0.762" diameter="1.524"/>
+<pad name="2@1" x="-4.2545" y="0" drill="1.524" diameter="2.54"/>
+<pad name="2@2" x="4.2545" y="0" drill="1.524" diameter="2.54"/>
+<pad name="2@3" x="-4.2545" y="-3.1496" drill="2.159" diameter="2.794"/>
+<pad name="2@4" x="4.2545" y="-3.1496" drill="2.159" diameter="2.794"/>
+<text x="0" y="5.461" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-5.461" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="-4.775" y1="-0.5" x2="-3.75" y2="0.5" layer="51"/>
+<rectangle x1="-4.775" y1="-3.2432" x2="-3.75" y2="-2.2432" layer="51"/>
+<rectangle x1="-4.775" y1="-4.0814" x2="-3.75" y2="-3.0814" layer="51"/>
+<rectangle x1="3.75" y1="-0.5" x2="4.775" y2="0.5" layer="51" rot="R180"/>
+<rectangle x1="3.75" y1="-3.2432" x2="4.775" y2="-2.2432" layer="51" rot="R180"/>
+<rectangle x1="3.75" y1="-4.0814" x2="4.775" y2="-3.0814" layer="51" rot="R180"/>
+</package>
+<package name="SMA-G1">
+<description>FEMALE &lt;b&gt;SMA CONNECTOR&lt;/b&gt;&lt;p&gt;
+Radiall&lt;p&gt;
+distributor RS 193-9117</description>
+<wire x1="-1.1" y1="3.4" x2="1.1" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="3.4" y1="1.1" x2="3.4" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="1.1" y1="-3.4" x2="-1.1" y2="-3.4" width="0.2032" layer="21"/>
+<wire x1="-3.4" y1="-1.1" x2="-3.4" y2="1.1" width="0.2032" layer="21"/>
+<wire x1="-3.4" y1="3.4" x2="3.4" y2="3.4" width="0.2032" layer="51"/>
+<wire x1="3.4" y1="3.4" x2="3.4" y2="-3.4" width="0.2032" layer="51"/>
+<wire x1="3.4" y1="-3.4" x2="-3.4" y2="-3.4" width="0.2032" layer="51"/>
+<wire x1="-3.4" y1="-3.4" x2="-3.4" y2="3.4" width="0.2032" layer="51"/>
+<wire x1="5.4" y1="3.3" x2="6.3" y2="3.3" width="0.2032" layer="51"/>
+<wire x1="6.3" y1="3.3" x2="6.3" y2="2.9" width="0.2032" layer="51"/>
+<wire x1="6.3" y1="2.9" x2="7.1" y2="2.9" width="0.2032" layer="51"/>
+<wire x1="7.1" y1="2.9" x2="7.1" y2="3.3" width="0.2032" layer="51"/>
+<wire x1="7.1" y1="3.3" x2="8" y2="3.3" width="0.2032" layer="51"/>
+<wire x1="15" y1="3.4" x2="15.3" y2="2.9" width="0.2032" layer="51"/>
+<wire x1="15.3" y1="2.9" x2="15.9" y2="2.9" width="0.2032" layer="51"/>
+<wire x1="15.9" y1="-2.9" x2="15.9" y2="2.9" width="0.2032" layer="51"/>
+<wire x1="8.9" y1="3.4" x2="15" y2="3.4" width="0.2032" layer="51"/>
+<wire x1="5.4" y1="-3.3" x2="6.3" y2="-3.3" width="0.2032" layer="51"/>
+<wire x1="6.3" y1="-3.3" x2="6.3" y2="-2.9" width="0.2032" layer="51"/>
+<wire x1="6.3" y1="-2.9" x2="7.1" y2="-2.9" width="0.2032" layer="51"/>
+<wire x1="7.1" y1="-2.9" x2="7.1" y2="-3.3" width="0.2032" layer="51"/>
+<wire x1="7.1" y1="-3.3" x2="8" y2="-3.3" width="0.2032" layer="51"/>
+<wire x1="15" y1="-3.4" x2="15.3" y2="-2.9" width="0.2032" layer="51"/>
+<wire x1="15.3" y1="-2.9" x2="15.9" y2="-2.9" width="0.2032" layer="51"/>
+<wire x1="8.9" y1="-3.4" x2="15" y2="-3.4" width="0.2032" layer="51"/>
+<wire x1="15.3" y1="-2.9" x2="15.3" y2="2.9" width="0.2032" layer="51"/>
+<wire x1="5.4" y1="-3.9" x2="5.4" y2="-3.3" width="0.2032" layer="51"/>
+<wire x1="5.4" y1="-3.3" x2="5.4" y2="3.3" width="0.2032" layer="51"/>
+<wire x1="5.4" y1="3.3" x2="5.4" y2="3.9" width="0.2032" layer="51"/>
+<wire x1="8" y1="4.4" x2="8.9" y2="4.4" width="0.2032" layer="51"/>
+<wire x1="8.9" y1="-4.4" x2="8" y2="-4.4" width="0.2032" layer="51"/>
+<wire x1="8" y1="-2.2" x2="8" y2="2.2" width="0.2032" layer="51"/>
+<wire x1="8" y1="-2.2" x2="8.9" y2="-2.2" width="0.2032" layer="51"/>
+<wire x1="8" y1="-2.2" x2="8" y2="-3.3" width="0.2032" layer="51"/>
+<wire x1="8" y1="-3.3" x2="8" y2="-4.4" width="0.2032" layer="51"/>
+<wire x1="8" y1="2.2" x2="8.9" y2="2.2" width="0.2032" layer="51"/>
+<wire x1="8" y1="2.2" x2="8" y2="3.3" width="0.2032" layer="51"/>
+<wire x1="8" y1="3.3" x2="8" y2="4.4" width="0.2032" layer="51"/>
+<wire x1="8.9" y1="2.2" x2="8.9" y2="3.4" width="0.2032" layer="51"/>
+<wire x1="8.9" y1="3.4" x2="8.9" y2="4.4" width="0.2032" layer="51"/>
+<wire x1="8.9" y1="2.2" x2="8.9" y2="-2.2" width="0.2032" layer="51"/>
+<wire x1="8.9" y1="-4.4" x2="8.9" y2="-3.4" width="0.2032" layer="51"/>
+<wire x1="8.9" y1="-3.4" x2="8.9" y2="-2.2" width="0.2032" layer="51"/>
+<wire x1="3.4" y1="3.9" x2="5.4" y2="3.9" width="0.2032" layer="51"/>
+<wire x1="3.4" y1="-3.9" x2="5.4" y2="-3.9" width="0.2032" layer="51"/>
+<wire x1="3.4" y1="3.9" x2="3.4" y2="3.4" width="0.2032" layer="51"/>
+<wire x1="3.4" y1="-3.4" x2="3.4" y2="-3.9" width="0.2032" layer="51"/>
+<wire x1="6.3" y1="2.9" x2="6.3" y2="-2.9" width="0.2032" layer="51"/>
+<wire x1="7.1" y1="2.9" x2="7.1" y2="-2.9" width="0.2032" layer="51"/>
+<pad name="1" x="0" y="0" drill="1.27"/>
+<pad name="2" x="-2.5499" y="2.5499" drill="1.778"/>
+<pad name="3" x="2.5499" y="2.5499" drill="1.778"/>
+<pad name="4" x="2.5499" y="-2.5499" drill="1.778"/>
+<pad name="5" x="-2.5499" y="-2.5499" drill="1.778"/>
+<text x="0" y="4.572" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-4.572" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+</package>
+<package name="SMA-H1">
+<description>FEMALE &lt;b&gt;SMA CONNECTOR&lt;/b&gt;&lt;p&gt;
+Radiall&lt;p&gt;</description>
+<wire x1="-1.1" y1="3.2" x2="1.1" y2="3.2" width="0.2032" layer="21"/>
+<wire x1="3.2" y1="1.1" x2="3.2" y2="-1.1" width="0.2032" layer="51"/>
+<wire x1="1.1" y1="-3.2" x2="-1.1" y2="-3.2" width="0.2032" layer="21"/>
+<wire x1="-3.2" y1="-1.1" x2="-3.2" y2="1.1" width="0.2032" layer="21"/>
+<wire x1="-3.1999" y1="3.1999" x2="3.2" y2="3.2" width="0.2032" layer="51"/>
+<wire x1="3.2" y1="3.2" x2="3.2" y2="2.9" width="0.2032" layer="51"/>
+<wire x1="3.2" y1="2.9" x2="3.2" y2="-2.9" width="0.2032" layer="51"/>
+<wire x1="3.2" y1="-2.9" x2="3.1999" y2="-3.1999" width="0.2032" layer="51"/>
+<wire x1="3.1999" y1="-3.1999" x2="-3.2" y2="-3.2" width="0.2032" layer="51"/>
+<wire x1="-3.2" y1="-3.2" x2="-3.1999" y2="3.1999" width="0.2032" layer="51"/>
+<wire x1="3.2" y1="2.9" x2="4.3" y2="2.9" width="0.2032" layer="51"/>
+<wire x1="4.3" y1="2.9" x2="8.3" y2="2.9" width="0.2032" layer="51"/>
+<wire x1="8.3" y1="2.9" x2="8.6" y2="3.4" width="0.2032" layer="51"/>
+<wire x1="10.7" y1="3.4" x2="11" y2="2.9" width="0.2032" layer="51"/>
+<wire x1="11" y1="2.9" x2="11.6" y2="2.9" width="0.2032" layer="51"/>
+<wire x1="11.6" y1="-2.9" x2="11.6" y2="2.9" width="0.2032" layer="51"/>
+<wire x1="8.6" y1="3.4" x2="10.7" y2="3.4" width="0.2032" layer="51"/>
+<wire x1="3.2" y1="-2.9" x2="4.3" y2="-2.9" width="0.2032" layer="51"/>
+<wire x1="4.3" y1="-2.9" x2="8.3" y2="-2.9" width="0.2032" layer="51"/>
+<wire x1="8.3" y1="-2.9" x2="8.6" y2="-3.4" width="0.2032" layer="51"/>
+<wire x1="10.7" y1="-3.4" x2="11" y2="-2.9" width="0.2032" layer="51"/>
+<wire x1="11" y1="-2.9" x2="11.6" y2="-2.9" width="0.2032" layer="51"/>
+<wire x1="8.6" y1="-3.4" x2="10.7" y2="-3.4" width="0.2032" layer="51"/>
+<wire x1="11" y1="-2.9" x2="11" y2="2.9" width="0.2032" layer="51"/>
+<wire x1="8.3" y1="-2.9" x2="8.3" y2="2.9" width="0.2032" layer="51"/>
+<circle x="0" y="0" radius="3.1999" width="0.2032" layer="51"/>
+<circle x="0" y="0" radius="1.7" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.27"/>
+<pad name="2" x="-2.5499" y="2.5499" drill="1.778"/>
+<pad name="3" x="2.5499" y="2.5499" drill="1.778"/>
+<pad name="4" x="2.5499" y="-2.5499" drill="1.778"/>
+<pad name="5" x="-2.5499" y="-2.5499" drill="1.778"/>
+<text x="0" y="4.572" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-4.572" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
@@ -481,22 +578,6 @@ www.johnsoncomponents.com
 Source:  http://catalog.digikey.com .. 142-0711-201, 205, 202, 206.pdf</description>
 <packageinstances>
 <packageinstance name="SMA-SMD"/>
-</packageinstances>
-</package3d>
-<package3d name="J502-ND-142-0711-821/826" urn="urn:adsk.eagle:package:6224/1" type="box">
-<description>SMA 50 Ohm Board Thickness 0.062 Inch, End Launch Jack Receptacle
-Johnson Components
-Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
-<packageinstances>
-<packageinstance name="SMA-EDGE-2"/>
-</packageinstances>
-</package3d>
-<package3d name="SMA-142-0701-871" urn="urn:adsk.eagle:package:6229/1" type="box">
-<description>SMA Connector HF-Steckverbinder PC END BLKHD JCK GLD .062" BOARDS
-Hersteller: Emerson / Johnson
-Source:  Data sheet</description>
-<packageinstances>
-<packageinstance name="SMA-EDGE-VERTICAL"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -607,13 +688,7 @@ Source:  Data sheet</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:6205/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-<attribute name="POPULARITY" value="4" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="_2" package="SMA-H">
@@ -652,26 +727,20 @@ Source:  Data sheet</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="_EDGE" package="SMA-EDGE-2">
-<connects>
-<connect gate="G$1" pin="GND" pad="G@1 G@2 G@3 G@4"/>
-<connect gate="G$1" pin="SIGNAL" pad="1"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6224/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="_EDGE-VERT" package="SMA-EDGE-VERTICAL">
 <connects>
 <connect gate="G$1" pin="GND" pad="2@1 2@2 2@3 2@4"/>
 <connect gate="G$1" pin="SIGNAL" pad="1"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6229/1"/>
-</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_EDGE" package="SMA-EDGE">
+<connects>
+<connect gate="G$1" pin="GND" pad="G@1 G@2 G@3 G@4"/>
+<connect gate="G$1" pin="SIGNAL" pad="1"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

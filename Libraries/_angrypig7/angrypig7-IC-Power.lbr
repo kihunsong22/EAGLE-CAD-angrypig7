@@ -388,7 +388,58 @@
 <smd name="8" x="-1.905" y="2.4693" dx="1.9671" dy="0.5991" layer="1" rot="R90"/>
 <text x="-3.2126" y="0" size="1.143" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 <text x="3.262" y="0" size="1.143" layer="27" font="vector" ratio="15" rot="R90" align="center">&gt;VALUE</text>
-<wire x1="-2.3114" y1="-1.524" x2="-2.3114" y2="-3.429" width="0.1524" layer="21"/>
+<wire x1="-2.4384" y1="-1.524" x2="-2.4384" y2="-3.429" width="0.1524" layer="21"/>
+</package>
+<package name="SOT-23-3L">
+<description>SOT23-3</description>
+<wire x1="-0.7" y1="1.52" x2="0.7" y2="1.52" width="0.1524" layer="51"/>
+<wire x1="0.7" y1="1.52" x2="0.7" y2="-1.52" width="0.1524" layer="51"/>
+<wire x1="0.7" y1="-1.52" x2="-0.7" y2="-1.52" width="0.1524" layer="51"/>
+<wire x1="-0.7" y1="-1.52" x2="-0.7" y2="1.52" width="0.1524" layer="51"/>
+<wire x1="-0.7" y1="-0.8" x2="-0.7" y2="-1.52" width="0.2032" layer="21"/>
+<wire x1="-0.7" y1="-1.52" x2="0.1" y2="-1.52" width="0.2032" layer="21"/>
+<wire x1="-0.7" y1="0.8" x2="-0.7" y2="1.52" width="0.2032" layer="21"/>
+<wire x1="-0.7" y1="1.52" x2="0.1" y2="1.52" width="0.2032" layer="21"/>
+<smd name="1" x="0.97" y="-0.96" dx="0.8" dy="0.9" layer="1" rot="R90"/>
+<smd name="2" x="0.97" y="0.96" dx="0.8" dy="0.9" layer="1" rot="R90"/>
+<smd name="3" x="-0.97" y="0" dx="0.8" dy="0.9" layer="1" rot="R90"/>
+<text x="0" y="-2.459" size="1.143" layer="25" font="vector" ratio="15" rot="R180" align="center">&gt;NAME</text>
+<text x="0" y="2.459" size="1.143" layer="27" font="vector" ratio="15" rot="R180" align="center">&gt;VALUE</text>
+</package>
+<package name="SOT-89-3" urn="urn:adsk.eagle:footprint:22798076/1">
+<wire x1="1.245" y1="2.235" x2="1.245" y2="-2.235" width="0.127" layer="51"/>
+<wire x1="-1.219" y1="2.235" x2="1.245" y2="2.235" width="0.127" layer="51"/>
+<wire x1="1.245" y1="-2.235" x2="-1.219" y2="-2.235" width="0.127" layer="51"/>
+<wire x1="-1.219" y1="-2.235" x2="-1.219" y2="2.235" width="0.127" layer="51"/>
+<wire x1="-1.5748" y1="-0.7874" x2="-2.0066" y2="-0.3556" width="0.1998" layer="51"/>
+<wire x1="-2.0066" y1="-0.3556" x2="-2.0066" y2="0.3556" width="0.1998" layer="51"/>
+<wire x1="-2.0066" y1="0.3556" x2="-1.5748" y2="0.7874" width="0.1998" layer="51"/>
+<wire x1="-1.5748" y1="0.7874" x2="-1.2954" y2="0.7874" width="0.1998" layer="51"/>
+<wire x1="-1.2954" y1="0.7874" x2="-1.2954" y2="-0.7874" width="0.1998" layer="51"/>
+<wire x1="-1.2954" y1="-0.7874" x2="-1.5748" y2="-0.7874" width="0.1998" layer="51"/>
+<smd name="1" x="1.981" y="-1.499" dx="1" dy="1.5" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="3" x="1.981" y="1.499" dx="1" dy="1.5" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="2" x="1.727" y="0" dx="1" dy="2" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="2@1" x="-1.321" y="0" dx="2.2" dy="3.048" layer="1" roundness="100" rot="R90" cream="no"/>
+<text x="0" y="3.175" size="1.27" layer="25" font="vector" ratio="15" rot="R180" align="center">&gt;NAME</text>
+<text x="0" y="-3.0211" size="1.27" layer="27" font="vector" ratio="15" rot="R180" align="center">&gt;VALUE</text>
+<rectangle x1="1.4605" y1="-1.9177" x2="1.9177" y2="-1.0795" layer="51" rot="R90"/>
+<rectangle x1="1.4605" y1="1.0795" x2="1.9177" y2="1.9177" layer="51" rot="R90"/>
+<rectangle x1="1.4097" y1="-0.4191" x2="1.9685" y2="0.4191" layer="51" rot="R90"/>
+<rectangle x1="1.58" y1="-0.7" x2="2.38" y2="0.7" layer="31" rot="R90"/>
+<rectangle x1="1.4625" y1="-2.2875" x2="2.5125" y2="-0.7125" layer="29" rot="R90"/>
+<rectangle x1="1.4625" y1="0.7125" x2="2.5125" y2="2.2875" layer="29" rot="R90"/>
+<rectangle x1="1.4625" y1="-0.7875" x2="2.5125" y2="0.7875" layer="29" rot="R90"/>
+<rectangle x1="1.58" y1="0.8" x2="2.38" y2="2.2" layer="31" rot="R90"/>
+<rectangle x1="1.58" y1="-2.2" x2="2.38" y2="-0.8" layer="31" rot="R90"/>
+<polygon width="0.1998" layer="51">
+<vertex x="-1.2954" y="-0.7874"/>
+<vertex x="-1.5748" y="-0.7874"/>
+<vertex x="-2.0066" y="-0.3556"/>
+<vertex x="-2.0066" y="0.3556"/>
+<vertex x="-1.5748" y="0.7874"/>
+<vertex x="-1.2954" y="0.7874"/>
+</polygon>
 </package>
 </packages>
 <packages3d>
@@ -417,6 +468,11 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 &lt;p&gt;8-pin SOIC package with 1.27 mm pitch, 6.00 mm span with body size 4.91 X 3.90 X 1.75 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SOIC-8_150MIL"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT-89-3" urn="urn:adsk.eagle:package:22798075/2" type="model">
+<packageinstances>
+<packageinstance name="SOT-89-3"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -673,14 +729,14 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="_SOT89" package="SOT-89">
+<device name="_SOT89" package="SOT-89-3">
 <connects>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="OUT" pad="2 2@1"/>
 <connect gate="G$1" pin="VIN" pad="3"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:8089860/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22798075/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -818,6 +874,44 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <connect gate="G$1" pin="SW" pad="6"/>
 <connect gate="G$1" pin="VIN" pad="5"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XC6206" prefix="U">
+<description>&lt;b&gt;LDO&lt;/b&gt;&lt;p&gt;</description>
+<gates>
+<gate name="G$1" symbol="REGULATOR-BASIC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-3L">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HT7553-1" prefix="U">
+<gates>
+<gate name="G$1" symbol="REGULATOR-BASIC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_SOT89" package="SOT-89-3">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="VIN" pad="2 2@1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22798075/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
