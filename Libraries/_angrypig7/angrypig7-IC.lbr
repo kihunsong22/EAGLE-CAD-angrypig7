@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -816,7 +816,7 @@ nRF52832 SoC module</description>
 <text x="0" y="-4.064" size="1.143" layer="27" font="vector" ratio="15" rot="SR0" align="center">&gt;Value</text>
 <wire x1="-2.54" y1="2.286" x2="-3.429" y2="2.286" width="0.2032" layer="21"/>
 </package>
-<package name="QFN24" urn="urn:adsk.eagle:footprint:16041/1" locally_modified="yes">
+<package name="QFN24" urn="urn:adsk.eagle:footprint:22835122/1">
 <description>&lt;b&gt;UF Package 24-Lead (4mm × 4mm) Plastic QFN&lt;/b&gt;&lt;p&gt;
 Source: http://cds.linear.com/docs/Datasheet/5598f.pdf</description>
 <wire x1="-2" y1="-2" x2="2" y2="-2" width="0.1" layer="51"/>
@@ -1103,18 +1103,18 @@ Source: http://cds.linear.com/docs/Datasheet/5598f.pdf</description>
 <packageinstance name="SOIC-14_150MIL"/>
 </packageinstances>
 </package3d>
-<package3d name="QFN24-EASYSOLDERING" urn="urn:adsk.eagle:package:22600104/2" type="model">
-<description>&lt;b&gt;UF Package 24-Lead (4mm × 4mm) Plastic QFN&lt;/b&gt;&lt;p&gt;
-Source: http://cds.linear.com/docs/Datasheet/5598f.pdf</description>
-<packageinstances>
-<packageinstance name="QFN24-EASYSOLDERING"/>
-</packageinstances>
-</package3d>
 <package3d name="SOT-363(SC-70-6)" urn="urn:adsk.eagle:package:22600162/2" type="model">
 <description>&lt;h3&gt;SC-88/SC70-6/SOT-363 6-pin Package&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://www.onsemi.com/pub_link/Collateral/MBT3904DW1T1-D.PDF"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SOT-363(SC-70-6)"/>
+</packageinstances>
+</package3d>
+<package3d name="QFN24" urn="urn:adsk.eagle:package:22835121/2" type="model">
+<description>&lt;b&gt;UF Package 24-Lead (4mm × 4mm) Plastic QFN&lt;/b&gt;&lt;p&gt;
+Source: http://cds.linear.com/docs/Datasheet/5598f.pdf</description>
+<packageinstances>
+<packageinstance name="QFN24"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2120,36 +2120,8 @@ Source: &lt;a href="https://datasheet.lcsc.com/szlcsc/Texas-Instruments-TI-TXS01
 <connect gate="G$1" pin="XTA" pad="3"/>
 <connect gate="G$1" pin="XTB" pad="4"/>
 </connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_EASYSOLDERING" package="QFN24-EASYSOLDERING">
-<connects>
-<connect gate="G$1" pin="BUSY" pad="14"/>
-<connect gate="G$1" pin="DCC_SW" pad="9"/>
-<connect gate="G$1" pin="DIO1" pad="13"/>
-<connect gate="G$1" pin="DIO2" pad="12"/>
-<connect gate="G$1" pin="DIO3" pad="6"/>
-<connect gate="G$1" pin="GND" pad="2 5 8 20 EXP"/>
-<connect gate="G$1" pin="MISO" pad="16"/>
-<connect gate="G$1" pin="MOSI" pad="17"/>
-<connect gate="G$1" pin="NRESET" pad="15"/>
-<connect gate="G$1" pin="NSS" pad="19"/>
-<connect gate="G$1" pin="RFI_N" pad="22"/>
-<connect gate="G$1" pin="RFI_P" pad="21"/>
-<connect gate="G$1" pin="RFO" pad="23"/>
-<connect gate="G$1" pin="SCK" pad="18"/>
-<connect gate="G$1" pin="VBAT" pad="10"/>
-<connect gate="G$1" pin="VBAT_IO" pad="11"/>
-<connect gate="G$1" pin="VDD_IN" pad="1"/>
-<connect gate="G$1" pin="VREG" pad="7"/>
-<connect gate="G$1" pin="VR_PA" pad="24"/>
-<connect gate="G$1" pin="XTA" pad="3"/>
-<connect gate="G$1" pin="XTB" pad="4"/>
-</connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22600104/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22835121/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>

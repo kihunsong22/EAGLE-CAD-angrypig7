@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -395,7 +395,7 @@ Source:  http://catalog.digikey.com .. 142-0711-201, 205, 202, 206.pdf</descript
 <smd name="SIG2" x="0" y="-1.16" dx="0.5" dy="0.58" layer="1"/>
 <smd name="GND" x="0" y="0" dx="2.8" dy="1.1" layer="1" stop="no" cream="no"/>
 </package>
-<package name="SMA-EDGE">
+<package name="SMA-EDGE" urn="urn:adsk.eagle:footprint:22835301/2">
 <wire x1="-3.6582" y1="-3" x2="-3.6582" y2="-2" width="0.2032" layer="51"/>
 <wire x1="-3.6582" y1="-2" x2="-5.8082" y2="-2" width="0.2032" layer="51"/>
 <wire x1="-5.8082" y1="-2" x2="-6.5582" y2="-2.75" width="0.2032" layer="51"/>
@@ -580,6 +580,11 @@ Source:  http://catalog.digikey.com .. 142-0711-201, 205, 202, 206.pdf</descript
 <packageinstance name="SMA-SMD"/>
 </packageinstances>
 </package3d>
+<package3d name="SMA-EDGE" urn="urn:adsk.eagle:package:22835300/4" type="model">
+<packageinstances>
+<packageinstance name="SMA-EDGE"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="BNC">
@@ -741,6 +746,9 @@ Source:  http://catalog.digikey.com .. 142-0711-201, 205, 202, 206.pdf</descript
 <connect gate="G$1" pin="GND" pad="G@1 G@2 G@3 G@4"/>
 <connect gate="G$1" pin="SIGNAL" pad="1"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22835300/4"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
