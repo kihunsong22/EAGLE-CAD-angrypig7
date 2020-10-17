@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -395,7 +395,7 @@ SHT-30-DIS-B Accuracy: +/-3%RH, +/-0.3°C
 <gate name="G$1" symbol="ACS724" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SOIC-8_150MIL" package="SOIC127P600X175-8N">
+<device name="_SOIC-8_150MIL" package="SOIC127P600X175-8N">
 <connects>
 <connect gate="G$1" pin="FILTER" pad="6"/>
 <connect gate="G$1" pin="GND" pad="8"/>
