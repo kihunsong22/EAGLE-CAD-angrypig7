@@ -62,7 +62,11 @@ ASSIGN A+W    MOVE;
 ASSIGN A+E    NET;
 ASSIGN A+R    DELETE;
 
+
+#ASSIGN A+A    VIA;
 ASSIGN A+S    SHOW;
+ASSIGN A+D    name;
+#ASSIGN A+F    ROUTEMULTI;
 
 
 #----------------------------------#
