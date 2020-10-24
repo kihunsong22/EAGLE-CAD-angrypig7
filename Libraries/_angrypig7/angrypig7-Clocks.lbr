@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -1008,11 +1008,37 @@
 <text x="0" y="-1.688" size="1.143" layer="27" font="vector" ratio="15" align="top-center">&gt;Value</text>
 <circle x="-1.5" y="-1.394" radius="0.1" width="0.2032" layer="21"/>
 </package>
+<package name="OSCILLATOR-SMD-3.0X2.5MM" urn="urn:adsk.eagle:footprint:24325734/1" locally_modified="yes">
+<description>Oscillator Corner Concave, 3.20 X 2.50 X 0.70 mm body
+&lt;p&gt;Oscillator Corner Concave package with body size 3.20 X 2.50 X 0.70 mm&lt;/p&gt;</description>
+<circle x="-2.4099" y="-1.941" radius="0.25" width="0" layer="21"/>
+<wire x1="-1.9659" y1="0.0401" x2="-1.9659" y2="-0.0401" width="0.12" layer="21"/>
+<wire x1="1.9659" y1="0.0401" x2="1.9659" y2="-0.0401" width="0.12" layer="21"/>
+<wire x1="-0.2901" y1="1.6159" x2="0.2901" y2="1.6159" width="0.12" layer="21"/>
+<wire x1="-0.2901" y1="-1.6159" x2="0.2901" y2="-1.6159" width="0.12" layer="21"/>
+<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.12" layer="51"/>
+<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.12" layer="51"/>
+<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.12" layer="51"/>
+<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.12" layer="51"/>
+<smd name="1" x="-1.225" y="-0.925" dx="1.4" dy="1.2" layer="1"/>
+<smd name="2" x="1.225" y="-0.925" dx="1.4" dy="1.2" layer="1"/>
+<smd name="3" x="1.225" y="0.925" dx="1.4" dy="1.2" layer="1"/>
+<smd name="4" x="-1.225" y="0.925" dx="1.4" dy="1.2" layer="1"/>
+<text x="0" y="1.885" size="1.143" layer="25" font="vector" ratio="15" align="bottom-center">&gt;Name</text>
+<text x="0" y="-1.942" size="1.143" layer="27" font="vector" ratio="15" align="top-center">&gt;Value</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="OSCILLATOR-SMD-2.0X1.6MM" urn="urn:adsk.eagle:package:22600177/2" type="model">
 <packageinstances>
 <packageinstance name="OSCILLATOR-SMD-2.0X1.6MM"/>
+</packageinstances>
+</package3d>
+<package3d name="OSCILLATOR-SMD-3.0X2.5MM" urn="urn:adsk.eagle:package:24325617/2" type="model">
+<description>Oscillator Corner Concave, 3.20 X 2.50 X 0.70 mm body
+&lt;p&gt;Oscillator Corner Concave package with body size 3.20 X 2.50 X 0.70 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="OSCILLATOR-SMD-3.0X2.5MM"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1044,7 +1070,7 @@
 <wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
 <wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
 <wire x1="-1.016" y1="1.778" x2="-1.016" y2="0" width="0.254" layer="94"/>
-<text x="1.524" y="-1.524" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<text x="-1.27" y="2.159" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 <text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
 <text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
 <pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
@@ -1052,7 +1078,7 @@
 <wire x1="-1.016" y1="0" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
 <pin name="GND" x="0" y="-5.08" visible="off" length="short" direction="pwr" rot="R90"/>
 <wire x1="0" y1="-2.8" x2="0" y2="-1.6" width="0.1524" layer="94"/>
-<text x="-1.27" y="-1.524" size="1.778" layer="95" font="vector" align="top-right">&gt;NAME</text>
+<text x="-1.27" y="4.191" size="1.778" layer="95" font="vector">&gt;NAME</text>
 </symbol>
 <symbol name="RESONATOR">
 <description>&lt;h3&gt;Resonator&lt;/h3&gt;</description>
@@ -1237,6 +1263,26 @@
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRYSTAL-25MHZ" prefix="Y">
+<gates>
+<gate name="G$1" symbol="CRYSTAL-GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_3025" package="OSCILLATOR-SMD-3.0X2.5MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2 4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24325617/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>

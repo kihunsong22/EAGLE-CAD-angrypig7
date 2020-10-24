@@ -16,8 +16,6 @@ grid 50 mil;
 # ASSIGN SA+F1 'grid FINE_IN';
 # ASSIGN CA+G 'Display';
 
-# ASSIGN C+1 
-
 ASSIGN C+1    grid 5 mil
 ASSIGN C+2    grid 50 mil
 ASSIGN C+3    grid 0.1 mm
@@ -63,10 +61,10 @@ ASSIGN A+E    NET;
 ASSIGN A+R    DELETE;
 
 
-#ASSIGN A+A    VIA;
+#ASSIGN A+A   VIA;
 ASSIGN A+S    SHOW;
-ASSIGN A+D    name;
-#ASSIGN A+F    ROUTEMULTI;
+ASSIGN A+D    NAME;
+ASSIGN A+F    VALUE;
 
 
 #----------------------------------#

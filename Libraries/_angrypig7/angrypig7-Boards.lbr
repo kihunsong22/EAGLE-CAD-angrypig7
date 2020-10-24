@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -1294,7 +1294,7 @@ Source: http://www.national.com .. USBN9603.pdf</description>
 <text x="-1.27" y="-19.05" size="1.778" layer="25" rot="R90">&gt;NAME</text>
 <text x="2.54" y="-19.05" size="1.778" layer="27" rot="R90">&gt;VALUE</text>
 </package>
-<package name="SX1262-LORA-MODULE">
+<package name="SX1262-LORA-MODULE" urn="urn:adsk.eagle:footprint:24334640/1">
 <wire x1="-19" y1="-12" x2="19" y2="-12" width="0.2032" layer="21"/>
 <wire x1="21" y1="-10" x2="21" y2="-3.5" width="0.2032" layer="21"/>
 <wire x1="21" y1="-3.5" x2="21" y2="-1.5" width="0.2032" layer="21"/>
@@ -1308,15 +1308,6 @@ Source: http://www.national.com .. USBN9603.pdf</description>
 <wire x1="19" y1="12" x2="21" y2="10" width="0.2032" layer="21"/>
 <wire x1="21" y1="-10" x2="19" y2="-12" width="0.2032" layer="21"/>
 <wire x1="-21" y1="-10" x2="-19" y2="-12" width="0.2032" layer="21"/>
-<pad name="1" x="-10.16" y="-10.16" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="2" x="-7.62" y="-10.16" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="3" x="-5.08" y="-10.16" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="4" x="-2.54" y="-10.16" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="5" x="0" y="-10.16" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="6" x="2.54" y="-10.16" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="7" x="5.08" y="-10.16" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="8" x="7.62" y="-10.16" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="9" x="10.16" y="-10.16" drill="1.016" shape="octagon" rot="R90"/>
 <wire x1="-10.795" y1="-8.89" x2="-9.525" y2="-8.89" width="0.1524" layer="21"/>
 <wire x1="-9.525" y1="-8.89" x2="-8.89" y2="-9.525" width="0.1524" layer="21"/>
 <wire x1="-8.89" y1="-9.525" x2="-8.89" y2="-10.795" width="0.1524" layer="21"/>
@@ -1381,15 +1372,6 @@ Source: http://www.national.com .. USBN9603.pdf</description>
 <wire x1="3.81" y1="-10.795" x2="3.81" y2="-9.525" width="0.1524" layer="21"/>
 <wire x1="6.35" y1="-10.795" x2="6.35" y2="-9.525" width="0.1524" layer="21"/>
 <wire x1="8.89" y1="-10.795" x2="8.89" y2="-9.525" width="0.1524" layer="21"/>
-<pad name="10" x="-10.16" y="10.16" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="11" x="-7.62" y="10.16" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="12" x="-5.08" y="10.16" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="13" x="-2.54" y="10.16" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="14" x="0" y="10.16" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="15" x="2.54" y="10.16" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="16" x="5.08" y="10.16" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="17" x="7.62" y="10.16" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="18" x="10.16" y="10.16" drill="1.016" shape="octagon" rot="R90"/>
 <wire x1="-10.795" y1="11.43" x2="-9.525" y2="11.43" width="0.1524" layer="21"/>
 <wire x1="-9.525" y1="11.43" x2="-8.89" y2="10.795" width="0.1524" layer="21"/>
 <wire x1="-8.89" y1="10.795" x2="-8.89" y2="9.525" width="0.1524" layer="21"/>
@@ -1481,21 +1463,6 @@ Source: http://www.national.com .. USBN9603.pdf</description>
 <wire x1="20.5" y1="-1.5" x2="20.5" y2="-3.5" width="0.1524" layer="21"/>
 <wire x1="20.5" y1="-3.5" x2="21" y2="-3.5" width="0.1524" layer="21"/>
 <wire x1="21" y1="0" x2="20" y2="0" width="0.1524" layer="21"/>
-<text x="-10.16" y="-8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">3V3</text>
-<text x="-7.62" y="-8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">3V3</text>
-<text x="10.16" y="-8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">GND</text>
-<text x="-5.08" y="-8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">BUSY</text>
-<text x="-2.54" y="-8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">NRST</text>
-<text x="0" y="-8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">MISO</text>
-<text x="2.54" y="-8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">MOSI</text>
-<text x="5.08" y="-8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">SCK</text>
-<text x="7.62" y="-8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">NSS</text>
-<text x="-10.16" y="8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR270" align="center-left">DIO1</text>
-<text x="-7.62" y="8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR270" align="center-left">DIO2</text>
-<text x="-5.08" y="8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR270" align="center-left">RSV1</text>
-<text x="-2.54" y="8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR270" align="center-left">RSV2</text>
-<pad name="19" x="-7.155178125" y="-3.6195" drill="1.016" shape="octagon" rot="R180"/>
-<pad name="20" x="-7.155178125" y="-1.0795" drill="1.016" shape="octagon" rot="R180"/>
 <wire x1="-8.425178125" y1="-4.2545" x2="-8.425178125" y2="-2.9845" width="0.1524" layer="21"/>
 <wire x1="-8.425178125" y1="-2.9845" x2="-7.790178125" y2="-2.3495" width="0.1524" layer="21"/>
 <wire x1="-7.790178125" y1="-2.3495" x2="-6.520178125" y2="-2.3495" width="0.1524" layer="21"/>
@@ -1511,6 +1478,39 @@ Source: http://www.national.com .. USBN9603.pdf</description>
 <wire x1="-5.885178125" y1="-0.4445" x2="-5.885178125" y2="-1.7145" width="0.1524" layer="21"/>
 <wire x1="-5.885178125" y1="-1.7145" x2="-6.520178125" y2="-2.3495" width="0.1524" layer="21"/>
 <wire x1="-6.520178125" y1="0.1905" x2="-7.790178125" y2="0.1905" width="0.1524" layer="21"/>
+<pad name="1" x="-10.16" y="-10.16" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="2" x="-7.62" y="-10.16" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="3" x="-5.08" y="-10.16" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="4" x="-2.54" y="-10.16" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="5" x="0" y="-10.16" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="6" x="2.54" y="-10.16" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="7" x="5.08" y="-10.16" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="8" x="7.62" y="-10.16" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="9" x="10.16" y="-10.16" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="10" x="-10.16" y="10.16" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="11" x="-7.62" y="10.16" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="12" x="-5.08" y="10.16" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="13" x="-2.54" y="10.16" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="14" x="0" y="10.16" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="15" x="2.54" y="10.16" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="16" x="5.08" y="10.16" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="17" x="7.62" y="10.16" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="18" x="10.16" y="10.16" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="19" x="-7.155178125" y="-3.6195" drill="1.016" shape="octagon" rot="R180"/>
+<pad name="20" x="-7.155178125" y="-1.0795" drill="1.016" shape="octagon" rot="R180"/>
+<text x="-10.16" y="-8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">3V3</text>
+<text x="-7.62" y="-8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">3V3</text>
+<text x="10.16" y="-8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">GND</text>
+<text x="-5.08" y="-8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">BUSY</text>
+<text x="-2.54" y="-8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">NRST</text>
+<text x="0" y="-8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">MISO</text>
+<text x="2.54" y="-8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">MOSI</text>
+<text x="5.08" y="-8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">SCK</text>
+<text x="7.62" y="-8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">NSS</text>
+<text x="-10.16" y="8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR270" align="center-left">DIO1</text>
+<text x="-7.62" y="8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR270" align="center-left">DIO2</text>
+<text x="-5.08" y="8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR270" align="center-left">RSV1</text>
+<text x="-2.54" y="8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR270" align="center-left">RSV2</text>
 </package>
 <package name="LORA-E22-900M22S">
 <wire x1="-7" y1="10" x2="-7" y2="-10" width="0.1524" layer="51"/>
@@ -1653,6 +1653,13 @@ Source: http://www.national.com .. USBN9603.pdf</description>
 <wire x1="-12" y1="-28.5" x2="12" y2="-28.5" width="0.1524" layer="21"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="SX1262-LORA-MODULE" urn="urn:adsk.eagle:package:24334639/2" type="model">
+<packageinstances>
+<packageinstance name="SX1262-LORA-MODULE"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
 <symbol name="ARDUINO_R3_SHIELD">
 <description>&lt;h3&gt;Arduino Uno R3-No ICSP&lt;/h3&gt;
@@ -1865,7 +1872,7 @@ Source: http://www.national.com .. USBN9603.pdf</description>
 <pin name="BUSY" x="-16.51" y="5.08" visible="pin" length="middle"/>
 <pin name="DIO1" x="16.51" y="10.16" visible="pin" length="middle" rot="R180"/>
 <pin name="DIO2" x="16.51" y="7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="VCC1@1" x="-16.51" y="7.62" visible="pin" length="middle"/>
+<pin name="VCC@1" x="-16.51" y="7.62" visible="pin" length="middle"/>
 <pin name="GND@4" x="16.51" y="-7.62" visible="pin" length="middle" rot="R180"/>
 <pin name="VCC@0" x="-16.51" y="10.16" visible="pin" length="middle"/>
 <pin name="GND@5" x="16.51" y="-10.16" visible="pin" length="middle" rot="R180"/>
@@ -2414,9 +2421,12 @@ https://www.sktiot.com/iot/introduction/network/networkLoraMain3</description>
 <connect gate="G$1" pin="RSV1" pad="12"/>
 <connect gate="G$1" pin="RSV2" pad="13"/>
 <connect gate="G$1" pin="SCK" pad="7"/>
-<connect gate="G$1" pin="VCC1@1" pad="2"/>
 <connect gate="G$1" pin="VCC@0" pad="1"/>
+<connect gate="G$1" pin="VCC@1" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24334639/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -2614,6 +2624,11 @@ https://www.sktiot.com/iot/introduction/network/networkLoraMain3</description>
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
 will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
