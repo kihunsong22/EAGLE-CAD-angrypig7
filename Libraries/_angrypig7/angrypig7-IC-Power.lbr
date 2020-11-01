@@ -265,7 +265,7 @@
 <vertex x="5.1054" y="7.267"/>
 </polygon>
 </package>
-<package name="SOT-223">
+<package name="SOT-223" urn="urn:adsk.eagle:footprint:24498225/1">
 <description>&lt;b&gt;SOT223/ H Package&lt;/b&gt;&lt;br&gt;
 </description>
 <smd name="1" x="3.1" y="-2.3" dx="1.85" dy="0.9" layer="1" rot="R180"/>
@@ -473,6 +473,12 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <package3d name="SOT-89-3" urn="urn:adsk.eagle:package:22798075/2" type="model">
 <packageinstances>
 <packageinstance name="SOT-89-3"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT-223" urn="urn:adsk.eagle:package:24498224/2" type="model">
+<description>&lt;b&gt;SOT223/ H Package&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="SOT-223"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -725,6 +731,9 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <connect gate="G$1" pin="OUT" pad="2 4"/>
 <connect gate="G$1" pin="VIN" pad="3"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24498224/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>

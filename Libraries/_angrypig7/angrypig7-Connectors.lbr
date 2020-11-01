@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -3509,8 +3509,8 @@ This part has an overhanging portion. The edge of the PCB should be aligned with
 <wire x1="-8.12" y1="-10.99" x2="8.12" y2="-10.99" width="0.2" layer="21"/>
 <wire x1="8.12" y1="-10.99" x2="8.12" y2="1.5" width="0.2" layer="21"/>
 <polygon width="0.1" layer="42">
-<vertex x="8" y="8.9"/>
-<vertex x="-8" y="8.9"/>
+<vertex x="8" y="5.4"/>
+<vertex x="-8" y="5.4"/>
 <vertex x="-8" y="-10.89"/>
 <vertex x="8" y="-10.89"/>
 </polygon>
@@ -3526,8 +3526,8 @@ This part has an overhanging portion. The edge of the PCB should be aligned with
 <pad name="11" x="4.085" y="-4.9" drill="1.02"/>
 <pad name="12" x="6.625" y="-4.9" drill="1.02"/>
 <polygon width="0.1" layer="41">
-<vertex x="8" y="8.9"/>
-<vertex x="-8" y="8.9"/>
+<vertex x="8" y="5.4"/>
+<vertex x="-8" y="5.4"/>
 <vertex x="-8" y="-10.89"/>
 <vertex x="8" y="-10.89"/>
 </polygon>
