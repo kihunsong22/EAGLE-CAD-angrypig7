@@ -171,13 +171,13 @@
 </layers>
 <library>
 <packages>
-<package name="USB-TYPE-C-31-M-17" urn="urn:adsk.eagle:footprint:24334505/1">
-<smd name="GND" x="-2.75" y="0.4" dx="2" dy="0.8" layer="1" rot="R90"/>
-<smd name="GND_2" x="2.75" y="0.4" dx="2" dy="0.8" layer="1" rot="R90"/>
-<smd name="VBUS" x="-1.52" y="0.4" dx="2" dy="0.76" layer="1" rot="R90"/>
-<smd name="VBUS_2" x="1.52" y="0.4" dx="2" dy="0.76" layer="1" rot="R90"/>
-<smd name="CC1" x="-0.5" y="0.4" dx="2" dy="0.7" layer="1" rot="R90"/>
-<smd name="CC2" x="0.5" y="0.4" dx="2" dy="0.7" layer="1" rot="R90"/>
+<package name="USB-TYPE-C-31-M-17" urn="urn:adsk.eagle:footprint:24334505/1" locally_modified="yes">
+<smd name="GND" x="-2.75" y="0.4" dx="2" dy="0.7" layer="1" rot="R90"/>
+<smd name="GND_2" x="2.75" y="0.4" dx="2" dy="0.7" layer="1" rot="R90"/>
+<smd name="VBUS" x="-1.52" y="0.4" dx="2" dy="0.7" layer="1" rot="R90"/>
+<smd name="VBUS_2" x="1.52" y="0.4" dx="2" dy="0.7" layer="1" rot="R90"/>
+<smd name="CC1" x="-0.5" y="0.4" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="CC2" x="0.5" y="0.4" dx="2" dy="0.6" layer="1" rot="R90"/>
 <smd name="SHLD-B1" x="-4.32" y="0" dx="1.3" dy="2" layer="16" roundness="100" cream="no"/>
 <smd name="SHLD-T1" x="-4.32" y="0" dx="1.3" dy="2" layer="1" roundness="100" rot="R180" cream="no"/>
 <smd name="SHLD-B2" x="4.32" y="0" dx="1.3" dy="2" layer="16" roundness="100" cream="no"/>
@@ -3097,7 +3097,7 @@ This part has an overhanging portion. The edge of the PCB should be aligned with
 <wire x1="-2.032" y1="-1.905" x2="1.27" y2="-1.905" width="0.2032" layer="1" style="longdash"/>
 <wire x1="1.524" y1="-2.286" x2="-0.762" y2="-2.286" width="0.2032" layer="1" style="longdash"/>
 </package>
-<package name="USB-TYPE-C-31-M-12" urn="urn:adsk.eagle:footprint:24334479/1">
+<package name="USB-TYPE-C-31-M-12" urn="urn:adsk.eagle:footprint:24334479/1" locally_modified="yes">
 <wire x1="4.32" y1="-6.78" x2="4.32" y2="-5.54" width="0.2032" layer="21"/>
 <wire x1="4.32" y1="-6.78" x2="-4.32" y2="-6.78" width="0.2032" layer="21"/>
 <wire x1="-4.32" y1="-6.78" x2="-4.32" y2="-5.54" width="0.2032" layer="21"/>
@@ -3128,14 +3128,14 @@ This part has an overhanging portion. The edge of the PCB should be aligned with
 <text x="0" y="-6" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <smd name="B6" x="0.75" y="1.19" dx="0.3" dy="2" layer="1"/>
 <smd name="A7" x="0.25" y="1.19" dx="0.3" dy="2" layer="1"/>
-<smd name="GND2" x="3.225" y="1.19" dx="0.6" dy="2" layer="1"/>
-<smd name="VBUS2" x="2.45" y="1.19" dx="0.6" dy="2" layer="1"/>
+<smd name="GND2" x="3.225" y="1.19" dx="0.5" dy="2" layer="1"/>
+<smd name="VBUS2" x="2.45" y="1.19" dx="0.5" dy="2" layer="1"/>
 <smd name="B5" x="1.75" y="1.19" dx="0.3" dy="2" layer="1"/>
 <smd name="A8" x="1.25" y="1.19" dx="0.3" dy="2" layer="1"/>
 <smd name="B7" x="-0.75" y="1.19" dx="0.3" dy="2" layer="1" rot="R180"/>
 <smd name="A6" x="-0.25" y="1.19" dx="0.3" dy="2" layer="1" rot="R180"/>
-<smd name="GND1" x="-3.225" y="1.19" dx="0.6" dy="2" layer="1" rot="R180"/>
-<smd name="VBUS1" x="-2.45" y="1.19" dx="0.6" dy="2" layer="1" rot="R180"/>
+<smd name="GND1" x="-3.225" y="1.19" dx="0.5" dy="2" layer="1" rot="R180"/>
+<smd name="VBUS1" x="-2.45" y="1.19" dx="0.5" dy="2" layer="1" rot="R180"/>
 <smd name="B8" x="-1.75" y="1.19" dx="0.3" dy="2" layer="1" rot="R180"/>
 <smd name="A5" x="-1.25" y="1.19" dx="0.3" dy="2" layer="1" rot="R180"/>
 <smd name="SHLD-B1" x="-4.32" y="0" dx="1.3" dy="2" layer="16" roundness="100" cream="no"/>
