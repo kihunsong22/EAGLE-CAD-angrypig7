@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -285,6 +285,21 @@
 <text x="0" y="2.0239" size="1.27" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.7109" size="1.27" layer="27" font="vector" ratio="15" align="top-center">&gt;VALUE</text>
 </package>
+<package name="TO-92" urn="urn:adsk.eagle:footprint:25216510/1" locally_modified="yes">
+<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="1.1359" x2="2.413" y2="1.1359" width="0.1524" layer="21" curve="-129.583345"/>
+<wire x1="-2.413" y1="1.1359" x2="-2.667" y2="-0.127" width="0.1524" layer="51" curve="27.937554"/>
+<wire x1="-2.667" y1="-0.127" x2="-2.413" y2="-1.1359" width="0.1524" layer="51" curve="22.478763"/>
+<wire x1="-2.4135" y1="-1.1359" x2="-2.095" y2="-1.651" width="0.1524" layer="21" curve="13.038528"/>
+<wire x1="2.413" y1="-1.1359" x2="2.664" y2="-0.127" width="0.1524" layer="51" curve="22.478763"/>
+<wire x1="2.664" y1="-0.127" x2="2.413" y2="1.1359" width="0.1524" layer="51" curve="27.937554"/>
+<wire x1="2.095" y1="-1.651" x2="2.4247" y2="-1.1118" width="0.1524" layer="21" curve="13.609443"/>
+<pad name="3" x="1.7" y="0" drill="0.7" rot="R90"/>
+<pad name="1" x="-1.7" y="0" drill="0.7" rot="R90"/>
+<pad name="2" x="0" y="0" drill="0.7" rot="R90"/>
+<text x="0" y="3.556" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-2.667" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOIC127P600X175-8N" urn="urn:adsk.eagle:package:24173389/1" type="model">
@@ -304,6 +319,11 @@
 &lt;p&gt;6-pin SON (DFN) package with 0.80 mm pitch with body size 2.44 X 2.44 X 0.85 mm and thermal pad size 1.64 X 1.25 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="DFN6-SGP40"/>
+</packageinstances>
+</package3d>
+<package3d name="TO-92" urn="urn:adsk.eagle:package:25216509/2" type="model">
+<packageinstances>
+<packageinstance name="TO-92"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -370,6 +390,17 @@
 <pin name="VDDH" x="15.24" y="2.54" length="middle" rot="R180"/>
 <pin name="SCL" x="15.24" y="5.08" length="middle" rot="R180"/>
 <pin name="EP" x="0" y="-12.7" length="middle" rot="R90"/>
+</symbol>
+<symbol name="DS18B20">
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="-5.08" y="8.89" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="-5.08" y="6.35" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="VDD" x="-2.54" y="-10.16" length="middle" rot="R90"/>
+<pin name="DQ" x="0" y="-10.16" length="middle" rot="R90"/>
+<pin name="GND" x="2.54" y="-10.16" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -484,6 +515,26 @@ SHT-30-DIS-B Accuracy: +/-3%RH, +/-0.3°C
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:24567762/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS18B20" prefix="U">
+<gates>
+<gate name="G$1" symbol="DS18B20" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO-92">
+<connects>
+<connect gate="G$1" pin="DQ" pad="2"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:25216509/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
