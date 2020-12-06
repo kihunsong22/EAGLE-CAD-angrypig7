@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -555,13 +555,13 @@ Source: http://www.diotec.com/pdf/s40.pdf</description>
 &lt;p&gt;SOD package with 3.75 mm span with body size 2.75 X 1.63 X 1.35 mm&lt;/p&gt;</description>
 <smd name="C" x="-1.6" y="0" dx="0.988" dy="0.95" layer="1"/>
 <smd name="A" x="1.6" y="0" dx="0.988" dy="0.95" layer="1"/>
-<wire x1="-0.973" y1="0.6238" x2="0.973" y2="0.6238" width="0.2032" layer="21"/>
-<wire x1="0.973" y1="0.6238" x2="0.973" y2="-0.6238" width="0.2032" layer="21"/>
-<wire x1="0.973" y1="-0.6238" x2="-0.973" y2="-0.6238" width="0.2032" layer="21"/>
-<wire x1="-0.973" y1="-0.6238" x2="-0.973" y2="0.6238" width="0.2032" layer="21"/>
+<wire x1="-0.973" y1="0.7" x2="0.957" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="0.957" y1="0.7" x2="0.957" y2="-0.7" width="0.2032" layer="21"/>
+<wire x1="0.957" y1="-0.7" x2="-0.973" y2="-0.7" width="0.2032" layer="21"/>
+<wire x1="-0.973" y1="-0.7" x2="-0.973" y2="0.7" width="0.2032" layer="21"/>
 <text x="0" y="1.4572" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="-1.4364" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
-<wire x1="-0.592" y1="-0.573" x2="-0.592" y2="0.573" width="0.254" layer="21"/>
+<wire x1="-0.592" y1="-0.6" x2="-0.592" y2="0.6" width="0.254" layer="21"/>
 </package>
 <package name="SOD-323" urn="urn:adsk.eagle:footprint:22471091/1" locally_modified="yes">
 <description>SOD-323, 2.60 mm span, 1.75 X 1.35 X 1.10 mm body
