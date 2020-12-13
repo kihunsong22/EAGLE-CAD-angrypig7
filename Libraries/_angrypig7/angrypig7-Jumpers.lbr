@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -310,10 +310,10 @@
 <vertex x="-0.6985" y="-0.127"/>
 </polygon>
 <polygon width="0.0127" layer="1">
-<vertex x="-0.70485" y="0.127"/>
-<vertex x="0.70485" y="0.127"/>
-<vertex x="0.70485" y="-0.127"/>
-<vertex x="-0.70485" y="-0.127"/>
+<vertex x="-1.08585" y="0.127"/>
+<vertex x="1.08585" y="0.127"/>
+<vertex x="1.08585" y="-0.127"/>
+<vertex x="-1.08585" y="-0.127"/>
 </polygon>
 </package>
 <package name="SMT-JUMPER_3_2-NC_TRACE_SILK" urn="urn:adsk.eagle:footprint:39270/1" locally_modified="yes">
@@ -343,10 +343,10 @@
 <vertex x="-0.6985" y="-0.127"/>
 </polygon>
 <polygon width="0.0127" layer="1">
-<vertex x="-0.70485" y="0.127"/>
-<vertex x="0.70485" y="0.127"/>
-<vertex x="0.70485" y="-0.127"/>
-<vertex x="-0.70485" y="-0.127"/>
+<vertex x="-1.08585" y="0.127"/>
+<vertex x="1.08585" y="0.127"/>
+<vertex x="1.08585" y="-0.127"/>
+<vertex x="-1.08585" y="-0.127"/>
 </polygon>
 </package>
 <package name="SMT-JUMPER_3_1-NC_TRACE_SILK" urn="urn:adsk.eagle:footprint:39266/1" locally_modified="yes">
@@ -370,10 +370,10 @@
 <vertex x="0.3175" y="-0.127"/>
 </polygon>
 <polygon width="0.0127" layer="1">
-<vertex x="-0.1905" y="0.127"/>
-<vertex x="0.70485" y="0.127"/>
-<vertex x="0.70485" y="-0.127"/>
-<vertex x="-0.1905" y="-0.127"/>
+<vertex x="0.0635" y="0.127"/>
+<vertex x="0.95885" y="0.127"/>
+<vertex x="0.95885" y="-0.127"/>
+<vertex x="0.0635" y="-0.127"/>
 </polygon>
 </package>
 <package name="SMT-JUMPER_3_1-NC_TRACE_NO-SILK" urn="urn:adsk.eagle:footprint:39267/1" locally_modified="yes">
@@ -389,10 +389,10 @@
 <vertex x="0.3175" y="-0.127"/>
 </polygon>
 <polygon width="0.0127" layer="1">
-<vertex x="-0.1905" y="0.127"/>
-<vertex x="0.70485" y="0.127"/>
-<vertex x="0.70485" y="-0.127"/>
-<vertex x="-0.1905" y="-0.127"/>
+<vertex x="0.0635" y="0.127"/>
+<vertex x="0.95885" y="0.127"/>
+<vertex x="0.95885" y="-0.127"/>
+<vertex x="0.0635" y="-0.127"/>
 </polygon>
 </package>
 <package name="SMT-JUMPER_3_2-NC_PASTE_SILK" urn="urn:adsk.eagle:footprint:39272/1">
@@ -422,8 +422,8 @@
 <package name="SMT-JUMPER_2_NC_TRACE_NO-SILK" urn="urn:adsk.eagle:footprint:39257/1" locally_modified="yes">
 <smd name="1" x="-0.5207" y="0" dx="0.6604" dy="1.27" layer="1" cream="no"/>
 <smd name="2" x="0.5207" y="0" dx="0.6604" dy="1.27" layer="1" cream="no"/>
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<text x="0" y="1.016" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.016" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 <polygon width="0.127" layer="29">
 <vertex x="-0.1905" y="0.127"/>
 <vertex x="0.1905" y="0.127"/>
@@ -431,10 +431,10 @@
 <vertex x="-0.1905" y="-0.127"/>
 </polygon>
 <polygon width="0.0127" layer="1">
-<vertex x="-0.6985" y="0.127"/>
-<vertex x="0.18415" y="0.127"/>
-<vertex x="0.18415" y="-0.127"/>
-<vertex x="-0.6985" y="-0.127"/>
+<vertex x="-0.4445" y="0.127"/>
+<vertex x="0.43815" y="0.127"/>
+<vertex x="0.43815" y="-0.127"/>
+<vertex x="-0.4445" y="-0.127"/>
 </polygon>
 </package>
 <package name="SMT-JUMPER_2_NC_TRACE_SILK" urn="urn:adsk.eagle:footprint:39258/1" locally_modified="yes">
@@ -457,10 +457,10 @@
 <vertex x="-0.1905" y="-0.127"/>
 </polygon>
 <polygon width="0.0127" layer="1">
-<vertex x="-0.6985" y="0.127"/>
-<vertex x="0.18415" y="0.127"/>
-<vertex x="0.18415" y="-0.127"/>
-<vertex x="-0.6985" y="-0.127"/>
+<vertex x="-0.4445" y="0.127"/>
+<vertex x="0.43815" y="0.127"/>
+<vertex x="0.43815" y="-0.127"/>
+<vertex x="-0.4445" y="-0.127"/>
 </polygon>
 </package>
 </packages>
