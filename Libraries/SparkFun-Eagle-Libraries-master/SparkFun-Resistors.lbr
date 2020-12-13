@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -939,8 +939,6 @@ It has a reduced top mask to make it harder to install upside-down.</description
 &lt;li&gt;&lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
-<text x="-1.605" y="1.198" size="0.6096" layer="25">&gt;NAME</text>
-<text x="-1.605" y="-1.802" size="0.6096" layer="27">&gt;VALUE</text>
 <smd name="P1" x="-1.2" y="-0.62" dx="0.8" dy="0.55" layer="1" stop="no"/>
 <smd name="P2" x="-0.4" y="-0.62" dx="0.5" dy="0.55" layer="1" stop="no"/>
 <smd name="P3" x="0.4" y="-0.62" dx="0.5" dy="0.55" layer="1" stop="no"/>
@@ -990,6 +988,8 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <wire x1="-1.778" y1="1.1176" x2="1.778" y2="1.1176" width="0.0508" layer="39"/>
 <wire x1="1.778" y1="1.1176" x2="1.778" y2="-1.0668" width="0.0508" layer="39"/>
 <wire x1="1.778" y1="-1.0668" x2="-1.778" y2="-1.0668" width="0.0508" layer="39"/>
+<text x="-1.651" y="1.27" size="0.6096" layer="25" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="-1.778" size="0.6096" layer="27" ratio="20">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -1796,6 +1796,17 @@ It has a reduced top mask to make it harder to install upside-down.</description
 </technology>
 </technologies>
 </device>
+<device name="-0402T-1/16W-1%" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-15093" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="15KOHM" prefix="R">
@@ -2157,6 +2168,17 @@ It has a reduced top mask to make it harder to install upside-down.</description
 </technology>
 </technologies>
 </device>
+<device name="-0402T-1/16W-1%" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-15550" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="200KOHM" prefix="R">
@@ -2211,6 +2233,18 @@ It has a reduced top mask to make it harder to install upside-down.</description
 </technology>
 </technologies>
 </device>
+<device name="-0402T-1/16W-1%" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-15131"/>
+<attribute name="VALUE" value="20k"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="22.6KOHM" prefix="R">
@@ -2250,6 +2284,17 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <technology name="">
 <attribute name="PROD_ID" value="RES-08969"/>
 <attribute name="VALUE" value="220k"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402T-1/16W-1%" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-15094" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2346,6 +2391,17 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <technology name="">
 <attribute name="PROD_ID" value="RES-09334"/>
 <attribute name="VALUE" value="27"/>
+</technology>
+</technologies>
+</device>
+<device name="" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-15238" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2600,6 +2656,18 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="RES-08416"/>
+<attribute name="VALUE" value="33k"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402T-1/16W-1%" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-15128"/>
 <attribute name="VALUE" value="33k"/>
 </technology>
 </technologies>
@@ -4385,6 +4453,15 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <attribute name="PROD_ID" value=" " constant="no"/>
 <attribute name="VALUE" value=" " constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="0402T" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

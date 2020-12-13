@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7597,6 +7597,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="-7.9375" y="-3.81" curve="-90"/>
 <vertex x="-7.62" y="-4.1275" curve="-90"/>
 </polygon>
+<rectangle x1="-6.985" y1="-2.032" x2="-5.715" y2="-0.254" layer="21"/>
+<rectangle x1="-4.445" y1="-2.032" x2="-3.175" y2="-0.254" layer="21"/>
+<rectangle x1="-1.905" y1="-2.032" x2="-0.635" y2="-0.254" layer="21"/>
+<rectangle x1="0.635" y1="-2.032" x2="1.905" y2="-0.254" layer="21"/>
+<rectangle x1="3.175" y1="-2.032" x2="4.445" y2="-0.254" layer="21"/>
+<rectangle x1="5.715" y1="-2.032" x2="6.985" y2="-0.254" layer="21"/>
+<wire x1="-7.62" y1="3.302" x2="-8.382" y2="3.302" width="0.2032" layer="21"/>
+<wire x1="-8.382" y1="3.302" x2="-8.382" y2="-3.302" width="0.2032" layer="21"/>
+<wire x1="-8.382" y1="-3.302" x2="-7.62" y2="-3.302" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="3.302" x2="8.382" y2="3.302" width="0.2032" layer="21"/>
+<wire x1="8.382" y1="3.302" x2="8.382" y2="-3.302" width="0.2032" layer="21"/>
+<wire x1="8.382" y1="-3.302" x2="7.62" y2="-3.302" width="0.2032" layer="21"/>
 </package>
 <package name="TACTILE_SWITCH_PTH_RIGHT_ANGLE">
 <description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - PTH, Right-angle&lt;/h3&gt;
@@ -9133,36 +9145,36 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <symbol name="DIPSWITCH-04">
 <description>&lt;h3&gt;4-Position DIP Switch&lt;/h3&gt;
 &lt;p&gt;4-circuit DIP (dual inline package) switch. Commonly used to physcially set a circuit's behavior.&lt;/p&gt;</description>
-<pin name="1B" x="2.54" y="-2.54" visible="pad" length="short" rot="R90"/>
-<pin name="2B" x="5.08" y="-2.54" visible="pad" length="short" rot="R90"/>
-<pin name="3B" x="7.62" y="-2.54" visible="pad" length="short" rot="R90"/>
-<pin name="4B" x="10.16" y="-2.54" visible="pad" length="short" rot="R90"/>
-<pin name="1A" x="2.54" y="10.16" visible="pad" length="short" rot="R270"/>
-<pin name="2A" x="5.08" y="10.16" visible="pad" length="short" rot="R270"/>
-<pin name="3A" x="7.62" y="10.16" visible="pad" length="short" rot="R270"/>
-<pin name="4A" x="10.16" y="10.16" visible="pad" length="short" rot="R270"/>
-<wire x1="2.54" y1="7.62" x2="2.54" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="5.08" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="10.16" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="0" x2="7.62" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="0" x2="10.16" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.032" y2="5.588" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="4.572" y2="5.588" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="2.54" x2="7.112" y2="5.588" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="2.54" x2="9.652" y2="5.588" width="0.1524" layer="94"/>
-<wire x1="0" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
-<wire x1="12.7" y1="7.62" x2="12.7" y2="0" width="0.254" layer="94"/>
-<wire x1="12.7" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="7.62" width="0.254" layer="94"/>
-<text x="0.508" y="0.508" size="1.27" layer="94">1</text>
-<text x="3.048" y="0.508" size="1.27" layer="94">2</text>
-<text x="5.588" y="0.508" size="1.27" layer="94">3</text>
-<text x="8.128" y="0.508" size="1.27" layer="94">4</text>
-<text x="-0.254" y="0" size="1.778" layer="95" font="vector" rot="R90">&gt;NAME</text>
-<text x="12.954" y="0" size="1.778" layer="96" font="vector" rot="R90" align="top-left">&gt;Value</text>
+<pin name="1B" x="-7.62" y="2.54" visible="off" length="short"/>
+<pin name="2B" x="-7.62" y="0" visible="off" length="short"/>
+<pin name="3B" x="-7.62" y="-2.54" visible="off" length="short"/>
+<pin name="4B" x="-7.62" y="-5.08" visible="off" length="short"/>
+<pin name="1A" x="5.08" y="2.54" visible="off" length="short" rot="R180"/>
+<pin name="2A" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<pin name="3A" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
+<pin name="4A" x="5.08" y="-5.08" visible="off" length="short" rot="R180"/>
+<wire x1="2.54" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="0" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="0.508" y2="3.048" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="0.508" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="0.508" y2="-2.032" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="0.508" y2="-4.572" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<text x="-4.572" y="4.572" size="1.27" layer="94" rot="R270">1</text>
+<text x="-4.572" y="2.032" size="1.27" layer="94" rot="R270">2</text>
+<text x="-4.572" y="-0.508" size="1.27" layer="94" rot="R270">3</text>
+<text x="-4.572" y="-3.048" size="1.27" layer="94" rot="R270">4</text>
+<text x="-5.08" y="5.334" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-5.08" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="SWITCH-DPDT">
 <description>&lt;h3&gt;Double-Pole, Double-Throw (DPDT) Switch&lt;/h3&gt;
@@ -9189,12 +9201,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <circle x="-2.54" y="-5.08" radius="0.3592" width="0.254" layer="94"/>
 <text x="0" y="7.874" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-10.414" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
-<pin name="1" x="5.08" y="5.08" visible="off" length="short" rot="R180"/>
+<pin name="1" x="5.08" y="0" visible="off" length="short" rot="R180"/>
 <pin name="2" x="-5.08" y="2.54" visible="off" length="short"/>
-<pin name="3" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-<pin name="4" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
+<pin name="3" x="5.08" y="5.08" visible="off" length="short" rot="R180"/>
+<pin name="4" x="5.08" y="-7.62" visible="off" length="short" rot="R180"/>
 <pin name="5" x="-5.08" y="-5.08" visible="off" length="short"/>
-<pin name="6" x="5.08" y="-7.62" visible="off" length="short" rot="R180"/>
+<pin name="6" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
 </symbol>
 <symbol name="BUTTON-CONDUCTIVE">
 <description>&lt;h3&gt;Conductive Button&lt;/h3&gt;
@@ -9845,10 +9857,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-2.032" y1="2.54" x2="-3.048" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="-3.048" y1="2.54" x2="-3.048" y2="-2.54" width="0.1524" layer="94"/>
 <text x="-4.826" y="-2.794" size="1.27" layer="94" font="vector" align="top-center">1</text>
-<pin name="1" x="-5.08" y="-7.62" visible="pad" length="short" rot="R90"/>
-<pin name="2" x="-2.54" y="-7.62" visible="pad" length="short" rot="R90"/>
-<pin name="11" x="-2.54" y="7.62" visible="pad" length="short" rot="R270"/>
-<pin name="12" x="-5.08" y="7.62" visible="pad" length="short" rot="R270"/>
+<pin name="1" x="-5.08" y="-7.62" visible="off" length="short" rot="R90"/>
+<pin name="2" x="-2.54" y="-7.62" visible="off" length="short" rot="R90"/>
+<pin name="11" x="-2.54" y="7.62" visible="off" length="short" rot="R270"/>
+<pin name="12" x="-5.08" y="7.62" visible="off" length="short" rot="R270"/>
 <text x="-3.81" y="3.048" size="1.27" layer="94" align="bottom-center">ON</text>
 <text x="-7.112" y="-5.08" size="1.778" layer="95" font="vector" rot="R90">&gt;NAME</text>
 <text x="9.652" y="-5.08" size="1.778" layer="96" font="vector" rot="R90" align="top-left">&gt;VALUE</text>
@@ -9877,14 +9889,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="7.112" y1="2.54" x2="7.112" y2="-2.54" width="0.1524" layer="94"/>
 <text x="5.334" y="-2.794" size="1.27" layer="94" font="vector" align="top-center">5</text>
 <text x="7.874" y="-2.794" size="1.27" layer="94" font="vector" align="top-center">6</text>
-<pin name="10" x="0" y="7.62" visible="pad" length="short" rot="R270"/>
-<pin name="9" x="2.54" y="7.62" visible="pad" length="short" rot="R270"/>
-<pin name="8" x="5.08" y="7.62" visible="pad" length="short" rot="R270"/>
-<pin name="7" x="7.62" y="7.62" visible="pad" length="short" rot="R270"/>
-<pin name="3" x="0" y="-7.62" visible="pad" length="short" rot="R90"/>
-<pin name="4" x="2.54" y="-7.62" visible="pad" length="short" rot="R90"/>
-<pin name="5" x="5.08" y="-7.62" visible="pad" length="short" rot="R90"/>
-<pin name="6" x="7.62" y="-7.62" visible="pad" length="short" rot="R90"/>
+<pin name="10" x="0" y="7.62" visible="off" length="short" rot="R270"/>
+<pin name="9" x="2.54" y="7.62" visible="off" length="short" rot="R270"/>
+<pin name="8" x="5.08" y="7.62" visible="off" length="short" rot="R270"/>
+<pin name="7" x="7.62" y="7.62" visible="off" length="short" rot="R270"/>
+<pin name="3" x="0" y="-7.62" visible="off" length="short" rot="R90"/>
+<pin name="4" x="2.54" y="-7.62" visible="off" length="short" rot="R90"/>
+<pin name="5" x="5.08" y="-7.62" visible="off" length="short" rot="R90"/>
+<pin name="6" x="7.62" y="-7.62" visible="off" length="short" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -10498,19 +10510,37 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10982"&gt;Rotary Encoder - Illuminated (RGB)&lt;/a&gt; (COM-10982)&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
-<gate name="G$1" symbol="ENCODER_LED_3_CA" x="0" y="0"/>
+<gate name="S1" symbol="ENCODER_LED_3_CA" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="ENCODER_LED_3">
+<device name="-WITH_NUT" package="ENCODER_LED_3">
 <connects>
-<connect gate="G$1" pin="+" pad="5"/>
-<connect gate="G$1" pin="-B" pad="4"/>
-<connect gate="G$1" pin="-G" pad="2"/>
-<connect gate="G$1" pin="-R" pad="1"/>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="B" pad="B"/>
-<connect gate="G$1" pin="C" pad="C"/>
-<connect gate="G$1" pin="SW" pad="3"/>
+<connect gate="S1" pin="+" pad="5"/>
+<connect gate="S1" pin="-B" pad="4"/>
+<connect gate="S1" pin="-G" pad="2"/>
+<connect gate="S1" pin="-R" pad="1"/>
+<connect gate="S1" pin="A" pad="A"/>
+<connect gate="S1" pin="B" pad="B"/>
+<connect gate="S1" pin="C" pad="C"/>
+<connect gate="S1" pin="SW" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-15425"/>
+<attribute name="SF_SKU" value="COM-15141"/>
+</technology>
+</technologies>
+</device>
+<device name="KIT" package="ENCODER_LED_3_KIT">
+<connects>
+<connect gate="S1" pin="+" pad="5"/>
+<connect gate="S1" pin="-B" pad="4"/>
+<connect gate="S1" pin="-G" pad="2"/>
+<connect gate="S1" pin="-R" pad="1"/>
+<connect gate="S1" pin="A" pad="A"/>
+<connect gate="S1" pin="B" pad="B"/>
+<connect gate="S1" pin="C" pad="C"/>
+<connect gate="S1" pin="SW" pad="3"/>
 </connects>
 <technologies>
 <technology name="">
@@ -10519,21 +10549,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </technology>
 </technologies>
 </device>
-<device name="KIT" package="ENCODER_LED_3_KIT">
+<device name="-NO_NUT" package="ENCODER_LED_3">
 <connects>
-<connect gate="G$1" pin="+" pad="5"/>
-<connect gate="G$1" pin="-B" pad="4"/>
-<connect gate="G$1" pin="-G" pad="2"/>
-<connect gate="G$1" pin="-R" pad="1"/>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="B" pad="B"/>
-<connect gate="G$1" pin="C" pad="C"/>
-<connect gate="G$1" pin="SW" pad="3"/>
+<connect gate="S1" pin="+" pad="5"/>
+<connect gate="S1" pin="-B" pad="4"/>
+<connect gate="S1" pin="-G" pad="2"/>
+<connect gate="S1" pin="-R" pad="1"/>
+<connect gate="S1" pin="A" pad="A"/>
+<connect gate="S1" pin="B" pad="B"/>
+<connect gate="S1" pin="C" pad="C"/>
+<connect gate="S1" pin="SW" pad="3"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-10859"/>
-<attribute name="SF_SKU" value="COM-10982"/>
+<attribute name="PROD_ID" value="RES-14168" constant="no"/>
 </technology>
 </technologies>
 </device>
