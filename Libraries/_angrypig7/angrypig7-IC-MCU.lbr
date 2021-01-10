@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -2203,8 +2203,8 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 <wire x1="-27.94" y1="-27.94" x2="27.94" y2="-27.94" width="0.254" layer="94"/>
 <wire x1="27.94" y1="-27.94" x2="27.94" y2="27.94" width="0.254" layer="94"/>
 <wire x1="27.94" y1="27.94" x2="-27.94" y2="27.94" width="0.254" layer="94"/>
-<text x="0" y="1.27" size="1.778" layer="95" align="center">&gt;NAME</text>
-<text x="0" y="-1.27" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="10.16" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="7.62" size="1.778" layer="96" align="center">&gt;VALUE</text>
 <pin name="DEC1" x="-33.02" y="13.97" length="middle"/>
 <pin name="P0.00.XL1" x="-33.02" y="11.43" length="middle"/>
 <pin name="P0.01/XL2" x="-33.02" y="8.89" length="middle"/>
@@ -2253,6 +2253,7 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 <pin name="DEC4" x="-8.89" y="33.02" length="middle" rot="R270"/>
 <pin name="DCC" x="-11.43" y="33.02" length="middle" rot="R270"/>
 <pin name="VDD@2" x="-13.97" y="33.02" length="middle" rot="R270"/>
+<pin name="PAD" x="-19.05" y="33.02" length="middle" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3463,6 +3464,7 @@ nRF52832 SoC module</description>
 <connect gate="G$1" pin="P0.29/AIN5" pad="41"/>
 <connect gate="G$1" pin="P0.30/AIN6" pad="42"/>
 <connect gate="G$1" pin="P0.31/AIN7" pad="43"/>
+<connect gate="G$1" pin="PAD" pad="49"/>
 <connect gate="G$1" pin="SWDCLK" pad="25"/>
 <connect gate="G$1" pin="SWDIO" pad="26"/>
 <connect gate="G$1" pin="VDD@0" pad="13"/>
