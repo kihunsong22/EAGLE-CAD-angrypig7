@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -1733,7 +1733,7 @@ Manufacturer: Hirose&lt;br&gt;
 <text x="3.81" y="0" size="1.143" layer="25" font="vector" ratio="15" rot="R270" align="bottom-center">&gt;NAME</text>
 <hole x="-0.1" y="2.25" drill="1"/>
 <hole x="-0.1" y="-2.25" drill="1"/>
-<text x="5.334" y="0.254" size="1.143" layer="27" font="vector" ratio="15" rot="R270" align="bottom-center">&gt;VALUE</text>
+<text x="5.334" y="0" size="1.143" layer="27" font="vector" ratio="15" rot="R270" align="bottom-center">&gt;VALUE</text>
 <wire x1="-1.1" y1="6.2" x2="-1.1" y2="5.4" width="0" layer="46"/>
 <wire x1="-1.1" y1="5.4" x2="1.1" y2="5.4" width="0" layer="46"/>
 <wire x1="1.1" y1="5.4" x2="1.1" y2="6.2" width="0" layer="46"/>

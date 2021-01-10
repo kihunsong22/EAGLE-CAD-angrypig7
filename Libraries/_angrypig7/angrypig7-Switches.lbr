@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -1563,6 +1563,23 @@
 <text x="0" y="3.275" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;Name</text>
 <text x="0" y="-3.275" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;Value</text>
 </package>
+<package name="TACTILE_SWITCH_SMD_3.0X4.0MM" urn="urn:adsk.eagle:footprint:25895585/1">
+<wire x1="-1.75" y1="1.45" x2="-2" y2="1.2" width="0.1524" layer="21" curve="90"/>
+<wire x1="-1.75" y1="1.45" x2="1.75" y2="1.45" width="0.1524" layer="21"/>
+<wire x1="1.75" y1="1.45" x2="2" y2="1.2" width="0.1524" layer="21" curve="-90"/>
+<wire x1="2" y1="-1.2" x2="1.75" y2="-1.45" width="0.1524" layer="21" curve="-90"/>
+<wire x1="1.75" y1="-1.45" x2="-1.75" y2="-1.45" width="0.1524" layer="21"/>
+<wire x1="-2" y1="-1.2" x2="-1.75" y2="-1.45" width="0.1524" layer="21" curve="90"/>
+<wire x1="-2" y1="-1.2" x2="-2" y2="-1" width="0.1524" layer="21"/>
+<wire x1="-2" y1="1" x2="-2" y2="1.2" width="0.1524" layer="21"/>
+<wire x1="2" y1="1" x2="2" y2="1.2" width="0.1524" layer="21"/>
+<wire x1="2" y1="-1.2" x2="2" y2="-1" width="0.1524" layer="21"/>
+<smd name="1" x="-2" y="0" dx="1.1" dy="1.6" layer="1" rot="R180"/>
+<smd name="2" x="2" y="0" dx="1.1" dy="1.6" layer="1" rot="R180"/>
+<text x="0" y="1.651" size="1.016" layer="25" font="vector" ratio="15" align="bottom-center">&gt;Name</text>
+<text x="0" y="-1.651" size="1.016" layer="27" font="vector" ratio="15" align="top-center">&gt;Value</text>
+<circle x="0" y="0" radius="0.8" width="0.1524" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="EDG-10" urn="urn:adsk.eagle:package:26662/2" type="model">
@@ -1636,6 +1653,11 @@
 <package3d name="TACTILE_SWITCH_SMD_5.1MM" urn="urn:adsk.eagle:package:22495294/3" type="model">
 <packageinstances>
 <packageinstance name="TACTILE_SWITCH_SMD_5.1MM"/>
+</packageinstances>
+</package3d>
+<package3d name="TACTILE_SWITCH_SMD_3.0X4.0MM" urn="urn:adsk.eagle:package:25895584/2" type="model">
+<packageinstances>
+<packageinstance name="TACTILE_SWITCH_SMD_3.0X4.0MM"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -3012,6 +3034,18 @@
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22495294/3"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SMD-3.0X4.0MM" package="TACTILE_SWITCH_SMD_3.0X4.0MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:25895584/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
