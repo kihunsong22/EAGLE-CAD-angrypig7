@@ -816,7 +816,7 @@ nRF52832 SoC module</description>
 <text x="0" y="-4.064" size="1.143" layer="27" font="vector" ratio="15" rot="SR0" align="center">&gt;Value</text>
 <wire x1="-2.54" y1="2.286" x2="-3.429" y2="2.286" width="0.2032" layer="21"/>
 </package>
-<package name="QFN24" urn="urn:adsk.eagle:footprint:22835122/1" locally_modified="yes">
+<package name="QFN24" urn="urn:adsk.eagle:footprint:22835122/2">
 <description>&lt;b&gt;UF Package 24-Lead (4mm × 4mm) Plastic QFN&lt;/b&gt;&lt;p&gt;
 Source: http://cds.linear.com/docs/Datasheet/5598f.pdf</description>
 <wire x1="-2" y1="-2" x2="2" y2="-2" width="0.1" layer="51"/>
@@ -1150,32 +1150,33 @@ Source: http://cds.linear.com/docs/Datasheet/5598f.pdf</description>
 <text x="3.262" y="0" size="1.143" layer="27" font="vector" ratio="15" rot="R90" align="center">&gt;VALUE</text>
 <wire x1="-2.4384" y1="-1.524" x2="-2.4384" y2="-3.429" width="0.1524" layer="21"/>
 </package>
-<package name="MSOP-10" urn="urn:adsk.eagle:footprint:25892165/1" locally_modified="yes">
+<package name="MSOP-10" urn="urn:adsk.eagle:footprint:25892165/4">
 <description>10-SOP, 0.50 mm pitch, 4.90 mm span, 3.00 X 3.00 X 1.10 mm body
 &lt;p&gt;10-pin SOP package with 0.50 mm pitch, 4.90 mm span with body size 3.00 X 3.00 X 1.10 mm&lt;/p&gt;</description>
-<wire x1="-1.5" y1="1.3899" x2="-1.5" y2="1.5" width="0.12" layer="21"/>
-<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.12" layer="21"/>
-<wire x1="1.5" y1="1.5" x2="1.5" y2="1.3899" width="0.12" layer="21"/>
-<wire x1="-1.5" y1="-1.3899" x2="-1.5" y2="-1.5" width="0.12" layer="21"/>
-<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.12" layer="21"/>
-<wire x1="1.5" y1="-1.5" x2="1.5" y2="-1.3899" width="0.12" layer="21"/>
-<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.12" layer="51"/>
+<wire x1="1.3899" y1="1.5" x2="1.5" y2="1.5" width="0.12" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.12" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.3899" y2="-1.5" width="0.12" layer="21"/>
+<wire x1="-1.3899" y1="1.5" x2="-1.5" y2="1.5" width="0.12" layer="21"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.12" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.3899" y2="-1.5" width="0.12" layer="21"/>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.12" layer="51"/>
 <wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.12" layer="51"/>
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.12" layer="51"/>
-<smd name="1" x="-2.15" y="1" dx="1.4118" dy="0.2718" layer="1"/>
-<smd name="2" x="-2.15" y="0.5" dx="1.4118" dy="0.2718" layer="1"/>
-<smd name="3" x="-2.15" y="0" dx="1.4118" dy="0.2718" layer="1"/>
-<smd name="4" x="-2.15" y="-0.5" dx="1.4118" dy="0.2718" layer="1"/>
-<smd name="5" x="-2.15" y="-1" dx="1.4118" dy="0.2718" layer="1"/>
-<smd name="6" x="2.15" y="-1" dx="1.4118" dy="0.2718" layer="1"/>
-<smd name="7" x="2.15" y="-0.5" dx="1.4118" dy="0.2718" layer="1"/>
-<smd name="8" x="2.15" y="0" dx="1.4118" dy="0.2718" layer="1"/>
-<smd name="9" x="2.15" y="0.5" dx="1.4118" dy="0.2718" layer="1"/>
-<smd name="10" x="2.15" y="1" dx="1.4118" dy="0.2718" layer="1"/>
-<text x="0" y="1.8899" size="1.143" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.881" size="1.143" layer="27" font="vector" ratio="15" align="top-center">&gt;VALUE</text>
-<wire x1="-1.524" y1="1.27" x2="-2.794" y2="1.27" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.12" layer="51"/>
+<wire x1="1.3462" y1="2.794" x2="1.3462" y2="1.524" width="0.1524" layer="21"/>
+<smd name="1" x="1" y="2.15" dx="1.4118" dy="0.2718" layer="1" rot="R270"/>
+<smd name="2" x="0.5" y="2.15" dx="1.4118" dy="0.2718" layer="1" rot="R270"/>
+<smd name="3" x="0" y="2.15" dx="1.4118" dy="0.2718" layer="1" rot="R270"/>
+<smd name="4" x="-0.5" y="2.15" dx="1.4118" dy="0.2718" layer="1" rot="R270"/>
+<smd name="5" x="-1" y="2.15" dx="1.4118" dy="0.2718" layer="1" rot="R270"/>
+<smd name="6" x="-1" y="-2.15" dx="1.4118" dy="0.2718" layer="1" rot="R270"/>
+<smd name="7" x="-0.5" y="-2.15" dx="1.4118" dy="0.2718" layer="1" rot="R270"/>
+<smd name="8" x="0" y="-2.15" dx="1.4118" dy="0.2718" layer="1" rot="R270"/>
+<smd name="9" x="0.5" y="-2.15" dx="1.4118" dy="0.2718" layer="1" rot="R270"/>
+<smd name="10" x="1" y="-2.15" dx="1.4118" dy="0.2718" layer="1" rot="R270"/>
+<text x="1.8899" y="0" size="1.143" layer="25" font="vector" ratio="15" rot="R270" align="bottom-center">&gt;NAME</text>
+<text x="-1.881" y="0" size="1.143" layer="27" font="vector" ratio="15" rot="R270" align="top-center">&gt;VALUE</text>
+<circle x="1.085" y="1.122" radius="0.25" width="0" layer="21"/>
 </package>
 <package name="SOP-16_150MIL" urn="urn:adsk.eagle:footprint:25892171/1" locally_modified="yes">
 <description>16-SOIC, 1.27 mm pitch, 6.00 mm span, 10.00 X 3.90 X 1.80 mm body
@@ -1228,7 +1229,7 @@ Source: http://cds.linear.com/docs/Datasheet/5598f.pdf</description>
 <packageinstance name="SOT-363(SC-70-6)"/>
 </packageinstances>
 </package3d>
-<package3d name="QFN24" urn="urn:adsk.eagle:package:22835121/2" type="model">
+<package3d name="QFN24" urn="urn:adsk.eagle:package:22835121/3" type="model">
 <description>&lt;b&gt;UF Package 24-Lead (4mm × 4mm) Plastic QFN&lt;/b&gt;&lt;p&gt;
 Source: http://cds.linear.com/docs/Datasheet/5598f.pdf</description>
 <packageinstances>
@@ -1249,7 +1250,7 @@ Source: http://cds.linear.com/docs/Datasheet/5598f.pdf</description>
 <packageinstance name="SOIC-8_150MIL"/>
 </packageinstances>
 </package3d>
-<package3d name="MSOP-10" urn="urn:adsk.eagle:package:25892162/2" type="model">
+<package3d name="MSOP-10" urn="urn:adsk.eagle:package:25892162/7" type="model">
 <description>10-SOP, 0.50 mm pitch, 4.90 mm span, 3.00 X 3.00 X 1.10 mm body
 &lt;p&gt;10-pin SOP package with 0.50 mm pitch, 4.90 mm span with body size 3.00 X 3.00 X 1.10 mm&lt;/p&gt;</description>
 <packageinstances>
@@ -2013,7 +2014,7 @@ Source: &lt;a href="https://datasheet.lcsc.com/szlcsc/Texas-Instruments-TI-TXS01
 <connect gate="G$1" pin="VCC" pad="7"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:25892162/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:25892162/7"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2320,7 +2321,7 @@ Source: &lt;a href="https://datasheet.lcsc.com/szlcsc/Texas-Instruments-TI-TXS01
 <connect gate="G$1" pin="XTB" pad="4"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22835121/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22835121/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
