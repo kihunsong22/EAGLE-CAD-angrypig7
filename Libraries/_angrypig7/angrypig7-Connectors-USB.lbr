@@ -1717,7 +1717,6 @@ Manufacturer: Hirose&lt;br&gt;
 <wire x1="-3" y1="-6" x2="-17.75" y2="-6" width="0.2032" layer="51"/>
 <wire x1="-3" y1="6" x2="-2" y2="6" width="0.2032" layer="51"/>
 <wire x1="-3" y1="-6" x2="-2" y2="-6" width="0.2032" layer="51"/>
-<wire x1="1" y1="-4.4" x2="1" y2="4.4" width="0.2032" layer="21"/>
 <wire x1="-12.6" y1="4.25" x2="-12.6" y2="1.75" width="0.15" layer="51"/>
 <wire x1="-12.6" y1="1.75" x2="-10.6" y2="1.75" width="0.15" layer="51"/>
 <wire x1="-10.6" y1="1.75" x2="-10.6" y2="4.25" width="0.15" layer="51"/>
