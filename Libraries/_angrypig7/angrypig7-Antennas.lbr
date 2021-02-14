@@ -711,7 +711,7 @@
 </package>
 <package name="TI-AN043_LEFT">
 <description>2.45GHz antenna from TI Application Note AN043</description>
-<pad name="GND" x="0.45" y="0.25" drill="0.35" stop="no"/>
+<pad name="GND" x="0.45" y="0.25" drill="0.35" stop="no" thermals="no"/>
 <smd name="RF" x="2.55" y="0.51" dx="1.016" dy="0.508" layer="1" rot="R90" stop="no" cream="no"/>
 <rectangle x1="-0.5" y1="0.5" x2="14.7" y2="5.7" layer="39"/>
 <rectangle x1="-0.5" y1="0.5" x2="14.7" y2="5.7" layer="40"/>
