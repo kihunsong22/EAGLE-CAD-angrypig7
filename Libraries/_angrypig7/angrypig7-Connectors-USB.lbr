@@ -1733,18 +1733,18 @@ Manufacturer: Hirose&lt;br&gt;
 <hole x="-0.1" y="2.25" drill="1"/>
 <hole x="-0.1" y="-2.25" drill="1"/>
 <text x="5.334" y="0" size="1.143" layer="27" font="vector" ratio="15" rot="R270" align="bottom-center">&gt;VALUE</text>
-<wire x1="-1.1" y1="6.2" x2="-1.1" y2="5.4" width="0" layer="46"/>
+<wire x1="-1.1" y1="6.7" x2="-1.1" y2="5.4" width="0" layer="46"/>
 <wire x1="-1.1" y1="5.4" x2="1.1" y2="5.4" width="0" layer="46"/>
-<wire x1="1.1" y1="5.4" x2="1.1" y2="6.2" width="0" layer="46"/>
-<wire x1="1.1" y1="6.2" x2="-1.1" y2="6.2" width="0" layer="46"/>
-<wire x1="-1.1" y1="-5.4" x2="-1.1" y2="-6.2" width="0" layer="46"/>
-<wire x1="-1.1" y1="-6.2" x2="1.1" y2="-6.2" width="0" layer="46"/>
-<wire x1="1.1" y1="-6.2" x2="1.1" y2="-5.4" width="0" layer="46"/>
+<wire x1="1.1" y1="5.4" x2="1.1" y2="6.7" width="0" layer="46"/>
+<wire x1="1.1" y1="6.7" x2="-1.1" y2="6.7" width="0" layer="46"/>
+<wire x1="-1.1" y1="-5.4" x2="-1.1" y2="-6.7" width="0" layer="46"/>
+<wire x1="-1.1" y1="-6.7" x2="1.1" y2="-6.7" width="0" layer="46"/>
+<wire x1="1.1" y1="-6.7" x2="1.1" y2="-5.4" width="0" layer="46"/>
 <wire x1="1.1" y1="-5.4" x2="-1.1" y2="-5.4" width="0" layer="46"/>
-<smd name="SHIELD@0" x="0" y="6.1" dx="4" dy="1.6" layer="1" roundness="40"/>
-<smd name="SHIELD@1" x="-0.1" y="-6" dx="4" dy="1.4" layer="1" roundness="40"/>
-<smd name="SHIELD@2" x="0" y="6.1" dx="4" dy="1.6" layer="16" roundness="40"/>
-<smd name="SHIELD@3" x="-0.1" y="-6" dx="4" dy="1.4" layer="16" roundness="40"/>
+<smd name="SHIELD@0" x="0" y="6.2" dx="4" dy="1.8" layer="1" roundness="40"/>
+<smd name="SHIELD@1" x="0" y="-6.2" dx="4" dy="1.8" layer="1" roundness="40"/>
+<smd name="SHIELD@2" x="0" y="6.2" dx="4" dy="1.8" layer="16" roundness="40"/>
+<smd name="SHIELD@3" x="0" y="-6.2" dx="4" dy="1.8" layer="16" roundness="40"/>
 </package>
 </packages>
 <packages3d>
