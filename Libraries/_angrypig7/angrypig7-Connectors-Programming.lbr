@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -1147,6 +1147,28 @@
 <pad name="5" x="-3.81" y="0" drill="1.016" diameter="1.8796"/>
 <pad name="6" x="-6.35" y="0" drill="1.016" diameter="1.8796"/>
 </package>
+<package name="TC2030-IDC-DOUBLE">
+<hole x="-2.54" y="0" drill="0.9906"/>
+<hole x="2.54" y="1.016" drill="0.9906"/>
+<hole x="2.54" y="-1.016" drill="0.9906"/>
+<rectangle x1="-3.3147" y1="-5.14985" x2="-1.7653" y2="-2.54" layer="40"/>
+<rectangle x1="-0.1397" y1="-5.14985" x2="1.4097" y2="-2.54" layer="40"/>
+<rectangle x1="-3.3147" y1="2.54" x2="-1.7653" y2="5.14985" layer="40"/>
+<rectangle x1="-0.1397" y1="2.54" x2="1.4097" y2="5.14985" layer="40"/>
+<rectangle x1="-1.016" y1="-0.381" x2="1.016" y2="0.381" layer="41"/>
+<text x="-4.445" y="0" size="0.762" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+<hole x="0.635" y="2.54" drill="2.3749"/>
+<hole x="-2.54" y="2.54" drill="2.3749"/>
+<hole x="0.635" y="-2.54" drill="2.3749"/>
+<hole x="-2.54" y="-2.54" drill="2.3749"/>
+<pad name="1" x="-1.27" y="-0.635" drill="0.2" diameter="0.85"/>
+<pad name="2" x="-1.27" y="0.635" drill="0.2" diameter="0.85"/>
+<pad name="3" x="0" y="-0.635" drill="0.2" diameter="0.85"/>
+<pad name="4" x="0" y="0.635" drill="0.2" diameter="0.85"/>
+<pad name="5" x="1.27" y="-0.635" drill="0.2" diameter="0.78" thermals="no"/>
+<pad name="6" x="1.27" y="0.635" drill="0.2" diameter="0.85"/>
+<circle x="1.27" y="-0.635" radius="0.3175" width="0.1524" layer="29"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="XH-4P-2.54MM-RIGHT" urn="urn:adsk.eagle:package:24353354/2" type="model">
@@ -1518,6 +1540,19 @@
 </technologies>
 </device>
 <device name="" package="TC2030-IDC">
+<connects>
+<connect gate="A" pin="GND" pad="5"/>
+<connect gate="A" pin="RST" pad="3"/>
+<connect gate="A" pin="TCK" pad="4"/>
+<connect gate="A" pin="TDO" pad="6"/>
+<connect gate="A" pin="TMS" pad="2"/>
+<connect gate="A" pin="VREF" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-DOUBLE" package="TC2030-IDC-DOUBLE">
 <connects>
 <connect gate="A" pin="GND" pad="5"/>
 <connect gate="A" pin="RST" pad="3"/>
