@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -294,8 +294,8 @@
 <wire x1="2.413" y1="-1.1359" x2="2.664" y2="-0.127" width="0.1524" layer="51" curve="22.478763"/>
 <wire x1="2.664" y1="-0.127" x2="2.413" y2="1.1359" width="0.1524" layer="51" curve="27.937554"/>
 <wire x1="2.095" y1="-1.651" x2="2.4247" y2="-1.1118" width="0.1524" layer="21" curve="13.609443"/>
-<pad name="1" x="1.7" y="0" drill="0.7" rot="R90"/>
-<pad name="3" x="-1.7" y="0" drill="0.7" rot="R90"/>
+<pad name="1" x="-1.7" y="0" drill="0.7" rot="R90"/>
+<pad name="3" x="1.7" y="0" drill="0.7" rot="R90"/>
 <pad name="2" x="0" y="0" drill="0.7" rot="R90"/>
 <text x="0" y="3.556" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="-2.667" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
