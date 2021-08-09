@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -1899,26 +1899,39 @@ Source: http://www.national.com .. USBN9603.pdf</description>
 <wire x1="70" y1="58" x2="68" y2="60" width="1" layer="21"/>
 <wire x1="68" y1="60" x2="2" y2="60" width="1" layer="21"/>
 <wire x1="2" y1="60" x2="0" y2="58" width="1" layer="21"/>
-<pad name="P$1" x="3.5" y="56.5" drill="1.8"/>
-<pad name="P$2" x="3.5" y="3.5" drill="1.8"/>
-<pad name="P$3" x="66.5" y="3.5" drill="1.8"/>
-<pad name="P$4" x="66.5" y="56.5" drill="1.8"/>
-<pad name="P$5" x="7.5" y="10" drill="1.4"/>
-<pad name="P$6" x="14" y="6" drill="1.4"/>
-<pad name="P$7" x="19.5" y="10" drill="1.4"/>
-<pad name="P$8" x="31.5" y="10.5" drill="1.4"/>
-<pad name="P$9" x="37.5" y="10.5" drill="1.4"/>
-<pad name="P$11" x="51" y="9.5" drill="1.4"/>
-<pad name="P$12" x="54.5" y="9.5" drill="1.4"/>
-<pad name="P$13" x="46" y="16" drill="1.4"/>
-<pad name="P$14" x="49" y="26" drill="1.4"/>
-<pad name="P$15" x="46" y="30" drill="1.4"/>
-<pad name="P$16" x="44" y="26.5" drill="1.4"/>
-<pad name="P$17" x="28.5" y="24.5" drill="1.4"/>
-<pad name="P$10" x="32" y="37.5" drill="1.4"/>
-<pad name="P$18" x="35.5" y="39" drill="1.4"/>
-<pad name="P$19" x="27.5" y="55" drill="1.4"/>
-<pad name="P$20" x="32" y="54.5" drill="1.4"/>
+<pad name="GND-HOLE-2" x="3.5" y="56.5" drill="1.8"/>
+<pad name="GND-HOLE-1" x="3.5" y="3.5" drill="1.8"/>
+<pad name="GND-HOLE-4" x="66.5" y="3.5" drill="1.8"/>
+<pad name="GND-HOLE-3" x="66.5" y="56.5" drill="1.8"/>
+<pad name="GND-1" x="5.08" y="12.446" drill="1.4"/>
+<pad name="VIN1" x="13.97" y="4.572" drill="1.4"/>
+<pad name="VIN2" x="17.272" y="7.366" drill="1.4"/>
+<pad name="UART-TX" x="25.654" y="11.176" drill="1.4"/>
+<pad name="UART-RX" x="29.464" y="11.176" drill="1.4"/>
+<pad name="RS485-B" x="51.816" y="11.557" drill="1.4"/>
+<pad name="RS485-A" x="55.626" y="11.557" drill="1.4"/>
+<pad name="JTDI" x="43.307" y="17.653" drill="1.4"/>
+<pad name="JTDO" x="47.117" y="27.178" drill="1.4"/>
+<pad name="JTCK" x="44.45" y="31.75" drill="1.4"/>
+<pad name="JTMS" x="40.005" y="28.194" drill="1.4"/>
+<pad name="3V3-1" x="26.924" y="26.162" drill="1.4"/>
+<pad name="PA3" x="30.861" y="39.878" drill="1.4"/>
+<pad name="PA2" x="33.401" y="40.894" drill="1.4"/>
+<pad name="NRST" x="26.543" y="55.372" drill="1.4"/>
+<pad name="GND-3" x="32.766" y="55.372" drill="1.4"/>
+<pad name="GND-2" x="14.986" y="36.068" drill="1.4"/>
+<pad name="GND-VIA-1" x="3.302" y="9.779" drill="1.4" shape="octagon"/>
+<pad name="GND-VIA-4" x="67.564" y="13.208" drill="1.4" shape="octagon"/>
+<pad name="GND-VIA-3" x="60.579" y="57.912" drill="1.4" shape="octagon"/>
+<pad name="GND-VIA-2" x="11.811" y="52.578" drill="1.4" shape="octagon"/>
+<attribute name="POPULARITY" value="79" x="33.401" y="20.828" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="33.401" y="19.304" size="1.27" layer="27" font="vector" ratio="15" align="top-center"/>
+<pad name="RSV3" x="35.687" y="24.892" drill="1.4"/>
+<pad name="RSV4" x="38.227" y="24.892" drill="1.4"/>
+<pad name="RSV2" x="33.147" y="24.892" drill="1.4"/>
+<pad name="RSV5" x="40.767" y="24.892" drill="1.4"/>
+<pad name="RSV6" x="43.307" y="24.892" drill="1.4"/>
+<pad name="RSV1" x="30.607" y="24.892" drill="1.4"/>
 </package>
 </packages>
 <packages3d>
@@ -2118,7 +2131,6 @@ Source: http://www.national.com .. USBN9603.pdf</description>
 <text x="-12.7" y="-22.86" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="SX1262-LORA-MODULE-V1.1">
-<description>ESP8266 Wifi module 01</description>
 <wire x1="-11.43" y1="12.7" x2="-11.43" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="-11.43" y1="-12.7" x2="11.43" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="11.43" y1="-12.7" x2="11.43" y2="12.7" width="0.254" layer="94"/>
@@ -2309,7 +2321,6 @@ Source: http://www.national.com .. USBN9603.pdf</description>
 <pin name="5V" x="20.32" y="20.32" visible="pin" length="middle" rot="R180"/>
 </symbol>
 <symbol name="SX1262-LORA-MODULE-V1.2">
-<description>ESP8266 Wifi module 01</description>
 <wire x1="-11.43" y1="12.7" x2="-11.43" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="-11.43" y1="-12.7" x2="11.43" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="11.43" y1="-12.7" x2="11.43" y2="12.7" width="0.254" layer="94"/>
@@ -2364,6 +2375,45 @@ Source: http://www.national.com .. USBN9603.pdf</description>
 <pin name="MOSI" x="3.81" y="-24.13" length="middle" rot="R90"/>
 <pin name="SCLK" x="6.35" y="-24.13" length="middle" rot="R90"/>
 <text x="-10.16" y="11.43" size="1.524" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="ELSCOM-LORA-BOARD-TEST-POINT">
+<wire x1="-13.97" y1="25.4" x2="-13.97" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-13.97" y1="-25.4" x2="13.97" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="13.97" y1="-25.4" x2="13.97" y2="25.4" width="0.254" layer="94"/>
+<wire x1="13.97" y1="25.4" x2="-13.97" y2="25.4" width="0.254" layer="94"/>
+<pin name="GND-VIA-4" x="-19.05" y="-6.35" visible="pin" length="middle"/>
+<pin name="GND-VIA-2" x="-19.05" y="-1.27" visible="pin" length="middle"/>
+<pin name="GND-VIA-3" x="-19.05" y="-3.81" visible="pin" length="middle"/>
+<pin name="RS485-A" x="19.05" y="22.86" visible="pin" length="middle" rot="R180"/>
+<pin name="PA3" x="-19.05" y="-19.05" visible="pin" length="middle"/>
+<pin name="VIN2" x="-19.05" y="22.86" visible="pin" length="middle"/>
+<pin name="PA2" x="-19.05" y="-21.59" visible="pin" length="middle"/>
+<pin name="GND-VIA-1" x="-19.05" y="1.27" visible="pin" length="middle"/>
+<text x="-13.97" y="25.654" size="1.778" layer="95">&gt;Name</text>
+<text x="-13.97" y="-27.432" size="1.778" layer="95">&gt;Value</text>
+<pin name="GND-HOLE-4" x="-19.05" y="5.08" visible="pin" length="middle"/>
+<pin name="GND-1" x="-19.05" y="-10.16" visible="pin" length="middle"/>
+<pin name="RS485-B" x="19.05" y="20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="GND-HOLE-3" x="-19.05" y="7.62" visible="pin" length="middle"/>
+<pin name="3V3" x="-19.05" y="17.78" visible="pin" length="middle"/>
+<pin name="VIN1" x="-19.05" y="20.32" visible="pin" length="middle"/>
+<pin name="GND-HOLE-2" x="-19.05" y="10.16" visible="pin" length="middle"/>
+<pin name="UART-TX" x="19.05" y="17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="GND-HOLE-1" x="-19.05" y="12.7" visible="pin" length="middle"/>
+<pin name="UART-RX" x="19.05" y="15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="GND-2" x="-19.05" y="-12.7" visible="pin" length="middle"/>
+<pin name="GND-3" x="-19.05" y="-15.24" visible="pin" length="middle"/>
+<pin name="JTDI" x="19.05" y="8.89" visible="pin" length="middle" rot="R180"/>
+<pin name="JTCK" x="19.05" y="11.43" visible="pin" length="middle" rot="R180"/>
+<pin name="JTDO" x="19.05" y="6.35" visible="pin" length="middle" rot="R180"/>
+<pin name="JTMS" x="19.05" y="3.81" visible="pin" length="middle" rot="R180"/>
+<pin name="NRST" x="19.05" y="1.27" visible="pin" length="middle" rot="R180"/>
+<pin name="RSV2" x="19.05" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="RSV1" x="19.05" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="RSV3" x="19.05" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="RSV4" x="19.05" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="RSV5" x="19.05" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="RSV6" x="19.05" y="-15.24" visible="pin" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3003,6 +3053,51 @@ https://www.sktiot.com/iot/introduction/network/networkLoraMain3</description>
 <connect gate="G$1" pin="SCLK" pad="22"/>
 <connect gate="G$1" pin="TXD" pad="16"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ELSCOM-LORA-BOARD-TEST-POINT" prefix="M">
+<gates>
+<gate name="G$1" symbol="ELSCOM-LORA-BOARD-TEST-POINT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ELSCOM-LORA-BOARD-TEST-POINT">
+<connects>
+<connect gate="G$1" pin="3V3" pad="3V3-1"/>
+<connect gate="G$1" pin="GND-1" pad="GND-1"/>
+<connect gate="G$1" pin="GND-2" pad="GND-2"/>
+<connect gate="G$1" pin="GND-3" pad="GND-3"/>
+<connect gate="G$1" pin="GND-HOLE-1" pad="GND-HOLE-1"/>
+<connect gate="G$1" pin="GND-HOLE-2" pad="GND-HOLE-2"/>
+<connect gate="G$1" pin="GND-HOLE-3" pad="GND-HOLE-3"/>
+<connect gate="G$1" pin="GND-HOLE-4" pad="GND-HOLE-4"/>
+<connect gate="G$1" pin="GND-VIA-1" pad="GND-VIA-1"/>
+<connect gate="G$1" pin="GND-VIA-2" pad="GND-VIA-2"/>
+<connect gate="G$1" pin="GND-VIA-3" pad="GND-VIA-3"/>
+<connect gate="G$1" pin="GND-VIA-4" pad="GND-VIA-4"/>
+<connect gate="G$1" pin="JTCK" pad="JTCK"/>
+<connect gate="G$1" pin="JTDI" pad="JTDI"/>
+<connect gate="G$1" pin="JTDO" pad="JTDO"/>
+<connect gate="G$1" pin="JTMS" pad="JTMS"/>
+<connect gate="G$1" pin="NRST" pad="NRST"/>
+<connect gate="G$1" pin="PA2" pad="PA2"/>
+<connect gate="G$1" pin="PA3" pad="PA3"/>
+<connect gate="G$1" pin="RS485-A" pad="RS485-A"/>
+<connect gate="G$1" pin="RS485-B" pad="RS485-B"/>
+<connect gate="G$1" pin="RSV1" pad="RSV1"/>
+<connect gate="G$1" pin="RSV2" pad="RSV2"/>
+<connect gate="G$1" pin="RSV3" pad="RSV3"/>
+<connect gate="G$1" pin="RSV4" pad="RSV4"/>
+<connect gate="G$1" pin="RSV5" pad="RSV5"/>
+<connect gate="G$1" pin="RSV6" pad="RSV6"/>
+<connect gate="G$1" pin="UART-RX" pad="UART-RX"/>
+<connect gate="G$1" pin="UART-TX" pad="UART-TX"/>
+<connect gate="G$1" pin="VIN1" pad="VIN1"/>
+<connect gate="G$1" pin="VIN2" pad="VIN2"/>
 </connects>
 <technologies>
 <technology name=""/>
