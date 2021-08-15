@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -1910,33 +1910,33 @@ Source: http://www.national.com .. USBN9603.pdf</description>
 <wire x1="35" y1="28" x2="33" y2="30" width="0.6096" layer="21"/>
 <wire x1="33" y1="30" x2="-33" y2="30" width="0.6096" layer="21"/>
 <wire x1="-33" y1="30" x2="-35" y2="28" width="0.6096" layer="21"/>
-<pad name="GND-1" x="-29.92" y="-17.554" drill="1.4"/>
-<pad name="VIN1" x="-21.03" y="-25.428" drill="1.4"/>
-<pad name="VIN2" x="-17.728" y="-22.634" drill="1.4"/>
-<pad name="UART-TX" x="-9.346" y="-18.824" drill="1.4"/>
-<pad name="UART-RX" x="-5.536" y="-18.824" drill="1.4"/>
-<pad name="RS485-B" x="16.816" y="-18.443" drill="1.4"/>
-<pad name="RS485-A" x="20.626" y="-18.443" drill="1.4"/>
-<pad name="JTDI" x="8.307" y="-12.347" drill="1.4"/>
-<pad name="JTDO" x="12.117" y="-2.822" drill="1.4"/>
-<pad name="JTCK" x="9.45" y="1.75" drill="1.4"/>
-<pad name="JTMS" x="5.005" y="-1.806" drill="1.4"/>
-<pad name="3V3-1" x="-8.076" y="-3.838" drill="1.4"/>
-<pad name="PA3" x="-4.139" y="9.878" drill="1.4"/>
-<pad name="PA2" x="-1.599" y="10.894" drill="1.4"/>
-<pad name="NRST" x="-8.457" y="25.372" drill="1.4"/>
-<pad name="GND-3" x="-2.234" y="25.372" drill="1.4"/>
-<pad name="GND-2" x="-20.014" y="6.068" drill="1.4"/>
-<pad name="GND-VIA-1" x="-31.698" y="-20.221" drill="1.4" shape="octagon"/>
-<pad name="GND-VIA-4" x="32.564" y="-16.792" drill="1.4" shape="octagon"/>
-<pad name="GND-VIA-3" x="25.579" y="27.912" drill="1.4" shape="octagon"/>
-<pad name="GND-VIA-2" x="-23.189" y="22.578" drill="1.4" shape="octagon"/>
-<pad name="RSV3" x="0.687" y="-5.108" drill="1.4"/>
-<pad name="RSV4" x="3.227" y="-5.108" drill="1.4"/>
-<pad name="RSV2" x="-1.853" y="-5.108" drill="1.4"/>
-<pad name="RSV5" x="5.767" y="-5.108" drill="1.4"/>
-<pad name="RSV6" x="8.307" y="-5.108" drill="1.4"/>
-<pad name="RSV1" x="-4.393" y="-5.108" drill="1.4"/>
+<pad name="GND-1" x="-29.92" y="-17.554" drill="1.45"/>
+<pad name="VIN1" x="-21.03" y="-25.428" drill="1.45"/>
+<pad name="VIN2" x="-17.728" y="-22.634" drill="1.45"/>
+<pad name="UART-TX" x="-9.346" y="-18.824" drill="1.45"/>
+<pad name="UART-RX" x="-5.536" y="-18.824" drill="1.45"/>
+<pad name="RS485-B" x="16.816" y="-18.443" drill="1.45"/>
+<pad name="RS485-A" x="20.626" y="-18.443" drill="1.45"/>
+<pad name="JTDI" x="8.307" y="-12.347" drill="1.45"/>
+<pad name="JTDO" x="12.117" y="-2.822" drill="1.45"/>
+<pad name="JTCK" x="9.45" y="1.75" drill="1.45"/>
+<pad name="JTMS" x="5.005" y="-1.806" drill="1.45"/>
+<pad name="3V3-1" x="-8.076" y="-3.838" drill="1.45"/>
+<pad name="PA3" x="-4.139" y="9.878" drill="1.45"/>
+<pad name="PA2" x="-1.599" y="10.894" drill="1.45"/>
+<pad name="NRST" x="-8.457" y="25.372" drill="1.45"/>
+<pad name="GND-3" x="-2.234" y="25.372" drill="1.45"/>
+<pad name="GND-2" x="-20.014" y="6.068" drill="1.45"/>
+<pad name="GND-VIA-1" x="-31.698" y="-20.221" drill="1.45" shape="octagon"/>
+<pad name="GND-VIA-4" x="32.564" y="-16.792" drill="1.45" shape="octagon"/>
+<pad name="GND-VIA-3" x="25.579" y="27.912" drill="1.45" shape="octagon"/>
+<pad name="GND-VIA-2" x="-23.189" y="22.578" drill="1.45" shape="octagon"/>
+<pad name="RSV3" x="0.687" y="-5.108" drill="1.45"/>
+<pad name="RSV4" x="3.227" y="-5.108" drill="1.45"/>
+<pad name="RSV2" x="-1.853" y="-5.108" drill="1.45"/>
+<pad name="RSV5" x="5.767" y="-5.108" drill="1.45"/>
+<pad name="RSV6" x="8.307" y="-5.108" drill="1.45"/>
+<pad name="RSV1" x="-4.393" y="-5.108" drill="1.45"/>
 <circle x="31.5" y="26.5" radius="3.01" width="0.1524" layer="21"/>
 <circle x="31.5" y="26.5" radius="2.25" width="1.6" layer="39"/>
 <circle x="31.5" y="26.5" radius="2.25" width="1.6" layer="40"/>
@@ -2073,7 +2073,6 @@ Source: http://www.national.com .. USBN9603.pdf</description>
 <wire x1="7.37514375" y1="-0.9248125" x2="7.37514375" y2="-4.324859375" width="0.1524" layer="51" style="longdash"/>
 <wire x1="7.37514375" y1="-4.324859375" x2="4.37515" y2="-4.324859375" width="0.1524" layer="51" style="longdash"/>
 <rectangle x1="-7.62" y1="-29.972" x2="7.62" y2="0" layer="39"/>
-<rectangle x1="-7.62" y1="-29.972" x2="7.62" y2="0" layer="41"/>
 </package>
 </packages>
 <packages3d>
@@ -3287,7 +3286,7 @@ https://www.sktiot.com/iot/introduction/network/networkLoraMain3</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="STLINK-V3MODS" prefix="U">
+<deviceset name="STLINK-V3MODS" prefix="M">
 <gates>
 <gate name="A" symbol="STLINK-V3MODS" x="0" y="0"/>
 </gates>
