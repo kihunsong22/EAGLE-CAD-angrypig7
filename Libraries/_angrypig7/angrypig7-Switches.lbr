@@ -1580,6 +1580,23 @@
 <text x="0" y="-1.651" size="1.143" layer="27" font="vector" ratio="15" align="top-center">&gt;Value</text>
 <circle x="0" y="0" radius="0.8" width="0.1524" layer="21"/>
 </package>
+<package name="SWITCH_DPDT_9.1X3.5MM">
+<description>Korean Hroparts Elec K3-2235D-F1</description>
+<pad name="1" x="-2.5" y="1.7" drill="0.9"/>
+<pad name="2" x="0" y="1.7" drill="0.9"/>
+<pad name="3" x="2.5" y="1.7" drill="0.9"/>
+<wire x1="-4.3" y1="1.75" x2="-3.3" y2="1.75" width="0.1524" layer="21"/>
+<wire x1="-3.3" y1="1.75" x2="3.3" y2="1.75" width="0.1524" layer="51"/>
+<wire x1="3.3" y1="1.75" x2="4.3" y2="1.75" width="0.1524" layer="21"/>
+<wire x1="4.3" y1="1.75" x2="4.3" y2="-1.75" width="0.1524" layer="21"/>
+<wire x1="4.3" y1="-1.75" x2="3.3" y2="-1.75" width="0.1524" layer="21"/>
+<wire x1="3.3" y1="-1.75" x2="-3.3" y2="-1.75" width="0.1524" layer="51"/>
+<wire x1="-3.3" y1="-1.75" x2="-4.3" y2="-1.75" width="0.1524" layer="21"/>
+<wire x1="-4.3" y1="-1.75" x2="-4.3" y2="1.75" width="0.1524" layer="21"/>
+<pad name="4" x="-2.5" y="-1.7" drill="0.9"/>
+<pad name="5" x="0" y="-1.7" drill="0.9"/>
+<pad name="6" x="2.5" y="-1.7" drill="0.9"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="EDG-10" urn="urn:adsk.eagle:package:26662/2" type="model">
@@ -2856,6 +2873,19 @@
 </technology>
 </technologies>
 </device>
+<device name="-PTH-9.1X3.5MM" package="SWITCH_DPDT_9.1X3.5MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="SWITCH-SP3T" prefix="S" uservalue="yes">
@@ -2930,6 +2960,16 @@
 <technology name="">
 <attribute name="PROD_ID" value="SWCH-14746"/>
 </technology>
+</technologies>
+</device>
+<device name="-PTH-9.1X3.5MM" package="SWITCH_DPDT_9.1X3.5MM">
+<connects>
+<connect gate="1" pin="O" pad="1 4"/>
+<connect gate="1" pin="P" pad="2 5"/>
+<connect gate="1" pin="S" pad="3 6"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

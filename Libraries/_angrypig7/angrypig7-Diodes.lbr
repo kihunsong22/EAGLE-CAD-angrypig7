@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -528,8 +528,8 @@ Source: http://www.diotec.com/pdf/s40.pdf</description>
 <smd name="1" x="-0.925" y="0.65" dx="0.7" dy="0.7" layer="1" rot="R270"/>
 <smd name="2" x="-0.925" y="-0.65" dx="0.7" dy="0.7" layer="1" rot="R270"/>
 <smd name="3" x="0.925" y="0" dx="0.7" dy="0.7" layer="1" rot="R270"/>
-<text x="0" y="1.27" size="1.016" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.27" size="1.016" layer="27" font="vector" ratio="12" align="top-center">&gt;VALUE</text>
+<text x="0" y="1.27" size="1.016" layer="25" font="vector" ratio="16" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.27" size="1.016" layer="27" font="vector" ratio="16" align="top-center">&gt;VALUE</text>
 <wire x1="-0.6222" y1="1.1064" x2="-1.2524" y2="1.1064" width="0.1524" layer="21"/>
 </package>
 <package name="SOT-363(SC-70-6)">
@@ -558,8 +558,8 @@ Source: http://www.diotec.com/pdf/s40.pdf</description>
 <wire x1="0.957" y1="0.7" x2="0.957" y2="-0.7" width="0.2032" layer="21"/>
 <wire x1="0.957" y1="-0.7" x2="-0.973" y2="-0.7" width="0.2032" layer="21"/>
 <wire x1="-0.973" y1="-0.7" x2="-0.973" y2="0.7" width="0.2032" layer="21"/>
-<text x="0" y="1.4572" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0" y="-1.4364" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<text x="0" y="1.397" size="1.143" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-1.397" size="1.143" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <wire x1="-0.592" y1="-0.6" x2="-0.592" y2="0.6" width="0.254" layer="21"/>
 </package>
 <package name="SOD-323" urn="urn:adsk.eagle:footprint:22471091/1" locally_modified="yes">
@@ -1220,7 +1220,7 @@ Molded Body, 6.86 X 5.91 X 2.50 mm body
 <symbol name="DIODE-SERIES">
 <wire x1="-2.54" y1="1.27" x2="-2.54" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-2.54" y2="-1.27" width="0.1524" layer="94"/>
-<text x="-5.842" y="3.81" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.842" y="4.064" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.842" y="2.032" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="A" x="-6.35" y="0" visible="off" length="point" direction="pas"/>
 <pin name="AC" x="0" y="0" visible="off" length="point" direction="pas" rot="R180"/>
