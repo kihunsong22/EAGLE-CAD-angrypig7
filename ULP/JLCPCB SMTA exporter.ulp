@@ -19,7 +19,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 #usage "<b>JLCPCB BOM/CPL files generator</b>\n"
        "<p>"
-       "Generates BOM and CPL files for JLCPCB SMT/TH assembly service"
+       "Generates BOM and CPL files for JLCPCB SMT/TH dual side assembly service"
        "https://jlcpcb.com/smt-assembly"
        "<p>"
        "Run the ULP from the board editor"
@@ -29,7 +29,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 int layer_id_map[] = { 1, 16 };
 UL_ELEMENT selected_elements[];
-string layer_name_map[] = { "Top", "Bottom" };
 
 string replace_commas(string s)
 {
@@ -92,21 +91,17 @@ string get_lcsc_part(UL_ELEMENT E)
     return "";
 }
 
+int is_dnp(UL_ELEMENT E)
+{
+    E.attributes(A) {
+        if (A.name == "DNP") {
+            return 1;
+        }
+    }
+    return 0;
+}
 
 if (board) board(B) {
-
-    string txt;
-    int layer_choice = 0;
-    int export_th = 1;
-
-    dlgDialog("Export selection") {
-        dlgGroup("Export layer") {
-            dlgRadioButton("&Top", layer_choice);
-            dlgRadioButton("&Bottom", layer_choice);
-        }
-        dlgCheckBox("&Export also TH components", export_th);
-        dlgPushButton("OK") dlgAccept();
-    };
 
     string output_dir = dlgDirectory("Export files to", filedir(B.name));
 
@@ -117,19 +112,17 @@ if (board) board(B) {
     int element_count = 0;
 
     // Gather the components that will appear in BOM/CPL
-    B.elements(E) if (E.populate) {
+    B.elements(E) if (E.populate && !is_dnp(E)) {
         E.package.contacts(C) {
-            if ((C.smd && C.smd.layer == layer_id_map[layer_choice])
-                    || (!C.smd && export_th && E.mirror == layer_choice)) {
+            if (C.smd || C.pad) {
                 selected_elements[element_count++] = E;
                 break;
             }
         }
     }
 
-    string base_path = (output_dir + "/" +
-        strsub(filename(B.name), 0, strlen(filename(B.name)) - 4) +
-        "_" + strlwr(layer_name_map[layer_choice]));
+    string base_path = (output_dir + "/" + 
+        strsub(filename(B.name), 0, strlen(filename(B.name)) - 4));
 
     string cpl_filename = base_path + "_cpl.csv";
     string bom_filename = base_path + "_bom.csv";
@@ -141,6 +134,11 @@ if (board) board(B) {
             UL_ELEMENT E = selected_elements[i];
             real angle = E.angle;
 
+            string layer = "Top";
+            if (E.mirror) {
+                layer = "Bottom";
+            }
+
             E.attributes(A) {  // manually rotate the part
                 if (A.name == "JLC_ROTATION") {
                     // Note: supporting only integer offsets
@@ -148,13 +146,13 @@ if (board) board(B) {
                 }
             }
 
-            if (layer_name_map[layer_choice] == "Bottom") {
+            if (layer == "Bottom") {
                 angle += 180;
             }
 
             printf("%s,%5.2f,%5.2f,%s,%.1f\n",
                 E.name, u2mm(E.x), u2mm(E.y),
-                layer_name_map[layer_choice],
+                layer,
                 angle_mod(angle));
         }
     }
@@ -163,12 +161,14 @@ if (board) board(B) {
         int i;
         int indexes[];
         numeric string values[];
+        numeric string footprints[];
 
         for (i=0 ; i < element_count ; ++i) {
             indexes[i] = i;
             values[i] = selected_elements[i].value;
+            footprints[i] = selected_elements[i].footprint.name;
         }
-        sort(element_count, indexes, values);
+        sort(element_count, indexes, values, footprints);
 
         // Header
         printf("Comment,Designator,Footprint,LCSC Part #\n");
@@ -178,11 +178,14 @@ if (board) board(B) {
             UL_ELEMENT E = selected_elements[indexes[i]];
             string lcsc_part = get_lcsc_part(E);
 
-            // Elements with no values aren't aggregated
             if (strip(E.value) == "") {
+                // Elements with no values aren't aggregated
                 printf("%s,%s,%s,%s\n", "", replace_commas(E.name), replace_commas(E.footprint.name), lcsc_part);
                 designators = "";
-            } else if (i < element_count - 1 && E.value == selected_elements[indexes[i + 1]].value) {
+            } else if (i < element_count - 1
+                    && E.value == selected_elements[indexes[i + 1]].value
+                    && E.footprint.name == selected_elements[indexes[i + 1]].footprint.name) {
+                // Split elements that have different value or package
                 designators += " " + replace_commas(E.name);
             } else {
                 designators += " " + replace_commas(E.name);
