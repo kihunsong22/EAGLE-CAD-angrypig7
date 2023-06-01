@@ -2088,7 +2088,9 @@ By Korean Hroparts Elec &lt;br&gt;
 <package3dinstance package3d_urn="urn:adsk.eagle:package:24334504/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LCSC" value="C283540" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2157,7 +2159,9 @@ Super Speed pins not available on the 16-pin purely SMD connector so this part i
 <package3dinstance package3d_urn="urn:adsk.eagle:package:24334474/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LCSC" value="C165948" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
